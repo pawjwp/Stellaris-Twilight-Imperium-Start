@@ -1,0 +1,272 @@
+add_generator_deposits = {
+	if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_continental
+				is_planet_class = pc_tropical
+			}
+		}
+
+		# 3 + 3 energy
+		add_deposit = d_hot_springs
+		add_deposit = d_rushing_waterfalls
+		add_deposit = d_tempestous_mountain
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_ocean
+		}
+
+		# 3 + 3 energy
+		add_deposit = d_hot_springs
+		add_deposit = d_rushing_waterfalls
+		add_deposit = d_underwater_vent
+	}
+
+	if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_arctic
+				is_planet_class = pc_tundra
+			}
+		}
+
+		# 3 + 3 energy
+		add_deposit = d_hot_springs
+		add_deposit = d_frozen_gas_lake
+		add_deposit = d_geothermal_vent
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_alpine
+		}
+
+		# 3 + 3 energy
+		add_deposit = d_hot_springs
+		add_deposit = d_frozen_gas_lake
+		add_deposit = d_tempestous_mountain
+	}
+
+	if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_desert
+				is_planet_class = pc_arid
+				is_planet_class = pc_savannah
+			}
+		}
+
+		# 3 + 3 energy
+		add_deposit = d_arid_highlands
+		add_deposit = d_searing_desert
+		add_deposit = d_geothermal_vent
+	}
+}
+
+
+add_mining_deposits = {
+	if = {
+		limit = {
+			is_planet_class = pc_continental
+		}
+
+		# 3 + 3 mining
+		add_deposit = d_veiny_cliffs
+		add_deposit = d_prosperous_mesa
+		add_deposit = d_rich_mountain
+	}
+
+	if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_tropical
+				is_planet_class = pc_savannah
+			}
+		}
+
+		# 3 + 3 mining
+		add_deposit = d_mineral_fields
+		add_deposit = d_prosperous_mesa
+		add_deposit = d_submerged_ore_veins
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_ocean
+		}
+
+		# 3 + 3 mining
+		add_deposit = d_mineral_fields
+		add_deposit = d_ore_rich_caverns
+		add_deposit = d_submerged_ore_veins
+	}
+
+	if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_arctic
+				is_planet_class = pc_alpine
+				is_planet_class = pc_arid
+			}
+		}
+
+		# 3 + 3 mining
+		add_deposit = d_veiny_cliffs
+		add_deposit = d_ore_rich_caverns
+		add_deposit = d_rich_mountain
+	}
+
+	if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_tundra
+				is_planet_class = pc_desert
+			}
+		}
+
+		# 3 + 3 mining
+		add_deposit = d_mineral_fields
+		add_deposit = d_ore_rich_caverns
+		add_deposit = d_rich_mountain
+	}
+}
+
+
+add_farming_deposits = {
+	if = {
+		limit = {
+			is_planet_class = pc_continental
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_rugged_woods
+		add_deposit = d_fertile_lands
+		add_deposit = d_rugged_woods
+		add_deposit = d_black_soil
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_tropical
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_green_hills
+		add_deposit = d_lush_jungle
+		add_deposit = d_green_hills
+		add_deposit = d_tropical_island
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_ocean
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_green_hills
+		add_deposit = d_lush_jungle
+		add_deposit = d_green_hills
+		add_deposit = d_teeming_reef
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_arctic
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_lichen_fields
+		add_deposit = d_fungal_caves
+		add_deposit = d_lichen_fields
+		add_deposit = d_fungal_forest
+	}
+
+	if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_tundra
+				is_planet_class = pc_alpine
+			}
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_forgiving_tundra
+		add_deposit = d_fungal_caves
+		add_deposit = d_forgiving_tundra
+		add_deposit = d_fungal_forest
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_desert
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_nutritious_mudland
+		add_deposit = d_great_river
+		add_deposit = d_nutritious_mudland
+		add_deposit = d_marvelous_oasis
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_arid
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_bountiful_plains
+		add_deposit = d_great_river
+		add_deposit = d_bountiful_plains
+		add_deposit = d_tropical_island
+	}
+
+	if = {
+		limit = {
+			is_planet_class = pc_savannah
+		}
+
+		# 4 + 3 farming
+		add_deposit = d_bountiful_plains
+		add_deposit = d_fertile_lands
+		add_deposit = d_bountiful_plains
+		add_deposit = d_black_soil
+	}
+}
+
+
+
+remove_generator_deposits = {
+	while = {
+		count = 2
+		random_deposit = {
+			limit = { has_deposit_category = deposit_cat_energy }
+			remove_deposit = yes
+		}
+	}
+}
+
+
+remove_mining_deposits = {
+	while = {
+		count = 2
+		random_deposit = {
+			limit = { has_deposit_category = deposit_cat_minerals }
+			remove_deposit = yes
+		}
+	}
+}
+
+
+remove_farming_deposits = {
+	while = {
+		count = 2
+		random_deposit = {
+			limit = { has_deposit_category = deposit_cat_food }
+			remove_deposit = yes
+		}
+	}
+}
+
+

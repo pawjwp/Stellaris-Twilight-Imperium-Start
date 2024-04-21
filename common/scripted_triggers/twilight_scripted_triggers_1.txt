@@ -1,0 +1,167 @@
+ti_is_arborec = {
+	has_origin = origin_tree_of_life
+	has_civic = civic_hive_cordyceptic_drones
+	has_civic = civic_hive_divided_attention
+}
+
+ti_is_argent_flight = {
+	has_origin = origin_default
+	has_civic = civic_memorialist
+	has_civic = civic_sovereign_guardianship
+}
+
+ti_is_creuss = {
+	has_origin = origin_star_slingshot
+	has_civic = civic_dimensional_worship
+	has_civic = civic_pompous_purists
+}
+
+ti_is_hacan = {
+	has_origin = origin_default
+	has_civic = civic_free_traders
+	has_civic = civic_corporate_crafters
+}
+
+ti_is_jol_nar = {
+	has_origin = origin_default
+	has_civic = civic_technocracy
+	has_civic = civic_functional_architecture
+}
+
+ti_is_l1z1x = {
+	has_origin = origin_mechanists
+	has_civic = civic_technocracy
+	has_civic = civic_dark_consortium
+}
+
+ti_is_letnev = {
+	has_origin = origin_subterranean
+	has_civic = civic_feudal_realm
+	has_civic = civic_aristocratic_elite
+}
+
+ti_is_mahact = {
+	OR = {
+		has_origin = origin_remnants
+		has_origin = origin_post_apocalyptic
+	}
+	has_civic = civic_slaver_guilds
+	has_civic = civic_barbaric_despoilers
+}
+
+ti_is_mentak = {
+	has_origin = origin_default
+	has_civic = civic_scavengers
+	has_civic = civic_warrior_culture
+}
+
+ti_is_muaat = {
+	has_origin = origin_post_apocalyptic
+	has_civic = civic_mining_guilds
+	has_civic = civic_relentless_industrialists
+}
+
+ti_is_naaz_rokha = {
+	has_origin = origin_syncretic_evolution
+	has_civic = civic_idealistic_foundation
+	has_civic = civic_parliamentary_system
+}
+
+ti_is_naalu = {
+	has_origin = origin_shroudwalker_apprentice
+	has_civic = civic_slaver_guilds
+	has_civic = civic_exalted_priesthood
+}
+
+ti_is_nekro = {
+	has_origin = origin_machine
+	has_civic = civic_machine_terminator
+	has_civic = civic_machine_replication
+}
+
+ti_is_nomad = {
+	has_origin = origin_default
+	has_civic = civic_corporate_dark_consortium
+	has_civic = civic_naval_contractors
+}
+
+ti_is_saar = {
+	has_origin = origin_void_dwellers
+	has_civic = civic_idealistic_foundation
+	has_civic = civic_hyperspace_specialty
+}
+
+ti_is_sardakk = {
+	has_origin = origin_default
+	has_civic = civic_warrior_culture
+	has_civic = civic_barbaric_despoilers
+}
+
+ti_is_sol = {
+	has_origin = origin_default
+	has_civic = civic_parliamentary_system
+	has_civic = civic_byzantine_bureaucracy
+}
+
+ti_is_titans = {
+	has_origin = origin_shattered_ring
+	has_civic = civic_environmentalist
+	has_civic = civic_memory_vault
+}
+
+ti_is_winnu = {
+	OR = {
+		has_origin = origin_default
+		has_origin = origin_legendary_leader
+	}
+	has_civic = civic_byzantine_bureaucracy
+	has_civic = civic_memorialist
+}
+
+ti_is_xxcha = {
+	has_origin = origin_default
+	has_civic = civic_diplomatic_corps
+	has_civic = civic_philosopher_king
+}
+
+ti_is_yin = {
+	OR = {
+		has_origin = origin_overtuned
+		has_origin = origin_clone_army
+	}	
+	has_civic = civic_death_cult
+	has_civic = civic_exalted_priesthood
+}
+
+ti_is_yssaril = {
+	has_origin = origin_default
+	has_civic = civic_shadow_council
+	has_civic = civic_warrior_culture
+}
+
+has_reduced_pop_origin = {
+	OR = {
+		has_origin = origin_broken_shackles
+		has_origin = origin_payback
+		has_origin = origin_fear_of_the_dark
+		ti_is_mentak = yes
+		ti_is_nomad = yes
+	}
+}
+
+ti_valid_immigration_empire = {
+	is_country_type = default
+	ti_is_nomad = no
+	NOR = {
+		has_ethic = ethic_xenophobe
+		has_ethic = ethic_fanatic_xenophobe
+		has_ethic = ethic_gestalt_consciousness
+	}
+	species = {
+		NOR = {
+			has_trait = trait_hive_mind
+			has_trait = trait_pc_habitat_preference
+			is_archetype = LITHOID
+		}
+	}
+}
