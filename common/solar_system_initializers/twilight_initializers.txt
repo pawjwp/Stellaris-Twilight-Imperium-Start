@@ -562,7 +562,6 @@ letnev_system = {
 
 	planet = {
 		count = 1
-		class = pc_m_star
 		orbit_distance = 150
 		class = ideal_planet_class
 		size = 22
@@ -574,7 +573,6 @@ letnev_system = {
 			init_effect = {
 			prevent_anomaly = yes
 			generate_empire_home_planet = yes
-			set_name = "Hercant"
 		}
 	}
 
@@ -857,7 +855,10 @@ naaz_rokha_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			generate_empire_home_planet = yes
-			add_modifier = { modifier = second_home days = -1 }
+			add_modifier = {
+				modifier = second_home
+				days = -1
+			}
 		}
 	}
 
@@ -869,14 +870,17 @@ naaz_rokha_system = {
 	planet = {
 		orbit_distance = 20
 		orbit_angle = 220
-		class = "pc_alpine"
+		class = "pc_continental"
 		size = 20
 		has_ring = no
 		flags = { ti_city_1_starting_planet ti_mining_starting_planet ti_generator_starting_planet }
 
 		init_effect = {
 			set_name = "Rokha"
-			add_modifier = { modifier = second_home days = -1 }
+			add_modifier = {
+				modifier = second_home
+				days = -1
+			}
 		}
 	}
 
@@ -1106,7 +1110,7 @@ sardakk_system = {
 		class = pc_arctic
 		size = 15
 		has_ring = no
-		flags = { ti_city_1_starting_planet ti_mining_starting_planet }
+		flags = { ti_city_1_starting_planet ti_mining_starting_planet ti_trenlak }
 
 		init_effect = {
 			set_name = "Tren'lak"
@@ -1215,7 +1219,7 @@ jol_nar_system = {
 	planet = {
 		orbit_distance = { min = 15 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
-		class = pc_arctic
+		class = pc_ocean
 		size = 15
 		has_ring = no
 		flags = { ti_city_1_starting_planet ti_industrial_starting_planet ti_trade_starting_planet ti_research_starting_planet }

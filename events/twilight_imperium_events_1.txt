@@ -302,9 +302,7 @@ planet_event = {
 					add_traits_at_start_of_list = yes
 				}
 				change_species_characteristics = {
-					remove_trait = trait_pc_tropical_preference
-					add_trait = trait_pc_alpine_preference
-					add_traits_at_start_of_list = yes
+					ideal_planet_class = pc_continental
 				}
 				save_event_target_as = syncretic_species
 			}
@@ -393,7 +391,7 @@ planet_event = {
 	}
 }
 
-# nomad and mentak council refresh
+# country start
 country_event = {
 	id = twilight_imperium.5
 	hide_window = yes
@@ -507,6 +505,15 @@ country_event = {
 					}
 				}
 			}
+		}
+		if = {
+			limit = {
+				OR = {
+					ti_is_nomad = yes
+				}
+			}
+
+			capital_scope = { spawn_orbital_ring_effect = yes }
 		}
 	}
 }
@@ -887,9 +894,6 @@ planet_event = {
 				limit = {
 					has_planet_flag = ti_industrial_starting_planet
 				}
-				set_owner = root.owner
-				set_controller = root.owner
-				prevent_anomaly = yes
 				while = {
 					count = 4
 					root = {
@@ -916,9 +920,6 @@ planet_event = {
 				limit = {
 					has_planet_flag = ti_research_starting_planet
 				}
-				set_owner = root.owner
-				set_controller = root.owner
-				prevent_anomaly = yes
 				while = {
 					count = 2
 					root = {
@@ -943,9 +944,6 @@ planet_event = {
 				limit = {
 					has_planet_flag = ti_trade_starting_planet
 				}
-				set_owner = root.owner
-				set_controller = root.owner
-				prevent_anomaly = yes
 				while = {
 					count = 2
 					root = {
@@ -970,9 +968,6 @@ planet_event = {
 				limit = {
 					has_planet_flag = ti_generator_starting_planet
 				}
-				set_owner = root.owner
-				set_controller = root.owner
-				prevent_anomaly = yes
 				while = {
 					count = 4
 					root = {
@@ -1002,9 +997,6 @@ planet_event = {
 				limit = {
 					has_planet_flag = ti_mining_starting_planet
 				}
-				set_owner = root.owner
-				set_controller = root.owner
-				prevent_anomaly = yes
 				while = {
 					count = 4
 					root = {
@@ -1034,9 +1026,6 @@ planet_event = {
 				limit = {
 					has_planet_flag = ti_farming_starting_planet
 				}
-				set_owner = root.owner
-				set_controller = root.owner
-				prevent_anomaly = yes
 				while = {
 					count = 4
 					root = {
@@ -1061,6 +1050,17 @@ planet_event = {
 				add_farming_deposits = yes
 				
 				check_planet_employment = yes
+			}
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = ti_trenlak
+				}
+				every_owned_pop = {
+					modify_species = {
+						species = this
+						ideal_planet_class = pc_arctic
+					}
+				}
 			}
 		}
 		check_planet_employment = yes
