@@ -6,8 +6,20 @@ ti_is_arborec = {
 
 ti_is_argent_flight = {
 	has_origin = origin_default
-	has_civic = civic_memorialist
-	has_civic = civic_sovereign_guardianship
+	OR = {
+		AND = {
+			has_civic = civic_memorialist
+			has_civic = civic_sovereign_guardianship
+		}
+		AND = {
+			has_civic = civic_memorialist
+			has_civic = civic_citizen_service
+		}
+		AND = {
+			has_civic = civic_sovereign_guardianship
+			has_civic = civic_citizen_service
+		}
+	}
 }
 
 ti_is_creuss = {

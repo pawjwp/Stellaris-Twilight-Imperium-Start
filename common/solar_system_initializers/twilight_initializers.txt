@@ -338,6 +338,7 @@ hacan_system = {
 		has_independent_orbital_line = yes
 		init_effect = {
 			remove_planet = yes
+			clear_deposits = yes
 		}
 
 		moon = {
@@ -411,7 +412,7 @@ hacan_system = {
 
 # Argent Flight System
 argent_flight_system = {
-	class = sc_m_giant
+	class = sc_neutron_star
 
 	usage = custom_empire
 
@@ -428,33 +429,59 @@ argent_flight_system = {
 	}
 
 	asteroid_belt = {
-		type = crystal_asteroid_belt
+		type = empty_asteroid_belt
+		radius = 30
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
 		radius = 60
 	}
 	asteroid_belt = {
-		type = crystal_asteroid_belt
+		type = empty_asteroid_belt
+		radius = 90
+	}
+	asteroid_belt = {
+		type = empty_asteroid_belt
 		radius = 120
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
 	}
 
 	planet = {
 		count = 1
-		class = pc_m_star
+		class = pc_neutron_star
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 35
+		size = 25
 		has_ring = no
+
+		init_effect = {
+			create_ambient_object = {
+				type = "space_storm_2"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+		}
 	}
 
 	change_orbit = 60
 
 	planet = {
 		count = 3
-		class = pc_rare_crystal_asteroid
+		class = pc_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 80 max = 160 }
 	}
 
-	change_orbit = 30
+	change_orbit = 15
 
 	planet = {
 		class = "pc_gas_giant"
@@ -467,13 +494,14 @@ argent_flight_system = {
 		has_independent_orbital_line = yes
 		init_effect = {
 			remove_planet = yes
+			clear_deposits = yes
 		}
 
 		moon = {
 			class = ideal_planet_class
 			orbit_distance = 12
 			orbit_angle = 60
-			size = 18
+			size = 15
 			starting_planet = yes
 			has_ring = no
 			deposit_blockers = none
@@ -482,33 +510,33 @@ argent_flight_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				generate_empire_home_planet = yes
-				set_name = "Hercant"
+				set_name = "Avar"
 			}
 		}
 
 		moon = {
-			class = "pc_desert"
-			size = 21
-			orbit_distance = 0
-			orbit_angle = 120
-			has_ring = no
-			flags = { ti_city_1_starting_planet ti_industrial_starting_planet }
-
-			init_effect = {
-				set_name = "Arretze"
-			}
-		}
-
-		moon = {
-			class = "pc_desert"
+			class = "pc_tropical"
 			size = 14
 			orbit_distance = 0
 			orbit_angle = 120
 			has_ring = no
-			flags = { ti_city_1_starting_planet ti_research_starting_planet }
+			flags = { ti_city_1_starting_planet ti_mining_starting_planet }
 
 			init_effect = {
-				set_name = "Kamdorn"
+				set_name = "Valk"
+			}
+		}
+
+		moon = {
+			class = "pc_tropical"
+			size = 12
+			orbit_distance = 0
+			orbit_angle = 120
+			has_ring = no
+			flags = { ti_city_1_starting_planet ti_research_starting_planet ti_admin_starting_planet }
+
+			init_effect = {
+				set_name = "Ylir"
 			}
 		}
 
@@ -520,8 +548,24 @@ argent_flight_system = {
 	change_orbit = 30
 
 	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 80 }
+		size = 30
+		has_ring = yes
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_exotic_gases_2
+			set_name = "Hacid"
+		}
+	}
+	
+	change_orbit = 45
+
+	planet = {
 		count = 4
-		class = pc_rare_crystal_asteroid
+		class = pc_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 50 max = 130 }
 	}
@@ -818,7 +862,7 @@ naaz_rokha_system = {
 		class = pc_m_star
 		orbit_distance = 10
 		orbit_angle = 180
-		size = { min = 15 max = 10 }
+		size = { min = 15 max = 20 }
 		has_ring = no
 
 		init_effect = {
@@ -855,10 +899,6 @@ naaz_rokha_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			generate_empire_home_planet = yes
-			add_modifier = {
-				modifier = second_home
-				days = -1
-			}
 		}
 	}
 
@@ -877,10 +917,6 @@ naaz_rokha_system = {
 
 		init_effect = {
 			set_name = "Rokha"
-			add_modifier = {
-				modifier = second_home
-				days = -1
-			}
 		}
 	}
 
@@ -956,6 +992,7 @@ naalu_system = {
 
 	planet = {
 		class = ideal_planet_class
+		orbit_distance = { min = 15 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
 		size = 20
 		starting_planet = yes
@@ -1077,6 +1114,7 @@ sardakk_system = {
 
 	planet = {
 		class = ideal_planet_class
+		orbit_distance = { min = 15 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		starting_planet = yes
@@ -1189,8 +1227,9 @@ jol_nar_system = {
 
 	planet = {
 		class = ideal_planet_class
+		orbit_distance = { min = 15 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
-		size = 30
+		size = 21
 		starting_planet = yes
 		has_ring = no
 		deposit_blockers = none
@@ -1220,7 +1259,7 @@ jol_nar_system = {
 		orbit_distance = { min = 15 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
 		class = pc_ocean
-		size = 15
+		size = 20
 		has_ring = no
 		flags = { ti_city_1_starting_planet ti_industrial_starting_planet ti_trade_starting_planet ti_research_starting_planet }
 
@@ -1231,6 +1270,361 @@ jol_nar_system = {
 
 	planet = {
 		count = { min = 1 max = 3 }
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+# Nomad System
+nomad_system = {
+	class = sc_binary_3
+
+	usage = custom_empire
+
+	flags = { empire_home_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		count = 1
+		class = pc_m_giant_star
+		orbit_distance = 15
+		orbit_angle = 1
+		size = { min = 30 max = 35 }
+		has_ring = no
+
+		init_effect = {
+			set_name = "Arcturus"
+		}
+	}
+
+	planet = {
+		count = 1
+		class = pc_t_star
+		orbit_distance = 10
+		orbit_angle = 180
+		size = { min = 15 max = 20 }
+		has_ring = no
+
+		init_effect = {
+			set_name = "Arcturus Minor"
+		}
+	}
+
+	change_orbit = { min = 25 max = 40 }
+
+	planet = {
+		count = { min = 0 max = 4 }
+		orbit_distance = { min = 20 max = 30 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		class = ideal_planet_class
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = 60
+		size = 24
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+			generate_empire_home_planet = yes
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 4 }
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+# Xxcha System
+xxcha_system = {
+	class = sc_k
+
+	usage = custom_empire
+
+	flags = { empire_home_system }
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 200
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 20
+		has_ring = no
+	}
+
+	change_orbit = 200
+
+	planet = {
+		count = 6
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 80 }
+	}
+
+	change_orbit = -180
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		class = ideal_planet_class
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+			generate_empire_home_planet = yes
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+		class = pc_nuked
+		size = 24
+		has_ring = no
+		flags = { ti_city_1_starting_planet ti_industrial_starting_planet ti_mining_starting_planet ti_archon_tau }
+
+		init_effect = {
+			set_name = "Archon Tau"
+		}
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+# yssaril System
+yssaril_system = {
+	class = sc_f
+
+	usage = custom_empire
+
+	flags = { empire_home_system }
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		count = 1
+		class = pc_f_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 120
+
+	planet = {
+		count = 6
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 80 }
+	}
+
+	change_orbit = -100
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		class = ideal_planet_class
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 21 }
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+			generate_empire_home_planet = yes
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		orbit_distance = { min = 15 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+		class = pc_tropical
+		size = { min = 18 max = 21 }
+		has_ring = no
+		flags = { ti_city_1_starting_planet ti_mining_starting_planet }
+
+		init_effect = {
+			set_name = "Shalloq"
+		}
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
 		orbit_distance = { min = 15 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
 
