@@ -127,6 +127,9 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		# set species flags and event targets
+		country_event = { id = twilight_imperium.20 }
+
 		# naaz-rokha remove proles, add more rokha, add farming districts, add clinic
 		if = {
 			limit = {
@@ -136,7 +139,7 @@ planet_event = {
 			}
 			random_galaxy_species = {
 				limit = {
-					has_species_flag = syncretic_species@root.owner
+					has_species_flag = rokha_species
 				}
 				change_species_characteristics = {
 					remove_trait = trait_syncretic_proles
@@ -148,7 +151,6 @@ planet_event = {
 					add_trait = trait_pc_continental_preference
 					add_traits_at_start_of_list = yes
 				}
-				save_global_event_target_as = rokha_species
 			}
 			while = {
 				count = 4
@@ -356,7 +358,6 @@ event = {
 					ti_is_hacan = yes
 					ti_is_sol = yes
 					ti_is_xxcha = yes
-					ti_is_naaz_rokha = yes
 				}
 			}
 			country_event = { id = twilight_imperium.7 }
@@ -761,107 +762,6 @@ country_event = {
 	}
 }
 
-
-# Change starting colonisables into barren worlds
-country_event = {
-	id = twilight_imperium.10
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		capital_scope.solar_system = {
-			closest_system = {
-				limit = { has_star_flag = neighbor_t1_first_colony }
-				max_steps = 3
-				random_system_planet = {
-					limit = {
-						is_colonizable = yes
-						is_colony = no
-						has_planet_flag = prescripted_ideal
-					}
-					change_pc = pc_barren
-				}
-			}
-			closest_system = {
-				limit = { has_star_flag = neighbor_t2_second_colony }
-				max_steps = 6
-				random_system_planet = {
-					limit = {
-						is_colonizable = yes
-						is_colony = no
-						has_planet_flag = prescripted_ideal
-					}
-					change_pc = pc_barren
-				}
-			}
-		}
-	}
-}
-
-
-# Change starting colonisables into terraformable barren worlds
-country_event = {
-	id = twilight_imperium.11
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		capital_scope.solar_system = {
-			closest_system = {
-				limit = { has_star_flag = neighbor_t1_first_colony }
-				max_steps = 3
-				random_system_planet = {
-					limit = {
-						is_colonizable = yes
-						is_colony = no
-						has_planet_flag = prescripted_ideal
-					}
-					change_pc = pc_barren
-					add_modifier = { modifier = "terraforming_candidate" days = -1 }
-				}
-			}
-			closest_system = {
-				limit = { has_star_flag = neighbor_t2_second_colony }
-				max_steps = 6
-				random_system_planet = {
-					limit = {
-						is_colonizable = yes
-						is_colony = no
-						has_planet_flag = prescripted_ideal
-					}
-					change_pc = pc_barren
-					add_modifier = { modifier = "terraforming_candidate" days = -1 }
-				}
-			}
-		}
-	}
-}
-
-
-# Change one starting colonisable into barren world
-country_event = {
-	id = twilight_imperium.12
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		capital_scope.solar_system = {
-			closest_system = {
-				limit = { has_star_flag = neighbor_t1_first_colony }
-				max_steps = 3
-				random_system_planet = {
-					limit = {
-						is_colonizable = yes
-						is_colony = no
-						has_planet_flag = prescripted_ideal
-					}
-					change_pc = pc_barren
-				}
-			}
-		}
-	}
-}
-
 # starting planet and pop effects
 planet_event = {
 	id = twilight_imperium.8
@@ -1162,5 +1062,280 @@ planet_event = {
 			}
 		}
 		check_planet_employment = yes
+	}
+}
+
+
+# Change starting colonisables into barren worlds
+country_event = {
+	id = twilight_imperium.10
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		capital_scope.solar_system = {
+			closest_system = {
+				limit = { has_star_flag = neighbor_t1_first_colony }
+				max_steps = 3
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					change_pc = pc_barren
+				}
+			}
+			closest_system = {
+				limit = { has_star_flag = neighbor_t2_second_colony }
+				max_steps = 6
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					change_pc = pc_barren
+				}
+			}
+		}
+	}
+}
+
+
+# Change starting colonisables into terraformable barren worlds
+country_event = {
+	id = twilight_imperium.11
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		capital_scope.solar_system = {
+			closest_system = {
+				limit = { has_star_flag = neighbor_t1_first_colony }
+				max_steps = 3
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					change_pc = pc_barren
+					add_modifier = { modifier = "terraforming_candidate" days = -1 }
+				}
+			}
+			closest_system = {
+				limit = { has_star_flag = neighbor_t2_second_colony }
+				max_steps = 6
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					change_pc = pc_barren
+					add_modifier = { modifier = "terraforming_candidate" days = -1 }
+				}
+			}
+		}
+	}
+}
+
+# Change one starting colonisable into barren world
+country_event = {
+	id = twilight_imperium.12
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		capital_scope.solar_system = {
+			closest_system = {
+				limit = { has_star_flag = neighbor_t1_first_colony }
+				max_steps = 3
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					change_pc = pc_barren
+				}
+			}
+		}
+	}
+}
+
+# Change one starting colonisable into barren world
+country_event = {
+	id = twilight_imperium.20
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		# Set species flags
+		random_playable_country = {
+			limit = { ti_is_arborec = yes }
+			species = {
+				set_species_flag = arborec_species
+				save_global_event_target_as = arborec_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_argent_flight = yes }
+			species = {
+				set_species_flag = argent_flight_species
+				save_global_event_target_as = argent_flight_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_creuss = yes }
+			species = {
+				set_species_flag = creuss_species
+				save_global_event_target_as = creuss_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_hacan = yes }
+			species = {
+				set_species_flag = hacan_species
+				save_global_event_target_as = hacan_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_jol_nar = yes }
+			species = {
+				set_species_flag = jol_nar_species
+				save_global_event_target_as = jol_nar_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_l1z1x = yes }
+			species = {
+				set_species_flag = l1z1x_species
+				save_global_event_target_as = l1z1x_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_letnev = yes }
+			species = {
+				set_species_flag = letnev_species
+				save_global_event_target_as = letnev_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_mahact = yes }
+			species = {
+				set_species_flag = mahact_species
+				save_global_event_target_as = mahact_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_mentak = yes }
+			species = {
+				set_species_flag = mentak_species
+				save_global_event_target_as = mentak_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_muaat = yes }
+			species = {
+				set_species_flag = muaat_species
+				save_global_event_target_as = muaat_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_naaz_rokha = yes }
+			species = {
+				set_species_flag = naaz_species
+				save_global_event_target_as = naaz_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_naaz_rokha = yes }
+			random_galaxy_species = {
+				limit = {
+					has_species_flag = syncretic_species@prev
+				}
+				set_species_flag = rokha_species
+				save_global_event_target_as = rokha_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_naalu = yes }
+			species = {
+				set_species_flag = naalu_species
+				save_global_event_target_as = naalu_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_nekro = yes }
+			species = {
+				set_species_flag = nekro_species
+				save_global_event_target_as = nekro_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_nomad = yes }
+			species = {
+				set_species_flag = nomad_species
+				save_global_event_target_as = nomad_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_saar = yes }
+			species = {
+				set_species_flag = saar_species
+				save_global_event_target_as = saar_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_sardakk = yes }
+			species = {
+				set_species_flag = sardakk_species
+				save_global_event_target_as = sardakk_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_sol = yes }
+			species = {
+				set_species_flag = sol_species
+				save_global_event_target_as = sol_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_titans = yes }
+			species = {
+				set_species_flag = titans_species
+				save_global_event_target_as = titans_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_winnu = yes }
+			species = {
+				set_species_flag = winnu_species
+				save_global_event_target_as = winnu_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_xxcha = yes }
+			species = {
+				set_species_flag = xxcha_species
+				save_global_event_target_as = xxcha_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_yin = yes }
+			species = {
+				set_species_flag = yin_species
+				save_global_event_target_as = yin_species
+			}
+		}
+		random_playable_country = {
+			limit = { ti_is_yssaril = yes }
+			species = {
+				set_species_flag = yssaril_species
+				save_global_event_target_as = yssaril_species
+			}
+		}
 	}
 }
