@@ -5,135 +5,6 @@
 
 namespace = twilight_imperium
 
-# should happen after game_start.1
-event = {
-	id = twilight_imperium.4
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		# Diverse pops
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_mentak = yes
-					ti_is_nomad = yes
-				}
-			}
-			country_event = { id = twilight_imperium.6 }
-		}
-
-		# Slightly diverse pops
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_hacan = yes
-					ti_is_sol = yes
-					ti_is_xxcha = yes
-					ti_is_naaz_rokha = yes
-				}
-			}
-			country_event = { id = twilight_imperium.7 }
-		}
-
-		# Empty barren worlds instead of starting habitables
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_hacan = yes
-					ti_is_naalu = yes
-					ti_is_sardakk = yes
-				}
-			}
-			country_event = { id = twilight_imperium.10 }
-		}
-
-		# Empty barren worlds instead of one starting habitable
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_jol_nar = yes
-					ti_is_xxcha = yes
-					ti_is_yssaril = yes
-					ti_is_argent_flight = yes
-					ti_is_naaz_rokha = yes
-				}
-			}
-			country_event = { id = twilight_imperium.12 }
-		}
-
-		random_playable_country = {
-			limit = {
-				ti_is_titans = yes
-			}
-			capital_scope.solar_system = {
-				random_system_planet = {
-					limit = { is_star = yes }
-					change_pc = pc_black_hole
-				}
-				set_star_class = sc_black_hole
-			}
-		}
-
-		random_country = {
-			limit = {
-				ti_is_letnev = yes
-			}
-			save_event_target_as = letnev_country
-			capital_scope = {
-				solar_system = {
-					closest_system = {
-						limit = { has_star_flag = wren_terra }
-						max_steps = 2
-						create_starbase = {
-							size = starbase_outpost
-							owner = event_target:letnev_country
-						}
-					}
-				}
-			}
-		}
-
-
-		# multiple starting planets
-		every_playable_country = {
-			limit = {
-				owner = {
-					OR = {
-						ti_is_hacan = yes
-						ti_is_letnev = yes
-						ti_is_naalu = yes
-						ti_is_sardakk = yes
-						ti_is_jol_nar = yes
-						ti_is_xxcha = yes
-						ti_is_yssaril = yes
-						ti_is_argent_flight = yes
-						ti_is_naaz_rokha = yes
-					}
-				}
-			}
-			capital_scope = { planet_event = { id = twilight_imperium.8 } }
-		}
-
-		# Remove delete me planet
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_argent_flight = yes
-					ti_is_hacan = yes
-				}
-			}
-			random_planet_within_border = {
-				limit = {
-					has_planet_flag = delete_me_planet
-				}
-				remove_planet = yes
-			}
-		}
-	}
-}
-
-
 # adds technologies to factions
 # should happen after game_start.8
 country_event = {
@@ -245,91 +116,6 @@ country_event = {
 			}
 			give_technology = { message = no tech = tech_ground_defense_planning  }
 			give_technology = { message = no tech = tech_combat_training }
-		}
-	}
-}
-
-# modify starting ships
-# should happen after game_start.9
-country_event = {
-	id = twilight_imperium.3
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		# muaat citadel and titan yards
-		if = {
-			limit = {
-				ti_is_muaat = yes
-			}
-			random_owned_starbase = {
-				set_starbase_size = starbase_citadel
-				set_starbase_module = {
-					slot = 1
-					module = trading_hub
-				}
-				set_starbase_module = {
-					slot = 2
-					module = shipyard
-				}
-				set_starbase_module = {
-					slot = 3
-					module = shipyard
-				}
-				set_starbase_building = {
-					slot = 2
-					building = resource_silo
-				}
-				set_starbase_building = {
-					slot = 3
-					building = communications_jammer
-				}
-				set_starbase_building = {
-					slot = 4
-					building = titan_yards
-				}
-			}
-		}
-		
-		# jol-nar bonus science ships
-		if = {
-			limit = {
-				ti_is_jol_nar = yes
-			}
-
-			create_fleet = {
-				effect = {
-					set_owner = prev
-
-					create_ship = {
-						name = random
-						random_existing_design = science
-					}
-
-					set_fleet_stance = evasive
-					#set_location = prev.capital_star
-					set_location = prev.capital_scope.star
-
-					owner = {
-						create_leader = {
-							class = scientist
-							sub_type = survey
-							name = random
-							species = owner_main_species
-						}
-					}
-					last_created_leader = {
-						if = {
-							limit = {
-								has_skill > 1
-								num_traits = 0
-							}
-							add_trait_no_notify = random_common
-						}
-					}
-					set_leader = last_created_leader
-				}
-			}
 		}
 	}
 }
@@ -460,6 +246,219 @@ planet_event = {
 	}
 }
 
+# modify starting ships
+# should happen after game_start.9
+country_event = {
+	id = twilight_imperium.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# muaat citadel and titan yards
+		if = {
+			limit = {
+				ti_is_muaat = yes
+			}
+			random_owned_starbase = {
+				set_starbase_size = starbase_citadel
+				set_starbase_module = {
+					slot = 1
+					module = trading_hub
+				}
+				set_starbase_module = {
+					slot = 2
+					module = shipyard
+				}
+				set_starbase_module = {
+					slot = 3
+					module = shipyard
+				}
+				set_starbase_building = {
+					slot = 2
+					building = resource_silo
+				}
+				set_starbase_building = {
+					slot = 3
+					building = communications_jammer
+				}
+				set_starbase_building = {
+					slot = 4
+					building = titan_yards
+				}
+			}
+		}
+		
+		# jol-nar bonus science ships
+		if = {
+			limit = {
+				ti_is_jol_nar = yes
+			}
+
+			create_fleet = {
+				effect = {
+					set_owner = prev
+
+					create_ship = {
+						name = random
+						random_existing_design = science
+					}
+
+					set_fleet_stance = evasive
+					#set_location = prev.capital_star
+					set_location = prev.capital_scope.star
+
+					owner = {
+						create_leader = {
+							class = scientist
+							sub_type = survey
+							name = random
+							species = owner_main_species
+						}
+					}
+					last_created_leader = {
+						if = {
+							limit = {
+								has_skill > 1
+								num_traits = 0
+							}
+							add_trait_no_notify = random_common
+						}
+					}
+					set_leader = last_created_leader
+				}
+			}
+		}
+	}
+}
+
+# should happen after game_start.1
+event = {
+	id = twilight_imperium.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# Diverse pops
+		every_playable_country = {
+			limit = {
+				OR = {
+					ti_is_mentak = yes
+					ti_is_nomad = yes
+				}
+			}
+			country_event = { id = twilight_imperium.6 }
+		}
+
+		# Slightly diverse pops
+		every_playable_country = {
+			limit = {
+				OR = {
+					ti_is_hacan = yes
+					ti_is_sol = yes
+					ti_is_xxcha = yes
+					ti_is_naaz_rokha = yes
+				}
+			}
+			country_event = { id = twilight_imperium.7 }
+		}
+
+		# Empty barren worlds instead of starting habitables
+		every_playable_country = {
+			limit = {
+				OR = {
+					ti_is_hacan = yes
+					ti_is_naalu = yes
+					ti_is_sardakk = yes
+				}
+			}
+			country_event = { id = twilight_imperium.10 }
+		}
+
+		# Empty barren worlds instead of one starting habitable
+		every_playable_country = {
+			limit = {
+				OR = {
+					ti_is_jol_nar = yes
+					ti_is_xxcha = yes
+					ti_is_yssaril = yes
+					ti_is_argent_flight = yes
+					ti_is_naaz_rokha = yes
+				}
+			}
+			country_event = { id = twilight_imperium.12 }
+		}
+
+		random_playable_country = {
+			limit = {
+				ti_is_titans = yes
+			}
+			capital_scope.solar_system = {
+				random_system_planet = {
+					limit = { is_star = yes }
+					change_pc = pc_black_hole
+				}
+				set_star_class = sc_black_hole
+			}
+		}
+
+		random_country = {
+			limit = {
+				ti_is_letnev = yes
+			}
+			save_event_target_as = letnev_country
+			capital_scope = {
+				solar_system = {
+					closest_system = {
+						limit = { has_star_flag = wren_terra }
+						max_steps = 2
+						create_starbase = {
+							size = starbase_outpost
+							owner = event_target:letnev_country
+						}
+					}
+				}
+			}
+		}
+
+
+		# multiple starting planets
+		every_playable_country = {
+			limit = {
+				owner = {
+					OR = {
+						ti_is_hacan = yes
+						ti_is_letnev = yes
+						ti_is_naalu = yes
+						ti_is_sardakk = yes
+						ti_is_jol_nar = yes
+						ti_is_xxcha = yes
+						ti_is_yssaril = yes
+						ti_is_argent_flight = yes
+						ti_is_naaz_rokha = yes
+					}
+				}
+			}
+			capital_scope = { planet_event = { id = twilight_imperium.8 } }
+		}
+
+		# Remove delete me planet
+		every_playable_country = {
+			limit = {
+				OR = {
+					ti_is_argent_flight = yes
+					ti_is_hacan = yes
+				}
+			}
+			random_planet_within_border = {
+				limit = {
+					has_planet_flag = delete_me_planet
+				}
+				remove_planet = yes
+			}
+		}
+	}
+}
+
 # country start
 country_event = {
 	id = twilight_imperium.5
@@ -522,7 +521,6 @@ country_event = {
 				}
 			}
 			
-
 			random_owned_pop = {
 				species = {
 					save_event_target_as = defense_species
