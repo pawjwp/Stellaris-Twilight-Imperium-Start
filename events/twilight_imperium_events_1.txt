@@ -7,12 +7,12 @@ namespace = twilight_imperium
 
 # should happen after game_start.1
 event = {
-	id = twilight_imperium.1
+	id = twilight_imperium.4
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-		# Nomad and Mentak
+		# Diverse pops
 		every_playable_country = {
 			limit = {
 				OR = {
@@ -60,6 +60,19 @@ event = {
 				}
 			}
 			country_event = { id = twilight_imperium.12 }
+		}
+
+		random_playable_country = {
+			limit = {
+				ti_is_titans = yes
+			}
+			capital_scope.solar_system = {
+				random_system_planet = {
+					limit = { is_star = yes }
+					change_pc = pc_black_hole
+				}
+				set_star_class = sc_black_hole
+			}
 		}
 
 		random_country = {
@@ -124,7 +137,7 @@ event = {
 # adds technologies to factions
 # should happen after game_start.8
 country_event = {
-	id = twilight_imperium.2
+	id = twilight_imperium.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -323,7 +336,7 @@ country_event = {
 
 # starting planet and pop effects
 planet_event = {
-	id = twilight_imperium.4
+	id = twilight_imperium.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -349,11 +362,11 @@ planet_event = {
 					add_trait = trait_pc_continental_preference
 					add_traits_at_start_of_list = yes
 				}
-				save_event_target_as = syncretic_species
+				save_global_event_target_as = rokha_species
 			}
 			while = {
 				count = 4
-				create_pop = { species = event_target:syncretic_species }
+				create_pop = { species = event_target:rokha_species }
 			}
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_farming
@@ -1110,6 +1123,7 @@ planet_event = {
 					add_district = district_farming
 					add_district = district_farming
 				}
+				# set sardakk on trenlak to arctic
 				if = {
 					limit = { has_planet_flag = ti_trenlak }
 					every_owned_pop = {
@@ -1119,19 +1133,31 @@ planet_event = {
 						}
 					}
 				}
-
+				# add survivor trait and tomb deposits to Archon Tau
+				if = {
+					limit = { has_planet_flag = ti_archon_tau }
+					every_owned_pop = {
+						if = {
+							limit = { NOT = { has_trait = trait_survivor } }
+							modify_species = {
+								species = this
+								add_trait = trait_survivor
+								add_traits_at_start_of_list = yes
+							}
+						}
+					}
+					add_deposit = d_tomb_world_ruins
+					add_deposit = d_tomb_world_wasteland
+				}
+				# add second home to rokha
 				if = {
 					limit = { owner = { ti_is_naaz_rokha = yes } }
 					add_modifier = { modifier = second_home days = -1 }
 				}
+				# add msi air freshener to nomad
 				if = {
 					limit = { owner = { ti_is_nomad = yes } }
 					add_deposit = d_msi_air_freshener
-				}
-				if = {
-					limit = { has_planet_flag = ti_archon_tau }
-					add_deposit = d_tomb_world_ruins
-					add_deposit = d_tomb_world_wasteland
 				}
 				
 				check_planet_employment = yes

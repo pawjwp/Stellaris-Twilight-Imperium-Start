@@ -1,10 +1,10 @@
-on_game_start = {
+empire_init_add_technologies = {
 	events = {
 		twilight_imperium.1
-    }
+	}
 }
 
-empire_init_add_technologies = {
+empire_init_capital_planet = {
 	events = {
 		twilight_imperium.2
 	}
@@ -16,10 +16,10 @@ empire_init_create_ships = {
 	}
 }
 
-empire_init_capital_planet = {
+on_game_start = {
 	events = {
 		twilight_imperium.4
-	}
+    }
 }
 
 on_game_start_country = {
