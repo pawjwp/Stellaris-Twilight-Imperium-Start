@@ -499,7 +499,7 @@ argent_flight_system = {
 
 		moon = {
 			class = ideal_planet_class
-			orbit_distance = 8
+			orbit_distance = 4
 			orbit_angle = 60
 			size = 15
 			starting_planet = yes
@@ -541,7 +541,7 @@ argent_flight_system = {
 		}
 
 		orbital_line = {
-			orbit_distance_from_parent = 8
+			orbit_distance_from_parent = 4
 		}
 	}
 
@@ -579,6 +579,7 @@ argent_flight_system = {
 		count = 2
 		orbit_distance = 20
 		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
 
 		change_orbit = @base_moon_distance
 
@@ -596,6 +597,7 @@ argent_flight_system = {
 		count = { min = 3 max = 6 }
 		orbit_distance = { min = 15 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
 
 		change_orbit = @base_moon_distance
 

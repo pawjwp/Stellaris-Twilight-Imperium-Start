@@ -1,0 +1,658 @@
+static_galaxy_scenario = {
+	name = "Twilight Imperium Medium"
+	priority = 7
+	supports_shape = spiral_4
+	num_empires = { min = 0 max = 32 }
+	num_empire_default = 22
+	fallen_empire_default = 1
+	fallen_empire_max = 5
+	marauder_empire_default = 2
+	marauder_empire_max = 3
+	advanced_empire_default = 0
+	colonizable_planet_odds = 0.25
+	primitive_odds = 1.0
+	crisis_strength = 2.0
+	extra_crisis_strength = { 10 25 }
+	num_wormhole_pairs = { min = 0 max = 10 }
+	num_wormhole_pairs_default = 0
+	num_gateways = { min = 0 max = 10 }
+	num_gateways_default = 1
+	random_hyperlanes = yes
+	core_radius = 0
+	
+	max_hyperlane_distance = 50
+	num_hyperlanes = { min = 0.5 max = 3 }
+	num_hyperlanes_default = 1
+
+	home_system_partitions = {
+		max_systems = 15
+		min_systems= 8
+
+		min_bridges = 2
+		max_bridges = 4
+
+		method = breadth_first
+	}
+
+	open_space_partitions = {
+		max_systems = 10
+		min_systems= 4
+
+		min_bridges = 2
+		max_bridges = 2
+
+		method = depth_first
+	}
+
+#	coordinate_transform = { #Subsequent systems will have the coordinates entered for them altered by these numbers
+#		x = {
+#			add = 10
+#			sub = 5
+#		}
+#		y = {
+#			mul = 1.1
+#		}
+#		z = {
+#			div = 1.1
+#		}
+#	}
+
+	system = { id = "0" name = "" position = { x = -151 y = -99 } initializer = saar_system }
+	system = { id = "1" name = "" position = { x = 22 y = -167 } initializer = hacan_system }
+	system = { id = "2" name = "" position = { x = -137 y = -132 } }
+	system = { id = "3" name = "" position = { x = 143 y = 367 } }
+	system = { id = "4" name = "" position = { x = -90 y = 112 } }
+	system = { id = "5" name = "" position = { x = 291 y = 100 } }
+	system = { id = "6" name = "" position = { x = -118 y = -90 } }
+	system = { id = "7" name = "" position = { x = -108 y = -72 } }
+	system = { id = "8" name = "" position = { x = 7 y = 194 } }
+	system = { id = "9" name = "" position = { x = -380 y = -98 } }
+	system = { id = "10" name = "" position = { x = -245 y = -88 } }
+	system = { id = "11" name = "" position = { x = 205 y = -81 } }
+	system = { id = "12" name = "" position = { x = -160 y = -278 } }
+	system = { id = "13" name = "" position = { x = -72 y = 172 } }
+	system = { id = "14" name = "" position = { x = -140 y = -31 } }
+	system = { id = "15" name = "" position = { x = 86 y = 329 } }
+	system = { id = "16" name = "" position = { x = -174 y = 80 } }
+	system = { id = "17" name = "" position = { x = -28 y = -181 } }
+	system = { id = "18" name = "" position = { x = 140 y = 277 } }
+	system = { id = "19" name = "" position = { x = -128 y = 221 } }
+	system = { id = "20" name = "" position = { x = 162 y = 124 } }
+	system = { id = "21" name = "" position = { x = -94 y = 132 } }
+	system = { id = "22" name = "" position = { x = -265 y = -39 } }
+	system = { id = "23" name = "" position = { x = -255 y = 243 } }
+	system = { id = "24" name = "" position = { x = -377 y = 200 } }
+	system = { id = "25" name = "" position = { x = 131 y = -332 } }
+	system = { id = "26" name = "" position = { x = 89 y = -291 } }
+	system = { id = "27" name = "" position = { x = 280 y = 73 } }
+	system = { id = "28" name = "" position = { x = -228 y = -20 } }
+	system = { id = "29" name = "" position = { x = -149 y = 189 } }
+	system = { id = "30" name = "" position = { x = -68 y = 133 } }
+	system = { id = "31" name = "" position = { x = 125 y = -141 } }
+	system = { id = "32" name = "" position = { x = 30 y = 361 } }
+	system = { id = "33" name = "" position = { x = -126 y = 142 } }
+	system = { id = "34" name = "" position = { x = 192 y = 181 } }
+	system = { id = "35" name = "" position = { x = -162 y = 263 } }
+	system = { id = "36" name = "" position = { x = 259 y = 100 } }
+	system = { id = "37" name = "" position = { x = -61 y = -384 } }
+	system = { id = "38" name = "" position = { x = -111 y = 160 } }
+	system = { id = "39" name = "" position = { x = 60 y = 219 } }
+	system = { id = "40" name = "" position = { x = 323 y = -65 } }
+	system = { id = "41" name = "" position = { x = -108 y = 112 } }
+	system = { id = "42" name = "" position = { x = 197 y = 151 } }
+	system = { id = "43" name = "" position = { x = 220 y = -36 } }
+	system = { id = "44" name = "" position = { x = 254 y = 115 } }
+	system = { id = "45" name = "" position = { x = 254 y = 133 } }
+	system = { id = "46" name = "" position = { x = 92 y = -385 } }
+	system = { id = "47" name = "" position = { x = 10 y = 378 } }
+	system = { id = "48" name = "" position = { x = 10 y = 347 } }
+	system = { id = "49" name = "" position = { x = 178 y = -343 } }
+	system = { id = "50" name = "" position = { x = -120 y = -185 } }
+	system = { id = "51" name = "" position = { x = 171 y = -70 } }
+	system = { id = "52" name = "" position = { x = -57 y = 247 } }
+	system = { id = "53" name = "" position = { x = 67 y = -127 } }
+	system = { id = "54" name = "" position = { x = 143 y = 36 } }
+	system = { id = "55" name = "" position = { x = -263 y = 178 } }
+	system = { id = "56" name = "" position = { x = -281 y = -111 } }
+	system = { id = "57" name = "" position = { x = -382 y = -59 } }
+	system = { id = "58" name = "" position = { x = 311 y = 199 } }
+	system = { id = "59" name = "" position = { x = -9 y = -271 } }
+	system = { id = "60" name = "" position = { x = 179 y = -135 } }
+	system = { id = "61" name = "" position = { x = -85 y = 246 } }
+	system = { id = "62" name = "" position = { x = 121 y = 313 } }
+	system = { id = "63" name = "" position = { x = 312 y = -37 } }
+	system = { id = "64" name = "" position = { x = -99 y = -166 } }
+	system = { id = "65" name = "" position = { x = -77 y = 234 } }
+	system = { id = "66" name = "" position = { x = 221 y = -207 } }
+	system = { id = "67" name = "" position = { x = -206 y = -227 } }
+	system = { id = "68" name = "" position = { x = -145 y = 252 } }
+	system = { id = "69" name = "" position = { x = 101 y = -89 } }
+	system = { id = "70" name = "" position = { x = 61 y = -240 } }
+	system = { id = "71" name = "" position = { x = -203 y = -116 } }
+	system = { id = "72" name = "" position = { x = -245 y = -43 } }
+	system = { id = "73" name = "" position = { x = -92 y = 292 } }
+	system = { id = "74" name = "" position = { x = -118 y = -145 } }
+	system = { id = "75" name = "" position = { x = -6 y = 157 } }
+	system = { id = "76" name = "" position = { x = -55 y = 118 } }
+	system = { id = "77" name = "" position = { x = -251 y = -105 } }
+	system = { id = "78" name = "" position = { x = -124 y = -72 } }
+	system = { id = "79" name = "" position = { x = -92 y = -148 } }
+	system = { id = "80" name = "" position = { x = -192 y = 271 } }
+	system = { id = "81" name = "" position = { x = -310 y = -238 } }
+	system = { id = "82" name = "" position = { x = 230 y = -22 } }
+	system = { id = "83" name = "" position = { x = 144 y = -18 } }
+	system = { id = "84" name = "" position = { x = -208 y = 331 } }
+	system = { id = "85" name = "" position = { x = -136 y = -268 } }
+	system = { id = "86" name = "" position = { x = 24 y = -131 } }
+	system = { id = "87" name = "" position = { x = -243 y = -174 } }
+	system = { id = "88" name = "" position = { x = 154 y = -53 } }
+	system = { id = "89" name = "" position = { x = -242 y = 15 } }
+	system = { id = "90" name = "" position = { x = -154 y = -118 } }
+	system = { id = "91" name = "" position = { x = 121 y = 27 } }
+	system = { id = "92" name = "" position = { x = -56 y = -203 } }
+	system = { id = "93" name = "" position = { x = 153 y = -147 } }
+	system = { id = "94" name = "" position = { x = -46 y = 232 } }
+	system = { id = "95" name = "" position = { x = 243 y = 63 } }
+	system = { id = "96" name = "" position = { x = -80 y = -192 } }
+	system = { id = "97" name = "" position = { x = 288 y = 134 } }
+	system = { id = "98" name = "" position = { x = 2 y = -237 } }
+	system = { id = "99" name = "" position = { x = 150 y = 310 } }
+	system = { id = "100" name = "" position = { x = 194 y = 196 } }
+	system = { id = "101" name = "" position = { x = 235 y = -175 } }
+	system = { id = "102" name = "" position = { x = 150 y = -236 } }
+	system = { id = "103" name = "" position = { x = -37 y = 255 } }
+	system = { id = "104" name = "" position = { x = 155 y = 244 } }
+	system = { id = "105" name = "" position = { x = 259 y = 210 } }
+	system = { id = "106" name = "" position = { x = 88 y = -227 } }
+	system = { id = "107" name = "" position = { x = -227 y = 52 } }
+	system = { id = "108" name = "" position = { x = -65 y = 208 } }
+	system = { id = "109" name = "" position = { x = -142 y = 94 } }
+	system = { id = "110" name = "" position = { x = 109 y = -116 } }
+	system = { id = "111" name = "" position = { x = -240 y = -71 } }
+	system = { id = "112" name = "" position = { x = 136 y = -76 } }
+	system = { id = "113" name = "" position = { x = 184 y = -264 } }
+	system = { id = "114" name = "" position = { x = 344 y = 199 } }
+	system = { id = "115" name = "" position = { x = 346 y = 32 } }
+	system = { id = "116" name = "" position = { x = -181 y = -188 } }
+	system = { id = "117" name = "" position = { x = -133 y = 22 } }
+	system = { id = "118" name = "" position = { x = -12 y = 289 } }
+	system = { id = "119" name = "" position = { x = -235 y = -109 } }
+	system = { id = "120" name = "" position = { x = -232 y = -40 } }
+	system = { id = "121" name = "" position = { x = -221 y = 221 } }
+	system = { id = "122" name = "" position = { x = 197 y = -7 } }
+	system = { id = "123" name = "" position = { x = -191 y = 181 } }
+	system = { id = "124" name = "" position = { x = -225 y = -60 } }
+	system = { id = "125" name = "" position = { x = -190 y = 216 } }
+	system = { id = "126" name = "" position = { x = 218 y = -52 } }
+	system = { id = "127" name = "" position = { x = -108 y = 234 } }
+	system = { id = "128" name = "" position = { x = -255 y = -3 } }
+	system = { id = "129" name = "" position = { x = 21 y = 132 } }
+	system = { id = "130" name = "" position = { x = -149 y = 218 } }
+	system = { id = "131" name = "" position = { x = -289 y = -260 } }
+	system = { id = "132" name = "" position = { x = 84 y = 212 } }
+	system = { id = "133" name = "" position = { x = -148 y = 372 } }
+	system = { id = "134" name = "" position = { x = -210 y = 233 } }
+	system = { id = "135" name = "" position = { x = -43 y = 165 } }
+	system = { id = "136" name = "" position = { x = -98 y = -96 } }
+	system = { id = "137" name = "" position = { x = -132 y = 6 } }
+	system = { id = "138" name = "" position = { x = -255 y = -56 } }
+	system = { id = "139" name = "" position = { x = -40 y = -209 } }
+	system = { id = "140" name = "" position = { x = 229 y = -84 } }
+	system = { id = "141" name = "" position = { x = -86 y = 149 } }
+	system = { id = "142" name = "" position = { x = 40 y = -367 } }
+	system = { id = "143" name = "" position = { x = 66 y = 337 } }
+	system = { id = "144" name = "" position = { x = 179 y = 85 } }
+	system = { id = "145" name = "" position = { x = 50 y = -384 } }
+	system = { id = "146" name = "" position = { x = 45 y = 234 } }
+	system = { id = "147" name = "" position = { x = -150 y = -267 } }
+	system = { id = "148" name = "" position = { x = -134 y = -86 } }
+	system = { id = "149" name = "" position = { x = -200 y = -213 } }
+	system = { id = "150" name = "" position = { x = -131 y = -43 } }
+	system = { id = "151" name = "" position = { x = 165 y = 103 } }
+	system = { id = "152" name = "" position = { x = -242 y = -152 } }
+	system = { id = "153" name = "" position = { x = -169 y = -38 } }
+	system = { id = "154" name = "" position = { x = -296 y = 218 } }
+	system = { id = "155" name = "" position = { x = 78 y = 241 } }
+	system = { id = "156" name = "" position = { x = 12 y = 264 } }
+	system = { id = "157" name = "" position = { x = -351 y = -138 } }
+	system = { id = "158" name = "" position = { x = -226 y = 12 } }
+	system = { id = "159" name = "" position = { x = 230 y = -221 } }
+	system = { id = "160" name = "" position = { x = -142 y = 236 } }
+	system = { id = "161" name = "" position = { x = -113 y = 208 } }
+	system = { id = "162" name = "" position = { x = -17 y = -240 } }
+	system = { id = "163" name = "" position = { x = 249 y = 32 } }
+	system = { id = "164" name = "" position = { x = -318 y = 104 } }
+	system = { id = "165" name = "" position = { x = 137 y = 106 } }
+	system = { id = "166" name = "" position = { x = 377 y = -61 } }
+	system = { id = "167" name = "" position = { x = -41 y = 375 } }
+	system = { id = "168" name = "" position = { x = 161 y = 148 } }
+	system = { id = "169" name = "" position = { x = 123 y = 83 } }
+	system = { id = "170" name = "" position = { x = -249 y = -210 } }
+	system = { id = "171" name = "" position = { x = 108 y = 338 } }
+	system = { id = "172" name = "" position = { x = -52 y = -354 } }
+	system = { id = "173" name = "" position = { x = 270 y = -240 } }
+	system = { id = "174" name = "" position = { x = 177 y = -355 } }
+	system = { id = "175" name = "" position = { x = 138 y = -263 } }
+	system = { id = "176" name = "" position = { x = 14 y = 317 } }
+	system = { id = "177" name = "" position = { x = -175 y = -84 } }
+	system = { id = "178" name = "" position = { x = 356 y = -94 } }
+	system = { id = "179" name = "" position = { x = -102 y = 97 } }
+	system = { id = "180" name = "" position = { x = -74 y = 102 } }
+	system = { id = "181" name = "" position = { x = 345 y = -124 } }
+	system = { id = "182" name = "" position = { x = 229 y = 277 } }
+	system = { id = "183" name = "" position = { x = 315 y = -7 } }
+	system = { id = "184" name = "" position = { x = 44 y = 332 } }
+	system = { id = "185" name = "" position = { x = -153 y = 150 } }
+	system = { id = "186" name = "" position = { x = 306 y = -177 } }
+	system = { id = "187" name = "" position = { x = 135 y = 74 } }
+	system = { id = "188" name = "" position = { x = -285 y = 2 } }
+	system = { id = "189" name = "" position = { x = 391 y = 32 } }
+	system = { id = "190" name = "" position = { x = 392 y = 21 } }
+	system = { id = "191" name = "" position = { x = -272 y = 158 } }
+	system = { id = "192" name = "" position = { x = -153 y = -296 } }
+	system = { id = "193" name = "" position = { x = -21 y = 231 } }
+	system = { id = "194" name = "" position = { x = 263 y = -199 } }
+	system = { id = "195" name = "" position = { x = -203 y = 26 } }
+	system = { id = "196" name = "" position = { x = -223 y = 305 } }
+	system = { id = "197" name = "" position = { x = -224 y = -135 } }
+	system = { id = "198" name = "" position = { x = 6 y = -124 } }
+	system = { id = "199" name = "" position = { x = -76 y = 268 } }
+	system = { id = "200" name = "" position = { x = -24 y = 360 } }
+	system = { id = "201" name = "" position = { x = -194 y = 42 } }
+	system = { id = "202" name = "" position = { x = 224 y = 29 } }
+	system = { id = "203" name = "" position = { x = -116 y = -53 } }
+	system = { id = "204" name = "" position = { x = -158 y = -231 } }
+	system = { id = "205" name = "" position = { x = -48 y = -257 } }
+	system = { id = "206" name = "" position = { x = 17 y = -224 } }
+	system = { id = "207" name = "" position = { x = 155 y = 284 } }
+	system = { id = "208" name = "" position = { x = -180 y = 126 } }
+	system = { id = "209" name = "" position = { x = -125 y = -105 } }
+	system = { id = "210" name = "" position = { x = 64 y = 180 } }
+	system = { id = "211" name = "" position = { x = -188 y = -164 } }
+	system = { id = "212" name = "" position = { x = 307 y = -108 } }
+	system = { id = "213" name = "" position = { x = 88 y = -247 } }
+	system = { id = "214" name = "" position = { x = 124 y = -168 } }
+	system = { id = "215" name = "" position = { x = -43 y = -396 } }
+	system = { id = "216" name = "" position = { x = 131 y = 129 } }
+	system = { id = "217" name = "" position = { x = -188 y = -247 } }
+	system = { id = "218" name = "" position = { x = 107 y = 97 } }
+	system = { id = "219" name = "" position = { x = -158 y = 89 } }
+	system = { id = "220" name = "" position = { x = -212 y = 8 } }
+	system = { id = "221" name = "" position = { x = -120 y = -16 } }
+	system = { id = "222" name = "" position = { x = -151 y = 321 } }
+	system = { id = "223" name = "" position = { x = -338 y = 98 } }
+	system = { id = "224" name = "" position = { x = 212 y = 48 } }
+	system = { id = "225" name = "" position = { x = 212 y = 212 } }
+	system = { id = "226" name = "" position = { x = 190 y = 265 } }
+	system = { id = "227" name = "" position = { x = 219 y = 342 } }
+	system = { id = "228" name = "" position = { x = 276 y = -182 } }
+	system = { id = "229" name = "" position = { x = -329 y = 124 } }
+	system = { id = "230" name = "" position = { x = -209 y = -164 } }
+	system = { id = "231" name = "" position = { x = 247 y = 91 } }
+	system = { id = "232" name = "" position = { x = 101 y = 122 } }
+	system = { id = "233" name = "" position = { x = 263 y = -13 } }
+	system = { id = "234" name = "" position = { x = -29 y = 384 } }
+	system = { id = "235" name = "" position = { x = 211 y = 10 } }
+	system = { id = "236" name = "" position = { x = -127 y = -286 } }
+	system = { id = "237" name = "" position = { x = 91 y = -334 } }
+	system = { id = "238" name = "" position = { x = -77 y = 374 } }
+	system = { id = "239" name = "" position = { x = 67 y = 153 } }
+	system = { id = "240" name = "" position = { x = -115 y = -212 } }
+	system = { id = "241" name = "" position = { x = -119 y = -35 } }
+	system = { id = "242" name = "" position = { x = -148 y = -309 } }
+	system = { id = "243" name = "" position = { x = 245 y = -67 } }
+	system = { id = "244" name = "" position = { x = 356 y = 174 } }
+	system = { id = "245" name = "" position = { x = -180 y = 349 } }
+	system = { id = "246" name = "" position = { x = 255 y = -305 } }
+	system = { id = "247" name = "" position = { x = 161 y = 205 } }
+	system = { id = "248" name = "" position = { x = -123 y = -128 } }
+	system = { id = "249" name = "" position = { x = -371 y = 2 } }
+	system = { id = "250" name = "" position = { x = 32 y = 377 } }
+	system = { id = "251" name = "" position = { x = -235 y = 95 } }
+	system = { id = "252" name = "" position = { x = 202 y = -167 } }
+	system = { id = "253" name = "" position = { x = 268 y = 56 } }
+	system = { id = "254" name = "" position = { x = -171 y = 208 } }
+	system = { id = "255" name = "" position = { x = -31 y = -235 } }
+	system = { id = "256" name = "" position = { x = -200 y = 83 } }
+	system = { id = "257" name = "" position = { x = 102 y = 314 } }
+	system = { id = "258" name = "" position = { x = -49 y = -310 } }
+	system = { id = "259" name = "" position = { x = -154 y = 56 } }
+	system = { id = "260" name = "" position = { x = -77 y = 122 } }
+	system = { id = "261" name = "" position = { x = -326 y = -147 } }
+	system = { id = "262" name = "" position = { x = 186 y = -57 } }
+	system = { id = "263" name = "" position = { x = 238 y = -7 } }
+	system = { id = "264" name = "" position = { x = 63 y = -396 } }
+	system = { id = "265" name = "" position = { x = -6 y = -200 } }
+	system = { id = "266" name = "" position = { x = 205 y = -195 } }
+	system = { id = "267" name = "" position = { x = 116 y = -248 } }
+	system = { id = "268" name = "" position = { x = -12 y = 255 } }
+	system = { id = "269" name = "" position = { x = 40 y = -144 } }
+	system = { id = "270" name = "" position = { x = -327 y = -179 } }
+	system = { id = "271" name = "" position = { x = 24 y = -118 } }
+	system = { id = "272" name = "" position = { x = -194 y = -310 } }
+	system = { id = "273" name = "" position = { x = 348 y = -75 } }
+	system = { id = "274" name = "" position = { x = -368 y = -12 } }
+	system = { id = "275" name = "" position = { x = 120 y = 203 } }
+	system = { id = "276" name = "" position = { x = 158 y = 264 } }
+	system = { id = "277" name = "" position = { x = -226 y = -93 } }
+	system = { id = "278" name = "" position = { x = 320 y = -158 } }
+	system = { id = "279" name = "" position = { x = 151 y = -102 } }
+	system = { id = "280" name = "" position = { x = -340 y = 74 } }
+	system = { id = "281" name = "" position = { x = -26 y = 131 } }
+	system = { id = "282" name = "" position = { x = -96 y = 394 } }
+	system = { id = "283" name = "" position = { x = -196 y = 243 } }
+	system = { id = "284" name = "" position = { x = 270 y = -98 } }
+	system = { id = "285" name = "" position = { x = 123 y = -119 } }
+	system = { id = "286" name = "" position = { x = 270 y = -38 } }
+	system = { id = "287" name = "" position = { x = 19 y = -202 } }
+	system = { id = "288" name = "" position = { x = -152 y = -328 } }
+	system = { id = "289" name = "" position = { x = 244 y = 17 } }
+	system = { id = "290" name = "" position = { x = 13 y = 221 } }
+	system = { id = "291" name = "" position = { x = 127 y = -42 } }
+	system = { id = "292" name = "" position = { x = 73 y = -100 } }
+	system = { id = "293" name = "" position = { x = 103 y = 150 } }
+	system = { id = "294" name = "" position = { x = 283 y = 37 } }
+	system = { id = "295" name = "" position = { x = -102 y = 250 } }
+	system = { id = "296" name = "" position = { x = -116 y = 336 } }
+	system = { id = "297" name = "" position = { x = 231 y = 234 } }
+	system = { id = "298" name = "" position = { x = -395 y = -43 } }
+	system = { id = "299" name = "" position = { x = 83 y = 143 } }
+	system = { id = "300" name = "" position = { x = 122 y = 293 } }
+	system = { id = "301" name = "" position = { x = 247 y = -47 } }
+	system = { id = "302" name = "" position = { x = 116 y = 128 } }
+	system = { id = "303" name = "" position = { x = 154 y = 12 } }
+	system = { id = "304" name = "" position = { x = -285 y = 148 } }
+	system = { id = "305" name = "" position = { x = 77 y = -374 } }
+	system = { id = "306" name = "" position = { x = -185 y = 12 } }
+	system = { id = "307" name = "" position = { x = 115 y = 51 } }
+	system = { id = "308" name = "" position = { x = -324 y = -213 } }
+	system = { id = "309" name = "" position = { x = -203 y = 111 } }
+	system = { id = "310" name = "" position = { x = -230 y = 208 } }
+	system = { id = "311" name = "" position = { x = 272 y = 5 } }
+	system = { id = "312" name = "" position = { x = 140 y = 140 } }
+	system = { id = "313" name = "" position = { x = -380 y = 43 } }
+	system = { id = "314" name = "" position = { x = 52 y = -286 } }
+	system = { id = "315" name = "" position = { x = 122 y = 64 } }
+	system = { id = "316" name = "" position = { x = 227 y = 168 } }
+	system = { id = "317" name = "" position = { x = 109 y = -231 } }
+	system = { id = "318" name = "" position = { x = -120 y = -118 } }
+	system = { id = "319" name = "" position = { x = -158 y = -4 } }
+	system = { id = "320" name = "" position = { x = 95 y = 179 } }
+	system = { id = "321" name = "" position = { x = -324 y = -102 } }
+	system = { id = "322" name = "" position = { x = 338 y = 78 } }
+	system = { id = "323" name = "" position = { x = -12 y = -309 } }
+	system = { id = "324" name = "" position = { x = 125 y = 98 } }
+	system = { id = "325" name = "" position = { x = 76 y = 301 } }
+	system = { id = "326" name = "" position = { x = 81 y = -258 } }
+	system = { id = "327" name = "" position = { x = -39 y = 127 } }
+	system = { id = "328" name = "" position = { x = -127 y = 116 } }
+	system = { id = "329" name = "" position = { x = 175 y = 277 } }
+	system = { id = "330" name = "" position = { x = 161 y = -318 } }
+	system = { id = "331" name = "" position = { x = 221 y = -250 } }
+	system = { id = "332" name = "" position = { x = -258 y = -22 } }
+	system = { id = "333" name = "" position = { x = 156 y = -201 } }
+	system = { id = "334" name = "" position = { x = 266 y = -132 } }
+	system = { id = "335" name = "" position = { x = 188 y = -198 } }
+	system = { id = "336" name = "" position = { x = 22 y = -239 } }
+	system = { id = "337" name = "" position = { x = 118 y = 144 } }
+	system = { id = "338" name = "" position = { x = 96 y = 357 } }
+	system = { id = "339" name = "" position = { x = 190 y = 212 } }
+	system = { id = "340" name = "" position = { x = 218 y = 19 } }
+	system = { id = "341" name = "" position = { x = -93 y = 262 } }
+	system = { id = "342" name = "" position = { x = -95 y = 202 } }
+	system = { id = "343" name = "" position = { x = -123 y = 246 } }
+	system = { id = "344" name = "" position = { x = 219 y = 183 } }
+	system = { id = "345" name = "" position = { x = 148 y = 324 } }
+	system = { id = "346" name = "" position = { x = -114 y = 288 } }
+	system = { id = "347" name = "" position = { x = -239 y = -5 } }
+	system = { id = "348" name = "" position = { x = 384 y = -26 } }
+	system = { id = "349" name = "" position = { x = -124 y = 260 } }
+	system = { id = "350" name = "" position = { x = -51 y = -176 } }
+	system = { id = "351" name = "" position = { x = -340 y = -24 } }
+	system = { id = "352" name = "" position = { x = 208 y = -329 } }
+	system = { id = "353" name = "" position = { x = 85 y = 348 } }
+	system = { id = "354" name = "" position = { x = -151 y = 117 } }
+	system = { id = "355" name = "" position = { x = 199 y = 242 } }
+	system = { id = "356" name = "" position = { x = -121 y = 82 } }
+	system = { id = "357" name = "" position = { x = -129 y = 42 } }
+	system = { id = "358" name = "" position = { x = -131 y = -60 } }
+	system = { id = "359" name = "" position = { x = 93 y = -113 } }
+	system = { id = "360" name = "" position = { x = 70 y = 384 } }
+	system = { id = "361" name = "" position = { x = -69 y = -200 } }
+	system = { id = "362" name = "" position = { x = 345 y = 12 } }
+	system = { id = "363" name = "" position = { x = -348 y = 122 } }
+	system = { id = "364" name = "" position = { x = -74 y = 354 } }
+	system = { id = "365" name = "" position = { x = -79 y = -243 } }
+	system = { id = "366" name = "" position = { x = -393 y = -7 } }
+	system = { id = "367" name = "" position = { x = 220 y = 80 } }
+	system = { id = "368" name = "" position = { x = -69 y = 392 } }
+	system = { id = "369" name = "" position = { x = 132 y = -94 } }
+	system = { id = "370" name = "" position = { x = 138 y = -212 } }
+	system = { id = "371" name = "" position = { x = -363 y = 56 } }
+	system = { id = "372" name = "" position = { x = 382 y = 58 } }
+	system = { id = "373" name = "" position = { x = 230 y = 192 } }
+	system = { id = "374" name = "" position = { x = -8 y = 128 } }
+	system = { id = "375" name = "" position = { x = 231 y = -139 } }
+	system = { id = "376" name = "" position = { x = -363 y = 22 } }
+	system = { id = "377" name = "" position = { x = 40 y = -223 } }
+	system = { id = "378" name = "" position = { x = -217 y = -191 } }
+	system = { id = "379" name = "" position = { x = -165 y = -206 } }
+	system = { id = "380" name = "" position = { x = -318 y = 86 } }
+	system = { id = "381" name = "" position = { x = -57 y = 292 } }
+	system = { id = "382" name = "" position = { x = -372 y = -29 } }
+	system = { id = "383" name = "" position = { x = -112 y = -356 } }
+	system = { id = "384" name = "" position = { x = 47 y = -128 } }
+	system = { id = "385" name = "" position = { x = -311 y = 164 } }
+	system = { id = "386" name = "" position = { x = -396 y = -22 } }
+	system = { id = "387" name = "" position = { x = 48 y = 364 } }
+	system = { id = "388" name = "" position = { x = 131 y = 50 } }
+	system = { id = "389" name = "" position = { x = -139 y = -178 } }
+	system = { id = "390" name = "" position = { x = 79 y = 189 } }
+	system = { id = "391" name = "" position = { x = -177 y = 233 } }
+	system = { id = "392" name = "" position = { x = -46 y = -224 } }
+	system = { id = "393" name = "" position = { x = 246 y = -190 } }
+	system = { id = "394" name = "" position = { x = 143 y = -368 } }
+	system = { id = "395" name = "" position = { x = 171 y = 231 } }
+	system = { id = "396" name = "" position = { x = 209 y = 175 } }
+	system = { id = "397" name = "" position = { x = -56 y = 262 } }
+	system = { id = "398" name = "" position = { x = 392 y = -6 } }
+	system = { id = "399" name = "" position = { x = 181 y = -239 } }
+	system = { id = "400" name = "" position = { x = -146 y = -156 } }
+	system = { id = "401" name = "" position = { x = 38 y = 347 } }
+	system = { id = "402" name = "" position = { x = -89 y = -378 } }
+	system = { id = "403" name = "" position = { x = -161 y = 236 } }
+	system = { id = "404" name = "" position = { x = 299 y = -137 } }
+	system = { id = "405" name = "" position = { x = 204 y = -59 } }
+	system = { id = "406" name = "" position = { x = 160 y = -364 } }
+	system = { id = "407" name = "" position = { x = -368 y = -96 } }
+	system = { id = "408" name = "" position = { x = -248 y = 138 } }
+	system = { id = "409" name = "" position = { x = -91 y = -118 } }
+	system = { id = "410" name = "" position = { x = -298 y = -53 } }
+	system = { id = "411" name = "" position = { x = 84 y = 173 } }
+	system = { id = "412" name = "" position = { x = -392 y = 8 } }
+	system = { id = "413" name = "" position = { x = 130 y = -236 } }
+	system = { id = "414" name = "" position = { x = 63 y = -139 } }
+	system = { id = "415" name = "" position = { x = -29 y = 243 } }
+	system = { id = "416" name = "" position = { x = -177 y = 315 } }
+	system = { id = "417" name = "" position = { x = -85 y = -178 } }
+	system = { id = "418" name = "" position = { x = 79 y = -165 } }
+	system = { id = "419" name = "" position = { x = -206 y = -78 } }
+	system = { id = "420" name = "" position = { x = 51 y = 307 } }
+	system = { id = "421" name = "" position = { x = 173 y = 60 } }
+	system = { id = "422" name = "" position = { x = -58 y = 368 } }
+	system = { id = "423" name = "" position = { x = 40 y = 213 } }
+	system = { id = "424" name = "" position = { x = 6 y = 234 } }
+	system = { id = "425" name = "" position = { x = 351 y = -18 } }
+	system = { id = "426" name = "" position = { x = 153 y = -251 } }
+	system = { id = "427" name = "" position = { x = -267 y = -71 } }
+	system = { id = "428" name = "" position = { x = 111 y = -200 } }
+	system = { id = "429" name = "" position = { x = -92 y = -133 } }
+	system = { id = "430" name = "" position = { x = -207 y = -45 } }
+	system = { id = "431" name = "" position = { x = 55 y = -164 } }
+	system = { id = "432" name = "" position = { x = -61 y = -155 } }
+	system = { id = "433" name = "" position = { x = -132 y = -17 } }
+	system = { id = "434" name = "" position = { x = 74 y = -394 } }
+	system = { id = "435" name = "" position = { x = -205 y = -17 } }
+	system = { id = "436" name = "" position = { x = 257 y = 80 } }
+	system = { id = "437" name = "" position = { x = -8 y = -393 } }
+	system = { id = "438" name = "" position = { x = 36 y = -119 } }
+	system = { id = "439" name = "" position = { x = 28 y = -272 } }
+	system = { id = "440" name = "" position = { x = -218 y = 39 } }
+	system = { id = "441" name = "" position = { x = -243 y = -25 } }
+	system = { id = "442" name = "" position = { x = 190 y = -229 } }
+	system = { id = "443" name = "" position = { x = 62 y = 194 } }
+	system = { id = "444" name = "" position = { x = -229 y = -220 } }
+	system = { id = "445" name = "" position = { x = -208 y = -291 } }
+	system = { id = "446" name = "" position = { x = 172 y = -188 } }
+	system = { id = "447" name = "" position = { x = -157 y = -252 } }
+	system = { id = "448" name = "" position = { x = -62 y = -333 } }
+	system = { id = "449" name = "" position = { x = 367 y = 19 } }
+	system = { id = "450" name = "" position = { x = -238 y = 190 } }
+	system = { id = "451" name = "" position = { x = 102 y = 212 } }
+	system = { id = "452" name = "" position = { x = -5 y = 243 } }
+	system = { id = "453" name = "" position = { x = 100 y = -144 } }
+	system = { id = "454" name = "" position = { x = -10 y = 344 } }
+	system = { id = "455" name = "" position = { x = -266 y = 55 } }
+	system = { id = "456" name = "" position = { x = 118 y = 173 } }
+	system = { id = "457" name = "" position = { x = -240 y = 61 } }
+	system = { id = "458" name = "" position = { x = 156 y = -282 } }
+	system = { id = "459" name = "" position = { x = -140 y = 347 } }
+	system = { id = "460" name = "" position = { x = 30 y = 196 } }
+	system = { id = "461" name = "" position = { x = -27 y = 204 } }
+	system = { id = "462" name = "" position = { x = 273 y = 169 } }
+	system = { id = "463" name = "" position = { x = -130 y = -319 } }
+	system = { id = "464" name = "" position = { x = -119 y = -249 } }
+	system = { id = "465" name = "" position = { x = -112 y = -309 } }
+	system = { id = "466" name = "" position = { x = -222 y = 160 } }
+	system = { id = "467" name = "" position = { x = 296 y = -71 } }
+	system = { id = "468" name = "" position = { x = -179 y = 54 } }
+	system = { id = "469" name = "" position = { x = -88 y = -291 } }
+	system = { id = "470" name = "" position = { x = -212 y = -149 } }
+	system = { id = "471" name = "" position = { x = 89 y = 279 } }
+	system = { id = "472" name = "" position = { x = 81 y = 112 } }
+	system = { id = "473" name = "" position = { x = -109 y = -339 } }
+	system = { id = "474" name = "" position = { x = 155 y = -117 } }
+	system = { id = "475" name = "" position = { x = -110 y = -109 } }
+	system = { id = "476" name = "" position = { x = 109 y = -375 } }
+	system = { id = "477" name = "" position = { x = -283 y = 281 } }
+	system = { id = "478" name = "" position = { x = -327 y = 7 } }
+	system = { id = "479" name = "" position = { x = 126 y = -1 } }
+	system = { id = "480" name = "" position = { x = 103 y = -257 } }
+	system = { id = "481" name = "" position = { x = 54 y = 203 } }
+	system = { id = "482" name = "" position = { x = 371 y = 78 } }
+	system = { id = "483" name = "" position = { x = 371 y = 43 } }
+	system = { id = "484" name = "" position = { x = -214 y = 60 } }
+	system = { id = "485" name = "" position = { x = -21 y = 120 } }
+	system = { id = "486" name = "" position = { x = 348 y = -48 } }
+	system = { id = "487" name = "" position = { x = 181 y = 288 } }
+	system = { id = "488" name = "" position = { x = 39 y = 165 } }
+	system = { id = "489" name = "" position = { x = 43 y = 269 } }
+	system = { id = "490" name = "" position = { x = -347 y = -53 } }
+	system = { id = "491" name = "" position = { x = -194 y = -206 } }
+	system = { id = "492" name = "" position = { x = -307 y = 45 } }
+	system = { id = "493" name = "" position = { x = 214 y = 109 } }
+	system = { id = "494" name = "" position = { x = -232 y = 245 } }
+	system = { id = "495" name = "" position = { x = 29 y = 241 } }
+	system = { id = "496" name = "" position = { x = 374 y = 126 } }
+	system = { id = "497" name = "" position = { x = -137 y = -344 } }
+	system = { id = "498" name = "" position = { x = 231 y = 126 } }
+	system = { id = "499" name = "" position = { x = -226 y = -168 } }
+	system = { id = "500" name = "" position = { x = 45 y = -247 } }
+	system = { id = "501" name = "" position = { x = -169 y = -135 } }
+	system = { id = "502" name = "" position = { x = 224 y = -190 } }
+	system = { id = "503" name = "" position = { x = -31 y = 271 } }
+	system = { id = "504" name = "" position = { x = -356 y = -109 } }
+	system = { id = "505" name = "" position = { x = 202 y = -107 } }
+	system = { id = "506" name = "" position = { x = 259 y = -163 } }
+	system = { id = "507" name = "" position = { x = -142 y = -68 } }
+	system = { id = "508" name = "" position = { x = 331 y = 162 } }
+	system = { id = "509" name = "" position = { x = 62 y = -355 } }
+	system = { id = "510" name = "" position = { x = 149 y = 172 } }
+	system = { id = "511" name = "" position = { x = 159 y = 47 } }
+	system = { id = "512" name = "" position = { x = -294 y = -241 } }
+	system = { id = "513" name = "" position = { x = 63 y = -204 } }
+	system = { id = "514" name = "" position = { x = -195 y = 334 } }
+	system = { id = "515" name = "" position = { x = -116 y = 383 } }
+	system = { id = "516" name = "" position = { x = 136 y = -116 } }
+	system = { id = "517" name = "" position = { x = -197 y = 67 } }
+	system = { id = "518" name = "" position = { x = -49 y = 135 } }
+	system = { id = "519" name = "" position = { x = -104 y = 359 } }
+	system = { id = "520" name = "" position = { x = 121 y = -276 } }
+	system = { id = "521" name = "" position = { x = -22 y = -135 } }
+	system = { id = "522" name = "" position = { x = -222 y = -256 } }
+	system = { id = "523" name = "" position = { x = 300 y = -94 } }
+	system = { id = "524" name = "" position = { x = -86 y = 333 } }
+	system = { id = "525" name = "" position = { x = -342 y = 48 } }
+	system = { id = "526" name = "" position = { x = 38 y = -331 } }
+	system = { id = "527" name = "" position = { x = 319 y = -232 } }
+	system = { id = "528" name = "" position = { x = 330 y = 6 } }
+	system = { id = "529" name = "" position = { x = -265 y = -135 } }
+	system = { id = "530" name = "" position = { x = 239 y = 152 } }
+	system = { id = "531" name = "" position = { x = -64 y = -219 } }
+	system = { id = "532" name = "" position = { x = -23 y = -216 } }
+	system = { id = "533" name = "" position = { x = -6 y = 380 } }
+	system = { id = "534" name = "" position = { x = 330 y = -91 } }
+	system = { id = "535" name = "" position = { x = 119 y = 257 } }
+	system = { id = "536" name = "" position = { x = -356 y = -78 } }
+	system = { id = "537" name = "" position = { x = 322 y = 46 } }
+	system = { id = "538" name = "" position = { x = 80 y = -119 } }
+	system = { id = "539" name = "" position = { x = -86 y = -330 } }
+	system = { id = "540" name = "" position = { x = -20 y = -346 } }
+	system = { id = "541" name = "" position = { x = -307 y = 119 } }
+	system = { id = "542" name = "" position = { x = 241 y = -210 } }
+	system = { id = "543" name = "" position = { x = -101 y = -187 } }
+	system = { id = "544" name = "" position = { x = -89 y = -208 } }
+	system = { id = "545" name = "" position = { x = 185 y = -33 } }
+	system = { id = "546" name = "" position = { x = -152 y = -53 } }
+	system = { id = "547" name = "" position = { x = -287 y = 128 } }
+	system = { id = "548" name = "" position = { x = -376 y = 89 } }
+	system = { id = "549" name = "" position = { x = 18 y = -361 } }
+	system = { id = "550" name = "" position = { x = 330 y = -134 } }
+	system = { id = "551" name = "" position = { x = 119 y = -95 } }
+	system = { id = "552" name = "" position = { x = -68 y = -359 } }
+	system = { id = "553" name = "" position = { x = -234 y = 28 } }
+	system = { id = "554" name = "" position = { x = -284 y = 93 } }
+	system = { id = "555" name = "" position = { x = 124 y = 156 } }
+	system = { id = "556" name = "" position = { x = -313 y = 70 } }
+	system = { id = "557" name = "" position = { x = -237 y = 39 } }
+	system = { id = "558" name = "" position = { x = -216 y = 193 } }
+	system = { id = "559" name = "" position = { x = 2 y = -147 } }
+	system = { id = "560" name = "" position = { x = 291 y = 266 } }
+	system = { id = "561" name = "" position = { x = -97 y = -354 } }
+	system = { id = "562" name = "" position = { x = 42 y = -394 } }
+	system = { id = "563" name = "" position = { x = -272 y = -182 } }
+	system = { id = "564" name = "" position = { x = 17 y = -328 } }
+	system = { id = "565" name = "" position = { x = 172 y = -96 } }
+	system = { id = "566" name = "" position = { x = -112 y = -326 } }
+	system = { id = "567" name = "" position = { x = -266 y = 22 } }
+	system = { id = "568" name = "" position = { x = -370 y = -144 } }
+	system = { id = "569" name = "" position = { x = -216 y = 27 } }
+	system = { id = "570" name = "" position = { x = -138 y = -111 } }
+	system = { id = "571" name = "" position = { x = -278 y = -87 } }
+	system = { id = "572" name = "" position = { x = -141 y = 285 } }
+	system = { id = "573" name = "" position = { x = 61 y = -370 } }
+	system = { id = "574" name = "" position = { x = -310 y = 190 } }
+	system = { id = "575" name = "" position = { x = 147 y = 297 } }
+	system = { id = "576" name = "" position = { x = -46 y = 332 } }
+	system = { id = "577" name = "" position = { x = 53 y = -112 } }
+	system = { id = "578" name = "" position = { x = -32 y = 147 } }
+	system = { id = "579" name = "" position = { x = -287 y = -22 } }
+	system = { id = "580" name = "" position = { x = 111 y = -352 } }
+	system = { id = "581" name = "" position = { x = -158 y = -70 } }
+	system = { id = "582" name = "" position = { x = 59 y = -330 } }
+	system = { id = "583" name = "" position = { x = -38 y = 115 } }
+	system = { id = "584" name = "" position = { x = -61 y = 144 } }
+	system = { id = "585" name = "" position = { x = 202 y = -214 } }
+	system = { id = "586" name = "" position = { x = -107 y = 125 } }
+	system = { id = "587" name = "" position = { x = -33 y = -367 } }
+	system = { id = "588" name = "" position = { x = -179 y = -226 } }
+	system = { id = "589" name = "" position = { x = -380 y = -120 } }
+	system = { id = "590" name = "" position = { x = 381 y = 35 } }
+	system = { id = "591" name = "" position = { x = 270 y = 69 } }
+	system = { id = "592" name = "" position = { x = 22 y = 227 } }
+	system = { id = "593" name = "" position = { x = -147 y = -206 } }
+	system = { id = "594" name = "" position = { x = -124 y = -199 } }
+
+# 	prevent_hyperlane = { from = "47" to = "8" }
+# 	nebula = { name = "My Name" position = { x = 10 y = 30 z = 1 } radius = 20 }
+}

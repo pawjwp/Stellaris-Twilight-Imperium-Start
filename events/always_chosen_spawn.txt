@@ -1,13 +1,6 @@
-################################
-#
-# Ancient Relics Events
-# Written by Henrik Thyrwall et al
-#
-################################
-
 namespace = ancrel
 
-### Surveillance Supercomputer
+### Surveillance Supercomputer Override
 #Spawn event
 event = {
 	id = ancrel.12050
