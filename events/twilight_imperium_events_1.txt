@@ -80,6 +80,7 @@ country_event = {
 			}
 			give_technology = { message = no tech = tech_shields_2 }
 			give_technology = { message = no tech = tech_planetary_shield_generator }
+			give_technology = { message = no tech = tech_ftl_inhibitor }
 			add_research_option = tech_shields_3
 		}
 		if = {

@@ -312,3 +312,201 @@ spawn_orbital_ring_effect = {
         effect = { }
     }
 }
+
+
+create_ti_empires = {
+	create_arborec = yes
+	create_argent_flight = yes
+	create_creuss = yes
+	create_hacan = yes
+	create_l1x1z = yes
+	create_letnev = yes
+	create_muaat = yes
+	create_mentak = yes
+	create_naalu = yes
+	create_nekro = yes
+	create_naaz_rokha = yes
+	create_nomad = yes
+	create_saar = yes
+	create_sardakk = yes
+	create_sol = yes
+	create_titans = yes
+	create_winnu = yes
+	create_xxcha = yes
+	create_yin = yes
+	create_yssaril = yes
+}
+
+
+create_arborec = {
+
+}
+
+create_argent_flight = {
+	create_species = {
+		class = AVI
+		portrait = avi11
+		name = "Shikrai"
+		plural = "Shikrai"
+		adjective = "Shikrai"
+		namelist = MAM2
+		traits = {
+			ideal_planet_class = pc_tropical
+			trait = trait_traditional
+			trait = trait_nomadic
+		}
+		homeworld = this
+	}
+	last_created_species = { save_global_event_target_as = argent_flight_species }
+	create_country = {
+		type = default
+		ignore_initial_colony_error = yes
+		name_list = MAM2
+
+		name = "The Argent Flight"
+		adjective = "Argent Flight"
+		authority = auth_democratic
+
+		effect = {
+			set_graphical_culture = avian_01
+			set_city_graphical_culture = avian_01
+		}
+
+		flag = {
+			icon = {
+				category = "lithoid"
+				file = "lithoid_03.dds"
+			}
+			background= {
+				category = backgrounds
+				file = "flag_BG_45.dds"
+			}
+			colors = {
+				"dark_teal"
+				"orange"
+				"black"
+				"null"
+			}
+		}
+
+		effect = {
+			set_male_ruler_title = "Speaker of the Murmuration"
+			set_female_ruler_title = "Speaker of the Murmuration"
+		}
+
+		ethos = {
+			ethic = ethic_egalitarian
+			ethic = ethic_fanatic_militarist
+		}
+		civics = {
+			civic = civic_citizen_service
+			civic = civic_memorialist
+		}
+		origin = origin_default
+		
+		species = event_target:argent_flight_species
+		effect = {
+			save_global_event_target_as = argent_flight
+			set_country_flag = ti_argent_flight
+			species = {
+				save_global_event_target_as = argent_flight_species
+			}
+			add_resource = {
+				minerals = 100
+				energy = 100
+				alloys = 100
+				consumer_goods = 100
+				influence = 100
+			}
+		}
+	}
+	generate_start_deposits_and_blockers = yes
+	clear_blockers = yes
+	generate_start_buildings_and_districts = yes
+	generate_start_pops = yes
+	event_target:argent_flight = {
+		country_event = { id = game_start.9 }
+		country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+	}
+	solar_system = {
+		create_starbase = {
+			size = starbase_starport
+			module = trading_hub
+			module = shipyard
+			building = crew_quarters
+			owner = event_target:argent_flight
+		}
+	}
+}
+
+create_creuss = {
+	
+}
+
+create_hacan = {
+	
+}
+
+create_l1x1z = {
+	
+}
+
+create_letnev = {
+	
+}
+
+create_muaat = {
+	
+}
+
+create_mentak = {
+	
+}
+
+create_naalu = {
+	
+}
+
+create_nekro = {
+	
+}
+
+create_naaz_rokha = {
+	
+}
+
+create_nomad = {
+	
+}
+
+create_saar = {
+	
+}
+
+create_sardakk = {
+	
+}
+
+create_sol = {
+	
+}
+
+create_titans = {
+	
+}
+
+create_winnu = {
+	
+}
+
+create_xxcha = {
+	
+}
+
+create_yin = {
+	
+}
+
+create_yssaril = {
+	
+}
