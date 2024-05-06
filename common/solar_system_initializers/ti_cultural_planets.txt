@@ -1,0 +1,87 @@
+@distance = 50
+@jumps = 3
+@planet_min_size = 10
+@planet_max_size = 25
+@base_moon_distance = 10
+@moon_min_size = 6
+@moon_max_size = 10
+@homeworld_min_size = 18
+@homeworld_max_size = 21
+
+# cultural
+
+ti_abaddon_system = {
+	
+}
+
+ti_alio_prima_system = {
+	
+}
+
+ti_cealdri_system = {
+	
+}
+
+ti_centuri_system = {
+	
+}
+
+ti_corneeq_system = {
+	
+}
+
+ti_dal_bootha_system = {
+	
+}
+
+ti_evarra_system = {
+	
+}
+
+ti_lodor_system = {
+	
+}
+
+ti_loki_system = {
+	
+}
+
+ti_mellon_system = {
+	
+}
+
+ti_primor_system = {
+	
+}
+
+ti_quann_system = {
+	
+}
+
+ti_rarron_system = {
+	
+}
+
+ti_resculon_system = {
+	
+}
+
+ti_sem_lore_system = {
+	
+}
+
+ti_torkan_system = {
+	
+}
+
+ti_vega_system = {
+	
+}
+
+ti_vorhal_system = {
+	
+}
+
+ti_xxehan_system = {
+	
+}

@@ -1,0 +1,83 @@
+@distance = 50
+@jumps = 3
+@planet_min_size = 10
+@planet_max_size = 25
+@base_moon_distance = 10
+@moon_min_size = 6
+@moon_max_size = 10
+@homeworld_min_size = 18
+@homeworld_max_size = 21
+
+# industrial
+
+ti_accoen_system = {
+	
+}
+
+ti_ang_system = {
+	
+}
+
+ti_arinam_system = {
+	
+}
+
+ti_arnor_system = {
+	
+}
+
+ti_bakal_system = {
+	
+}
+
+ti_gral_system = {
+	
+}
+
+ti_jeol_ir_system = {
+	
+}
+
+ti_lazar_system = {
+	
+}
+
+ti_lisis_system = {
+	
+}
+
+ti_lor_system = {
+	
+}
+
+ti_new_albion_system = {
+	
+}
+
+ti_perimeter_system = {
+	
+}
+
+ti_qucenn_system = {
+	
+}
+
+ti_saudor_system = {
+	
+}
+
+ti_tarmann_system = {
+	
+}
+
+ti_thibah_system = {
+	
+}
+
+ti_velnor_system = {
+	
+}
+
+ti_wellon_system = {
+	
+}

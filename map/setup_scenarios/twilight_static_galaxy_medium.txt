@@ -1,4 +1,4 @@
-static_galaxy_scenario = {
+#static_galaxy_scenario = {
 #	name = "Twilight Imperium Medium"
 #	priority = 7
 #	supports_shape = spiral_4

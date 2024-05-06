@@ -1,0 +1,95 @@
+@distance = 50
+@jumps = 3
+@planet_min_size = 10
+@planet_max_size = 25
+@base_moon_distance = 10
+@moon_min_size = 6
+@moon_max_size = 10
+@homeworld_min_size = 18
+@homeworld_max_size = 21
+
+# hazardous
+
+ti_abyz_system = {
+	
+}
+
+ti_archon_vail_system = {
+	
+}
+
+ti_ashtroth_system = {
+	
+}
+
+ti_atlas_system = {
+	
+}
+
+ti_bereg_system = {
+	
+}
+
+ti_cormund_system = {
+	
+}
+
+ti_fria_system = {
+	
+}
+
+ti_kraag_system = {
+	
+}
+
+ti_hopes_end_system = {
+	
+}
+
+ti_industrex_system = {
+	
+}
+
+ti_lirta_system = {
+	
+}
+
+ti_meer_system = {
+	
+}
+
+ti_mehar_xull_system = {
+	
+}
+
+ti_sakulag_system = {
+	
+}
+
+ti_siig_system = {
+	
+}
+
+ti_starpoint_system = {
+	
+}
+
+ti_tequran_system = {
+	
+}
+
+ti_vefut_system = {
+	
+}
+
+ti_vira_pics_system = {
+	
+}
+
+ti_xanact_system = {
+	
+}
+
+ti_zohbat_system = {
+	
+}
