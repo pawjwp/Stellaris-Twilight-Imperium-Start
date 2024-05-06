@@ -58,7 +58,7 @@ static_galaxy_scenario = {
 #	}
 
 	# mecatol
-	system = { id = "0" name = "" position = { x = -382 y = -340 } initializer = ti_mecatol_system spawn_weight = 0 }
+	system = { id = "0" name = "" position = { x = -382 y = -340 } initializer = ti_mecatol_system spawn_weight = { base = 0 } }
 	# home systems
 	system = { id = "1" name = "" position = { x = 131 y = -362 } initializer = ti_arborec_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_arborec_empire } } }
 	system = { id = "2" name = "" position = { x = 345 y = -103 } initializer = ti_argent_flight_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_argent_flight_empire } } }
@@ -85,113 +85,113 @@ static_galaxy_scenario = {
 	system = { id = "23" name = "" position = { x = 3 y = -420 } initializer = ti_yin_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = is_yin_empire } } }
 	system = { id = "24" name = "" position = { x = 166 y = -34 } initializer = ti_yssaril_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_yssaril_empire } } }
 	# other owned systems
-	system = { id = "25" name = "" position = { x = 394 y = -120 } initializer = ti_acheron_system spawn_weight = 0 }
-	system = { id = "26" name = "" position = { x = 195 y = -109 } initializer = ti_shaleri_passage_system spawn_weight = 0 }
-	system = { id = "27" name = "" position = { x = -246 y = 187 } initializer = ti_wren_system spawn_weight = 0 }
+	system = { id = "25" name = "" position = { x = 394 y = -120 } initializer = ti_acheron_system spawn_weight = { base = 0 } }
+	system = { id = "26" name = "" position = { x = 195 y = -109 } initializer = ti_shaleri_passage_system spawn_weight = { base = 0 } }
+	system = { id = "27" name = "" position = { x = -246 y = 187 } initializer = ti_wren_system spawn_weight = { base = 0 } }
 	# a wormhole
-	system = { id = "28" name = "" position = { x = 15 y = -151 } initializer = ti_coreward_gate_system spawn_weight = 0 }
-	system = { id = "29" name = "" position = { x = -96 y = -157 } initializer = ti_plateaus_rift_system spawn_weight = 0 }
-	system = { id = "30" name = "" position = { x = -280 y = 37 } initializer = ti_primor_gate_system spawn_weight = 0 }
+	system = { id = "28" name = "" position = { x = 15 y = -151 } initializer = ti_coreward_gate_system spawn_weight = { base = 0 } }
+	system = { id = "29" name = "" position = { x = -96 y = -157 } initializer = ti_plateaus_rift_system spawn_weight = { base = 0 } }
+	system = { id = "30" name = "" position = { x = -280 y = 37 } initializer = ti_primor_gate_system spawn_weight = { base = 0 } }
 	# b wormhole
-	system = { id = "31" name = "" position = { x = -41 y = 366 } initializer = ti_elysian_wormhole_system spawn_weight = 0 }
-	system = { id = "32" name = "" position = { x = -150 y = 167 } initializer = ti_quann_wormhole_system spawn_weight = 0 }
-	system = { id = "33" name = "" position = { x = 191 y = -272 } initializer = ti_stygian_passage_system spawn_weight = 0 }
+	system = { id = "31" name = "" position = { x = -41 y = 366 } initializer = ti_elysian_wormhole_system spawn_weight = { base = 0 } }
+	system = { id = "32" name = "" position = { x = -150 y = 167 } initializer = ti_quann_wormhole_system spawn_weight = { base = 0 } }
+	system = { id = "33" name = "" position = { x = 191 y = -272 } initializer = ti_stygian_passage_system spawn_weight = { base = 0 } }
 	# anomaly
-	system = { id = "34" name = "" position = { x = 261 y = -360 } initializer = ti_ghost_worlds_system spawn_weight = 0 }
-	system = { id = "35" name = "" position = { x = 259 y = -72 } initializer = ti_manon_singularity_system spawn_weight = 0 }
-	system = { id = "36" name = "" position = { x = -251 y = 363 } initializer = ti_shattered_ring_system spawn_weight = 0 }
-	system = { id = "37" name = "" position = { x = -58 y = 129 } initializer = ti_tor_mantal_system spawn_weight = 0 }
-	system = { id = "38" name = "" position = { x = 287 y = -69 } initializer = ti_torali_pulsar_system spawn_weight = 0 }
+	system = { id = "34" name = "" position = { x = 261 y = -360 } initializer = ti_ghost_worlds_system spawn_weight = { base = 0 } }
+	system = { id = "35" name = "" position = { x = 259 y = -72 } initializer = ti_manon_singularity_system spawn_weight = { base = 0 } }
+	system = { id = "36" name = "" position = { x = -251 y = 363 } initializer = ti_shattered_ring_system spawn_weight = { base = 0 } }
+	system = { id = "37" name = "" position = { x = -58 y = 129 } initializer = ti_tor_mantal_system spawn_weight = { base = 0 } }
+	system = { id = "38" name = "" position = { x = 287 y = -69 } initializer = ti_torali_pulsar_system spawn_weight = { base = 0 } }
 	# cultural
-	system = { id = "39" name = "" position = { x = 152 y = 76 } initializer = ti_abaddon_system spawn_weight = 0 }
-	system = { id = "40" name = "" position = { x = -188 y = -145 } initializer = ti_alio_prima_system spawn_weight = 0 }
-	system = { id = "41" name = "" position = { x = 206 y = 252 } initializer = ti_cealdri_system spawn_weight = 0 }
-	system = { id = "42" name = "" position = { x = 20 y = 258 } initializer = ti_centuri_system spawn_weight = 0 }
-	system = { id = "43" name = "" position = { x = 94 y = 269 } initializer = ti_corneeq_system spawn_weight = 0 }
-	system = { id = "44" name = "" position = { x = -243 y = -179 } initializer = ti_dal_bootha_system spawn_weight = 0 }
-	system = { id = "45" name = "" position = { x = 3 y = -140 } initializer = ti_evarra_system spawn_weight = 0 }
-	system = { id = "46" name = "" position = { x = -292 y = -11 } initializer = ti_lodor_system spawn_weight = 0 }
-	system = { id = "47" name = "" position = { x = 113 y = 138 } initializer = ti_loki_system spawn_weight = 0 }
-	system = { id = "48" name = "" position = { x = -172 y = 113 } initializer = ti_mellon_system spawn_weight = 0 }
-	system = { id = "49" name = "" position = { x = -275 y = 65 } initializer = ti_primor_system spawn_weight = 0 }
-	system = { id = "50" name = "" position = { x = -141 y = 195 } initializer = ti_quann_system spawn_weight = 0 }
-	system = { id = "51" name = "" position = { x = -172 y = 30 } initializer = ti_rarron_system spawn_weight = 0 }
-	system = { id = "52" name = "" position = { x = 67 y = -132 } initializer = ti_resculon_system spawn_weight = 0 }
-	system = { id = "53" name = "" position = { x = 135 y = -172 } initializer = ti_sem_lore_system spawn_weight = 0 }
-	system = { id = "54" name = "" position = { x = 163 y = -219 } initializer = ti_torkan_system spawn_weight = 0 }
-	system = { id = "55" name = "" position = { x = 52 y = 303 } initializer = ti_vega_system spawn_weight = 0 }
-	system = { id = "56" name = "" position = { x = 236 y = -199 } initializer = ti_vorhal_system spawn_weight = 0 }
-	system = { id = "57" name = "" position = { x = -281 y = -170 } initializer = ti_xxehan_system spawn_weight = 0 }
+	system = { id = "39" name = "" position = { x = 152 y = 76 } initializer = ti_abaddon_system spawn_weight = { base = 0 } }
+	system = { id = "40" name = "" position = { x = -188 y = -145 } initializer = ti_alio_prima_system spawn_weight = { base = 0 } }
+	system = { id = "41" name = "" position = { x = 206 y = 252 } initializer = ti_cealdri_system spawn_weight = { base = 0 } }
+	system = { id = "42" name = "" position = { x = 20 y = 258 } initializer = ti_centuri_system spawn_weight = { base = 0 } }
+	system = { id = "43" name = "" position = { x = 94 y = 269 } initializer = ti_corneeq_system spawn_weight = { base = 0 } }
+	system = { id = "44" name = "" position = { x = -243 y = -179 } initializer = ti_dal_bootha_system spawn_weight = { base = 0 } }
+	system = { id = "45" name = "" position = { x = 3 y = -140 } initializer = ti_evarra_system spawn_weight = { base = 0 } }
+	system = { id = "46" name = "" position = { x = -292 y = -11 } initializer = ti_lodor_system spawn_weight = { base = 0 } }
+	system = { id = "47" name = "" position = { x = 113 y = 138 } initializer = ti_loki_system spawn_weight = { base = 0 } }
+	system = { id = "48" name = "" position = { x = -172 y = 113 } initializer = ti_mellon_system spawn_weight = { base = 0 } }
+	system = { id = "49" name = "" position = { x = -275 y = 65 } initializer = ti_primor_system spawn_weight = { base = 0 } }
+	system = { id = "50" name = "" position = { x = -141 y = 195 } initializer = ti_quann_system spawn_weight = { base = 0 } }
+	system = { id = "51" name = "" position = { x = -172 y = 30 } initializer = ti_rarron_system spawn_weight = { base = 0 } }
+	system = { id = "52" name = "" position = { x = 67 y = -132 } initializer = ti_resculon_system spawn_weight = { base = 0 } }
+	system = { id = "53" name = "" position = { x = 135 y = -172 } initializer = ti_sem_lore_system spawn_weight = { base = 0 } }
+	system = { id = "54" name = "" position = { x = 163 y = -219 } initializer = ti_torkan_system spawn_weight = { base = 0 } }
+	system = { id = "55" name = "" position = { x = 52 y = 303 } initializer = ti_vega_system spawn_weight = { base = 0 } }
+	system = { id = "56" name = "" position = { x = 236 y = -199 } initializer = ti_vorhal_system spawn_weight = { base = 0 } }
+	system = { id = "57" name = "" position = { x = -281 y = -170 } initializer = ti_xxehan_system spawn_weight = { base = 0 } }
 	# hazardous
-	system = { id = "58" name = "" position = { x = 39 y = -391 } initializer = ti_abyz_system spawn_weight = 0 }
-	system = { id = "59" name = "" position = { x = -175 y = 81 } initializer = ti_archon_vail_system spawn_weight = 0 }
-	system = { id = "60" name = "" position = { x = 147 y = 111 } initializer = ti_ashtroth_system spawn_weight = 0 }
-	system = { id = "61" name = "" position = { x = -22 y = 320 } initializer = ti_atlas_system spawn_weight = 0 }
-	system = { id = "62" name = "" position = { x = 12 y = -273 } initializer = ti_bereg_system spawn_weight = 0 }
-	system = { id = "63" name = "" position = { x = 265 y = -271 } initializer = ti_cormund_system spawn_weight = 0 }
-	system = { id = "64" name = "" position = { x = 30 y = -370 } initializer = ti_fria_system spawn_weight = 0 }
-	system = { id = "65" name = "" position = { x = -209 y = 248 } initializer = ti_kraag_system spawn_weight = 0 }
-	system = { id = "66" name = "" position = { x = 180 y = 416 } initializer = ti_hopes_end_system spawn_weight = 0 }
-	system = { id = "67" name = "" position = { x = 202 y = 94 } initializer = ti_industrex_system spawn_weight = 0 }
-	system = { id = "68" name = "" position = { x = 12 y = -247 } initializer = ti_lirta_system spawn_weight = 0 }
-	system = { id = "69" name = "" position = { x = -237 y = -66 } initializer = ti_meer_system spawn_weight = 0 }
-	system = { id = "70" name = "" position = { x = -148 y = 94 } initializer = ti_mehar_xull_system spawn_weight = 0 }
-	system = { id = "71" name = "" position = { x = 106 y = -112 } initializer = ti_sakulag_system spawn_weight = 0 }
-	system = { id = "72" name = "" position = { x = -197 y = 267 } initializer = ti_siig_system spawn_weight = 0 }
-	system = { id = "73" name = "" position = { x = -84 y = 168 } initializer = ti_starpoint_system spawn_weight = 0 }
-	system = { id = "74" name = "" position = { x = 164 y = -176 } initializer = ti_tequran_system spawn_weight = 0 }
-	system = { id = "75" name = "" position = { x = -369 y = -65 } initializer = ti_vefut_system spawn_weight = 0 }
-	system = { id = "76" name = "" position = { x = 307 y = 169 } initializer = ti_vira_pics_system spawn_weight = 0 }
-	system = { id = "77" name = "" position = { x = 134 y = 251 } initializer = ti_xanact_system spawn_weight = 0 }
-	system = { id = "78" name = "" position = { x = -145 y = 131 } initializer = ti_zohbat_system spawn_weight = 0 }
+	system = { id = "58" name = "" position = { x = 39 y = -391 } initializer = ti_abyz_system spawn_weight = { base = 0 } }
+	system = { id = "59" name = "" position = { x = -175 y = 81 } initializer = ti_archon_vail_system spawn_weight = { base = 0 } }
+	system = { id = "60" name = "" position = { x = 147 y = 111 } initializer = ti_ashtroth_system spawn_weight = { base = 0 } }
+	system = { id = "61" name = "" position = { x = -22 y = 320 } initializer = ti_atlas_system spawn_weight = { base = 0 } }
+	system = { id = "62" name = "" position = { x = 12 y = -273 } initializer = ti_bereg_system spawn_weight = { base = 0 } }
+	system = { id = "63" name = "" position = { x = 265 y = -271 } initializer = ti_cormund_system spawn_weight = { base = 0 } }
+	system = { id = "64" name = "" position = { x = 30 y = -370 } initializer = ti_fria_system spawn_weight = { base = 0 } }
+	system = { id = "65" name = "" position = { x = -209 y = 248 } initializer = ti_kraag_system spawn_weight = { base = 0 } }
+	system = { id = "66" name = "" position = { x = 180 y = 416 } initializer = ti_hopes_end_system spawn_weight = { base = 0 } }
+	system = { id = "67" name = "" position = { x = 202 y = 94 } initializer = ti_industrex_system spawn_weight = { base = 0 } }
+	system = { id = "68" name = "" position = { x = 12 y = -247 } initializer = ti_lirta_system spawn_weight = { base = 0 } }
+	system = { id = "69" name = "" position = { x = -237 y = -66 } initializer = ti_meer_system spawn_weight = { base = 0 } }
+	system = { id = "70" name = "" position = { x = -148 y = 94 } initializer = ti_mehar_xull_system spawn_weight = { base = 0 } }
+	system = { id = "71" name = "" position = { x = 106 y = -112 } initializer = ti_sakulag_system spawn_weight = { base = 0 } }
+	system = { id = "72" name = "" position = { x = -197 y = 267 } initializer = ti_siig_system spawn_weight = { base = 0 } }
+	system = { id = "73" name = "" position = { x = -84 y = 168 } initializer = ti_starpoint_system spawn_weight = { base = 0 } }
+	system = { id = "74" name = "" position = { x = 164 y = -176 } initializer = ti_tequran_system spawn_weight = { base = 0 } }
+	system = { id = "75" name = "" position = { x = -369 y = -65 } initializer = ti_vefut_system spawn_weight = { base = 0 } }
+	system = { id = "76" name = "" position = { x = 307 y = 169 } initializer = ti_vira_pics_system spawn_weight = { base = 0 } }
+	system = { id = "77" name = "" position = { x = 134 y = 251 } initializer = ti_xanact_system spawn_weight = { base = 0 } }
+	system = { id = "78" name = "" position = { x = -145 y = 131 } initializer = ti_zohbat_system spawn_weight = { base = 0 } }
 	# industrial
-	system = { id = "79" name = "" position = { x = 173 y = 10 } initializer = ti_accoen_system spawn_weight = 0 }
-	system = { id = "80" name = "" position = { x = 182 y = -316 } initializer = ti_ang_system spawn_weight = 0 }
-	system = { id = "81" name = "" position = { x = -254 y = -91 } initializer = ti_arinam_system spawn_weight = 0 }
-	system = { id = "82" name = "" position = { x = -67 y = -333 } initializer = ti_arnor_system spawn_weight = 0 }
-	system = { id = "83" name = "" position = { x = -145 y = 296 } initializer = ti_bakal_system spawn_weight = 0 }
-	system = { id = "84" name = "" position = { x = -37 y = 280 } initializer = ti_gral_system spawn_weight = 0 }
-	system = { id = "85" name = "" position = { x = 160 y = 16 } initializer = ti_jeol_ir_system spawn_weight = 0 }
-	system = { id = "86" name = "" position = { x = -172 y = -91 } initializer = ti_lazar_system spawn_weight = 0 }
-	system = { id = "87" name = "" position = { x = -46 y = -221 } initializer = ti_lisis_system spawn_weight = 0 }
-	system = { id = "88" name = "" position = { x = -152 y = -222 } initializer = ti_lor_system spawn_weight = 0 }
-	system = { id = "89" name = "" position = { x = 340 y = -135 } initializer = ti_new_albion_system spawn_weight = 0 }
-	system = { id = "90" name = "" position = { x = 83 y = -206 } initializer = ti_perimeter_system spawn_weight = 0 }
-	system = { id = "91" name = "" position = { x = -196 y = -3 } initializer = ti_qucenn_system spawn_weight = 0 }
-	system = { id = "92" name = "" position = { x = -273 y = -107 } initializer = ti_saudor_system spawn_weight = 0 }
-	system = { id = "93" name = "" position = { x = -318 y = -109 } initializer = ti_tarmann_system spawn_weight = 0 }
-	system = { id = "94" name = "" position = { x = -290 y = -219 } initializer = ti_thibah_system spawn_weight = 0 }
-	system = { id = "95" name = "" position = { x = 284 y = 26 } initializer = ti_velnor_system spawn_weight = 0 }
-	system = { id = "96" name = "" position = { x = 55 y = -239 } initializer = ti_wellon_system spawn_weight = 0 }
+	system = { id = "79" name = "" position = { x = 173 y = 10 } initializer = ti_accoen_system spawn_weight = { base = 0 } }
+	system = { id = "80" name = "" position = { x = 182 y = -316 } initializer = ti_ang_system spawn_weight = { base = 0 } }
+	system = { id = "81" name = "" position = { x = -254 y = -91 } initializer = ti_arinam_system spawn_weight = { base = 0 } }
+	system = { id = "82" name = "" position = { x = -67 y = -333 } initializer = ti_arnor_system spawn_weight = { base = 0 } }
+	system = { id = "83" name = "" position = { x = -145 y = 296 } initializer = ti_bakal_system spawn_weight = { base = 0 } }
+	system = { id = "84" name = "" position = { x = -37 y = 280 } initializer = ti_gral_system spawn_weight = { base = 0 } }
+	system = { id = "85" name = "" position = { x = 160 y = 16 } initializer = ti_jeol_ir_system spawn_weight = { base = 0 } }
+	system = { id = "86" name = "" position = { x = -172 y = -91 } initializer = ti_lazar_system spawn_weight = { base = 0 } }
+	system = { id = "87" name = "" position = { x = -46 y = -221 } initializer = ti_lisis_system spawn_weight = { base = 0 } }
+	system = { id = "88" name = "" position = { x = -152 y = -222 } initializer = ti_lor_system spawn_weight = { base = 0 } }
+	system = { id = "89" name = "" position = { x = 340 y = -135 } initializer = ti_new_albion_system spawn_weight = { base = 0 } }
+	system = { id = "90" name = "" position = { x = 83 y = -206 } initializer = ti_perimeter_system spawn_weight = { base = 0 } }
+	system = { id = "91" name = "" position = { x = -196 y = -3 } initializer = ti_qucenn_system spawn_weight = { base = 0 } }
+	system = { id = "92" name = "" position = { x = -273 y = -107 } initializer = ti_saudor_system spawn_weight = { base = 0 } }
+	system = { id = "93" name = "" position = { x = -318 y = -109 } initializer = ti_tarmann_system spawn_weight = { base = 0 } }
+	system = { id = "94" name = "" position = { x = -290 y = -219 } initializer = ti_thibah_system spawn_weight = { base = 0 } }
+	system = { id = "95" name = "" position = { x = 284 y = 26 } initializer = ti_velnor_system spawn_weight = { base = 0 } }
+	system = { id = "96" name = "" position = { x = 55 y = -239 } initializer = ti_wellon_system spawn_weight = { base = 0 } }
 	# system
-	system = { id = "97" name = "" position = { x = -130 y = -190 } initializer = ti_bellatrix_system spawn_weight = 0 }
-	system = { id = "98" name = "" position = { x = -273 y = -71 } initializer = ti_capha_system spawn_weight = 0 }
-	system = { id = "99" name = "" position = { x = 191 y = 330 } initializer = ti_cresius_system spawn_weight = 0 }
-	system = { id = "100" name = "" position = { x = -272 y = 15 } initializer = ti_cronos_system spawn_weight = 0 }
-	system = { id = "101" name = "" position = { x = -174 y = -327 } initializer = ti_elnath_system spawn_weight = 0 }
-	system = { id = "102" name = "" position = { x = 125 y = 165 } initializer = ti_emplar_system spawn_weight = 0 }
-	system = { id = "103" name = "" position = { x = 144 y = -54 } initializer = ti_faunus_system spawn_weight = 0 }
-	system = { id = "104" name = "" position = { x = 298 y = 28 } initializer = ti_gamma_eridus_system spawn_weight = 0 }
-	system = { id = "105" name = "" position = { x = 237 y = 2 } initializer = ti_garbozia_system spawn_weight = 0 }
-	system = { id = "106" name = "" position = { x = 65 y = 192 } initializer = ti_hercalor_system spawn_weight = 0 }
-	system = { id = "107" name = "" position = { x = 137 y = 3 } initializer = ti_horizon_system spawn_weight = 0 }
-	system = { id = "108" name = "" position = { x = 344 y = -283 } initializer = ti_kal_haddar_system spawn_weight = 0 }
-	system = { id = "109" name = "" position = { x = -204 y = -44 } initializer = ti_kostboth_system spawn_weight = 0 }
-	system = { id = "110" name = "" position = { x = 158 y = 289 } initializer = ti_lazul_rex_system spawn_weight = 0 }
-	system = { id = "111" name = "" position = { x = -26 y = -137 } initializer = ti_lemox_system spawn_weight = 0 }
-	system = { id = "112" name = "" position = { x = -265 y = -7 } initializer = ti_lesab_system spawn_weight = 0 }
-	system = { id = "113" name = "" position = { x = -287 y = -304 } initializer = ti_luthen_system spawn_weight = 0 }
-	system = { id = "114" name = "" position = { x = 344 y = 249 } initializer = ti_lycian_system spawn_weight = 0 }
-	system = { id = "115" name = "" position = { x = -318 y = 173 } initializer = ti_new_terra_system spawn_weight = 0 }
-	system = { id = "116" name = "" position = { x = -274 y = 96 } initializer = ti_olergodt_system spawn_weight = 0 }
-	system = { id = "117" name = "" position = { x = 349 y = -147 } initializer = ti_ordinian_system spawn_weight = 0 }
-	system = { id = "118" name = "" position = { x = -124 y = 263 } initializer = ti_rigels_system spawn_weight = 0 }
-	system = { id = "119" name = "" position = { x = 241 y = 300 } initializer = ti_ryma_system spawn_weight = 0 }
-	system = { id = "120" name = "" position = { x = 116 y = -287 } initializer = ti_tallin_system spawn_weight = 0 }
-	system = { id = "121" name = "" position = { x = 295 y = 123 } initializer = ti_tarana_system spawn_weight = 0 }
-	system = { id = "122" name = "" position = { x = 193 y = -164 } initializer = ti_tempesta_system spawn_weight = 0 }
-	system = { id = "123" name = "" position = { x = 115 y = 185 } initializer = ti_tiamat_system spawn_weight = 0 }
-	system = { id = "124" name = "" position = { x = -300 y = 195 } initializer = ti_tinnes_system spawn_weight = 0 }
+	system = { id = "97" name = "" position = { x = -130 y = -190 } initializer = ti_bellatrix_system spawn_weight = { base = 0 } }
+	system = { id = "98" name = "" position = { x = -273 y = -71 } initializer = ti_capha_system spawn_weight = { base = 0 } }
+	system = { id = "99" name = "" position = { x = 191 y = 330 } initializer = ti_cresius_system spawn_weight = { base = 0 } }
+	system = { id = "100" name = "" position = { x = -272 y = 15 } initializer = ti_cronos_system spawn_weight = { base = 0 } }
+	system = { id = "101" name = "" position = { x = -174 y = -327 } initializer = ti_elnath_system spawn_weight = { base = 0 } }
+	system = { id = "102" name = "" position = { x = 125 y = 165 } initializer = ti_emplar_system spawn_weight = { base = 0 } }
+	system = { id = "103" name = "" position = { x = 144 y = -54 } initializer = ti_faunus_system spawn_weight = { base = 0 } }
+	system = { id = "104" name = "" position = { x = 298 y = 28 } initializer = ti_gamma_eridus_system spawn_weight = { base = 0 } }
+	system = { id = "105" name = "" position = { x = 237 y = 2 } initializer = ti_garbozia_system spawn_weight = { base = 0 } }
+	system = { id = "106" name = "" position = { x = 65 y = 192 } initializer = ti_hercalor_system spawn_weight = { base = 0 } }
+	system = { id = "107" name = "" position = { x = 137 y = 3 } initializer = ti_horizon_system spawn_weight = { base = 0 } }
+	system = { id = "108" name = "" position = { x = 344 y = -283 } initializer = ti_kal_haddar_system spawn_weight = { base = 0 } }
+	system = { id = "109" name = "" position = { x = -204 y = -44 } initializer = ti_kostboth_system spawn_weight = { base = 0 } }
+	system = { id = "110" name = "" position = { x = 158 y = 289 } initializer = ti_lazul_rex_system spawn_weight = { base = 0 } }
+	system = { id = "111" name = "" position = { x = -26 y = -137 } initializer = ti_lemox_system spawn_weight = { base = 0 } }
+	system = { id = "112" name = "" position = { x = -265 y = -7 } initializer = ti_lesab_system spawn_weight = { base = 0 } }
+	system = { id = "113" name = "" position = { x = -287 y = -304 } initializer = ti_luthen_system spawn_weight = { base = 0 } }
+	system = { id = "114" name = "" position = { x = 344 y = 249 } initializer = ti_lycian_system spawn_weight = { base = 0 } }
+	system = { id = "115" name = "" position = { x = -318 y = 173 } initializer = ti_new_terra_system spawn_weight = { base = 0 } }
+	system = { id = "116" name = "" position = { x = -274 y = 96 } initializer = ti_olergodt_system spawn_weight = { base = 0 } }
+	system = { id = "117" name = "" position = { x = 349 y = -147 } initializer = ti_ordinian_system spawn_weight = { base = 0 } }
+	system = { id = "118" name = "" position = { x = -124 y = 263 } initializer = ti_rigels_system spawn_weight = { base = 0 } }
+	system = { id = "119" name = "" position = { x = 241 y = 300 } initializer = ti_ryma_system spawn_weight = { base = 0 } }
+	system = { id = "120" name = "" position = { x = 116 y = -287 } initializer = ti_tallin_system spawn_weight = { base = 0 } }
+	system = { id = "121" name = "" position = { x = 295 y = 123 } initializer = ti_tarana_system spawn_weight = { base = 0 } }
+	system = { id = "122" name = "" position = { x = 193 y = -164 } initializer = ti_tempesta_system spawn_weight = { base = 0 } }
+	system = { id = "123" name = "" position = { x = 115 y = 185 } initializer = ti_tiamat_system spawn_weight = { base = 0 } }
+	system = { id = "124" name = "" position = { x = -300 y = 195 } initializer = ti_tinnes_system spawn_weight = { base = 0 } }
 
 	system = { id = "125" name = "" position = { x = -442 y = -76 } }
 	system = { id = "126" name = "" position = { x = -438 y = -60 } }
