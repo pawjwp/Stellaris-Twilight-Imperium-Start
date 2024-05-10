@@ -123,6 +123,15 @@ ti_argent_flight_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_name = "Avar"
+				random_country = {
+					limit = { has_country_flag = argent_flight }
+					save_global_event_target_as = argent_flight_species
+					species = { save_global_event_target_as = argent_flight_species }
+				}
+				if = {
+					limit = { exists = event_target:argent_flight }
+					set_owner = event_target:argent_flight
+				}
 				create_argent_flight = yes
 			}
 		}
@@ -1335,9 +1344,9 @@ ti_saar_system = {
 					modifier = master_builders_habitats
 					days = -1
 				}
+				create_saar = yes
 			}
 			deposit_blockers = none
-			create_saar = yes
 		}
 	}
 

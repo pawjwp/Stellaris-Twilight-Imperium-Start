@@ -131,7 +131,7 @@ planet_event = {
 		# set species flags and event targets
 		owner = { country_event = { id = twilight_imperium.20 } }
 
-		# naaz-rokha remove proles, add more rokha, add farming districts, add clinic
+		# naaz-rokha change species characteristics
 		if = {
 			limit = {
 				owner = {
@@ -139,25 +139,27 @@ planet_event = {
 				}
 			}
 			event_target:rokha_species = {
-				change_species_characteristics = {
-					remove_trait = trait_syncretic_proles
-					add_trait = trait_traditional
-					add_traits_at_start_of_list = yes
+				if = {
+					limit = {
+						has_trait = trait_syncretic_proles
+					}
+					change_species_characteristics = {
+						remove_trait = trait_syncretic_proles
+						add_trait = trait_traditional
+						add_traits_at_start_of_list = yes
+					}
 				}
-				change_species_characteristics = {
-					remove_trait = trait_pc_tropical_preference
-					add_trait = trait_pc_continental_preference
-					add_traits_at_start_of_list = yes
+				if = {
+					limit = {
+						has_trait = trait_pc_tropical_preference
+					}
+					change_species_characteristics = {
+						remove_trait = trait_pc_tropical_preference
+						add_trait = trait_pc_continental_preference
+						add_traits_at_start_of_list = yes
+					}
 				}
 			}
-			while = {
-				count = 4
-				create_pop = { species = event_target:rokha_species }
-			}
-			add_district_and_planet_size_if_needed_effect = {
-				district = district_farming
-			}
-			add_building = building_clinic
 		}
 
 		# muaat set relic habitability
@@ -168,9 +170,15 @@ planet_event = {
 				}
 			}
 			owner_species = {
-				change_species_characteristics = {
-					remove_trait = trait_pc_desert_preference
-					add_trait = trait_pc_relic_preference
+				if = {
+					limit = {
+						has_trait = trait_pc_desert_preference
+					}
+					change_species_characteristics = {
+						remove_trait = trait_pc_desert_preference
+						add_trait = trait_pc_relic_preference
+						add_traits_at_start_of_list = yes
+					}
 				}
 			}
 		}
@@ -183,9 +191,15 @@ planet_event = {
 				}
 			}
 			owner_species = {
-				change_species_characteristics = {
-					remove_trait = trait_pc_desert_preference
-					add_trait = trait_pc_nuked_preference
+				if = {
+					limit = {
+						has_trait = trait_pc_desert_preference
+					}
+					change_species_characteristics = {
+						remove_trait = trait_pc_desert_preference
+						add_trait = trait_pc_nuked_preference
+						add_traits_at_start_of_list = yes
+					}
 				}
 			}
 		}

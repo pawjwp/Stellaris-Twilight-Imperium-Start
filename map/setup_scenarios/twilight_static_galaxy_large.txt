@@ -60,30 +60,30 @@ static_galaxy_scenario = {
 	# mecatol
 	system = { id = "0" name = "" position = { x = -382 y = -340 } initializer = ti_mecatol_system spawn_weight = { base = 0 } }
 	# home systems
-	system = { id = "1" name = "" position = { x = 131 y = -362 } initializer = ti_arborec_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_arborec_empire } } }
-	system = { id = "2" name = "" position = { x = 345 y = -103 } initializer = ti_argent_flight_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_argent_flight_empire } } }
-	system = { id = "3" name = "" position = { x = 400 y = 400 } initializer = ti_creuss_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_creuss_empire } } }
-	system = { id = "4" name = "" position = { x = -8 y = -40 } initializer = ti_empyrean_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_empyrean_empire } } }
-	system = { id = "5" name = "" position = { x = -13 y = -286 } initializer = ti_hacan_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_hacan_empire } } }
-	system = { id = "6" name = "" position = { x = -293 y = -40 } initializer = ti_jol_nar_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_jol_nar_empire } } }
-	system = { id = "7" name = "" position = { x = 418 y = -4 } initializer = ti_l1z1x_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_l1z1x_empire } } }
-	system = { id = "8" name = "" position = { x = -265 y = 177 } initializer = ti_letnev_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_letnev_empire } } }
-	system = { id = "9" name = "" position = { x = 19 y = 36 } initializer = ti_mahact_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_mahact_empire } } }
-	system = { id = "10" name = "" position = { x = 290 y = 338 } initializer = ti_mentak_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_mentak_empire } } }
-	system = { id = "11" name = "" position = { x = 380 y = 84 } initializer = ti_muaat_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_muaat_empire } } }
-	system = { id = "12" name = "" position = { x = 80 y = -176 } initializer = ti_naalu_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_naalu_empire } } }
-	system = { id = "13" name = "" position = { x = 235 y = -226 } initializer = ti_naaz_rokha_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_naaz_rokha_empire } } }
-	system = { id = "14" name = "" position = { x = 324 y = -218 } initializer = ti_nekro_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_nekro_empire } } }
-	system = { id = "15" name = "" position = { x = 19 y = 232 } initializer = ti_nomad_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_nomad_empire } } }
-	system = { id = "16" name = "" position = { x = -368 y = 146 } initializer = ti_saar_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_saar_empire } } }
-	system = { id = "17" name = "" position = { x = -185 y = -246 } initializer = ti_sardakk_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_sardakk_empire } } }
-	system = { id = "18" name = "" position = { x = 27 y = 269 } initializer = ti_sol_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_sol_empire } } }
-	system = { id = "19" name = "" position = { x = -81 y = -425 } initializer = ti_titans_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_titans_empire } } }
-	system = { id = "20" name = "" position = { x = -400 y = -400 } initializer = ti_vuil_raith_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_vuil_raith_empire } } }
-	system = { id = "21" name = "" position = { x = -24 y = -179 } initializer = ti_winnu_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_winnu_empire } } }
-	system = { id = "22" name = "" position = { x = -186 y = 104 } initializer = ti_xxcha_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_xxcha_empire } } }
+	system = { id = "1" name = "" position = { x = 131 y = -362 } initializer = ti_arborec_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = arborec_empire } } }
+	system = { id = "2" name = "" position = { x = 345 y = -103 } initializer = ti_argent_flight_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = argent_flight_empire } } }
+	system = { id = "3" name = "" position = { x = 400 y = 400 } initializer = ti_creuss_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = creuss_empire } } }
+	system = { id = "4" name = "" position = { x = -8 y = -40 } initializer = ti_empyrean_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = empyrean_empire } } }
+	system = { id = "5" name = "" position = { x = -13 y = -286 } initializer = ti_hacan_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = hacan_empire } } }
+	system = { id = "6" name = "" position = { x = -293 y = -40 } initializer = ti_jol_nar_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = jol_nar_empire } } }
+	system = { id = "7" name = "" position = { x = 418 y = -4 } initializer = ti_l1z1x_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = l1z1x_empire } } }
+	system = { id = "8" name = "" position = { x = -265 y = 177 } initializer = ti_letnev_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = letnev_empire } } }
+	system = { id = "9" name = "" position = { x = 19 y = 36 } initializer = ti_mahact_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = mahact_empire } } }
+	system = { id = "10" name = "" position = { x = 290 y = 338 } initializer = ti_mentak_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = mentak_empire } } }
+	system = { id = "11" name = "" position = { x = 380 y = 84 } initializer = ti_muaat_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = muaat_empire } } }
+	system = { id = "12" name = "" position = { x = 80 y = -176 } initializer = ti_naalu_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = naalu_empire } } }
+	system = { id = "13" name = "" position = { x = 235 y = -226 } initializer = ti_naaz_rokha_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = naaz_rokha_empire } } }
+	system = { id = "14" name = "" position = { x = 324 y = -218 } initializer = ti_nekro_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = nekro_empire } } }
+	system = { id = "15" name = "" position = { x = 19 y = 232 } initializer = ti_nomad_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = nomad_empire } } }
+	system = { id = "16" name = "" position = { x = -368 y = 146 } initializer = ti_saar_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = saar_empire } } }
+	system = { id = "17" name = "" position = { x = -185 y = -246 } initializer = ti_sardakk_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = sardakk_empire } } }
+	system = { id = "18" name = "" position = { x = 27 y = 269 } initializer = ti_sol_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = sol_empire } } }
+	system = { id = "19" name = "" position = { x = -81 y = -425 } initializer = ti_titans_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = titans_empire } } }
+	system = { id = "20" name = "" position = { x = -400 y = -400 } initializer = ti_vuil_raith_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = vuil_raith_empire } } }
+	system = { id = "21" name = "" position = { x = -24 y = -179 } initializer = ti_winnu_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = winnu_empire } } }
+	system = { id = "22" name = "" position = { x = -186 y = 104 } initializer = ti_xxcha_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = xxcha_empire } } }
 	system = { id = "23" name = "" position = { x = 3 y = -420 } initializer = ti_yin_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = is_yin_empire } } }
-	system = { id = "24" name = "" position = { x = 166 y = -34 } initializer = ti_yssaril_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = ti_yssaril_empire } } }
+	system = { id = "24" name = "" position = { x = 166 y = -34 } initializer = ti_yssaril_system spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = yssaril_empire } } }
 	# other owned systems
 	system = { id = "25" name = "" position = { x = 394 y = -120 } initializer = ti_acheron_system spawn_weight = { base = 0 } }
 	system = { id = "26" name = "" position = { x = 195 y = -109 } initializer = ti_shaleri_passage_system spawn_weight = { base = 0 } }
@@ -882,7 +882,6 @@ static_galaxy_scenario = {
 	system = { id = "811" name = "" position = { x = 433 y = 34 } }
 	system = { id = "812" name = "" position = { x = 443 y = 79 } }
 	
- 	prevent_hyperlane = { from = "7" to = "195" }
 # 	prevent_hyperlane = { from = "47" to = "8" }
 # 	nebula = { name = "My Name" position = { x = 10 y = 30 z = 1 } radius = 20 }
 }

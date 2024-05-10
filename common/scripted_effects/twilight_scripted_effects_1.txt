@@ -321,8 +321,8 @@ create_ti_empires = {
 	create_hacan = yes
 	create_l1x1z = yes
 	create_letnev = yes
-	create_muaat = yes
 	create_mentak = yes
+	create_muaat = yes
 	create_naalu = yes
 	create_nekro = yes
 	create_naaz_rokha = yes
@@ -337,176 +337,2373 @@ create_ti_empires = {
 	create_yssaril = yes
 }
 
-
 create_arborec = {
+	if = {
+		limit = { NOT = { exists = event_target:arborec } }
+		create_species = {
+			class = "PLANT"
+			portrait = "pla11"
+			name = "Letani"
+			plural = "Letani"
+			adjective = "Letani"
+			namelist = "PLANT4"
+			gender = indeterminable
+			traits = {
+				ideal_planet_class = pc_tropical
+				trait = "trait_hive_mind"
+				trait = "trait_plantoid_budding"
+				trait = "trait_invasive"
+				trait = "trait_plantoid_phototrophic"
+				trait = "trait_repugnant"
+				trait = "trait_fleeting"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = arborec_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = PLANT4
 
+			name = "The Arborec"
+			adjective = "Arborec"
+			authority = "auth_hive_mind"
+
+			effect = {
+				set_graphical_culture = plantoid_01
+				set_city_graphical_culture = plantoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "blocky"
+					file = "flag_blocky_24.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_51.dds"
+				}
+				colors = {
+					"dark_green"
+					"moss_green"
+					"black"
+					"null"
+				}
+			}
+
+			ethos = {
+				ethic = "ethic_gestalt_consciousness"
+			}
+
+			civics = {
+				civic = "civic_hive_cordyceptic_drones"
+				civic = "civic_hive_divided_attention"
+			}
+			origin = "origin_tree_of_life"
+
+			species = event_target:arborec_species
+			effect = {
+				save_global_event_target_as = arborec
+				set_country_flag = arborec
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:arborec = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:arborec
+			}
+		}
+	}
 }
 
 create_argent_flight = {
-	create_species = {
-		class = AVI
-		portrait = avi11
-		name = "Shikrai"
-		plural = "Shikrai"
-		adjective = "Shikrai"
-		namelist = MAM2
-		traits = {
-			ideal_planet_class = pc_tropical
-			trait = trait_traditional
-			trait = trait_nomadic
-		}
-		homeworld = this
-	}
-	last_created_species = { save_global_event_target_as = argent_flight_species }
-	create_country = {
-		type = default
-		ignore_initial_colony_error = yes
-		name_list = MAM2
-
-		name = "The Argent Flight"
-		adjective = "Argent Flight"
-		authority = auth_democratic
-
-		effect = {
-			set_graphical_culture = avian_01
-			set_city_graphical_culture = avian_01
-		}
-
-		flag = {
-			icon = {
-				category = "lithoid"
-				file = "lithoid_03.dds"
+	if = {
+		limit = { NOT = { exists = event_target:argent_flight } }
+		create_species = {
+			class = "AVI"
+			portrait = "avi11"
+			name = "Shikrai"
+			plural = "Shikrai"
+			adjective = "Shikrai"
+			namelist = "MAM2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_tropical
+				trait = "trait_traditional"
+				trait = "trait_nomadic"
 			}
-			background= {
-				category = backgrounds
-				file = "flag_BG_45.dds"
-			}
-			colors = {
-				"dark_teal"
-				"orange"
-				"black"
-				"null"
-			}
+			homeworld = this
 		}
+		last_created_species = { save_global_event_target_as = argent_flight_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = MAM2
 
-		effect = {
-			set_male_ruler_title = "Speaker of the Murmuration"
-			set_female_ruler_title = "Speaker of the Murmuration"
-		}
+			name = "The Argent Flight"
+			adjective = "Argent"
+			authority = "auth_democratic"
 
-		ethos = {
-			ethic = ethic_egalitarian
-			ethic = ethic_fanatic_militarist
-		}
-		civics = {
-			civic = civic_citizen_service
-			civic = civic_memorialist
-		}
-		origin = origin_default
-		
-		species = event_target:argent_flight_species
-		effect = {
-			save_global_event_target_as = argent_flight
-			set_country_flag = ti_argent_flight
-			species = {
-				save_global_event_target_as = argent_flight_species
+			effect = {
+				set_graphical_culture = avian_01
+				set_city_graphical_culture = avian_01
 			}
-			add_resource = {
-				minerals = 100
-				energy = 100
-				alloys = 100
-				consumer_goods = 100
-				influence = 100
+
+			flag = {
+				icon = {
+					category = "lithoid"
+					file = "lithoid_03.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_45.dds"
+				}
+				colors = {
+					"dark_teal"
+					"orange"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Speaker of the Murmuration"
+				set_female_ruler_title = "Speaker of the Murmuration"
+			}
+
+			ethos = {
+				ethic = "ethic_fanatic_militarist"
+				ethic = "ethic_egalitarian"
+			}
+
+			civics = {
+				civic = "civic_memorialist"
+				civic = "civic_citizen_service"
+			}
+			origin = "origin_default"
+
+			species = event_target:argent_flight_species
+			effect = {
+				save_global_event_target_as = argent_flight
+				set_country_flag = argent_flight
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
 			}
 		}
-	}
-	generate_start_deposits_and_blockers = yes
-	clear_blockers = yes
-	generate_start_buildings_and_districts = yes
-	generate_start_pops = yes
-	event_target:argent_flight = {
-		country_event = { id = game_start.9 }
-		country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-	}
-	solar_system = {
-		create_starbase = {
-			size = starbase_starport
-			module = trading_hub
-			module = shipyard
-			building = crew_quarters
-			owner = event_target:argent_flight
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:argent_flight = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:argent_flight
+			}
 		}
 	}
 }
 
 create_creuss = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:creuss } }
+		create_species = {
+			class = "NECROID"
+			portrait = "nec7"
+			name = "Ghost"
+			plural = "Ghosts"
+			adjective = "Ghost"
+			namelist = "NECROID4"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_arctic
+				trait = "trait_intelligent"
+				trait = "trait_natural_physicists"
+				trait = "trait_nomadic"
+				trait = "trait_solitary"
+				trait = "trait_decadent"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = creuss_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = NECROID4
+
+			name = "The Ghosts of Creuss"
+			adjective = "Creuss"
+			authority = "auth_dictatorial"
+
+			effect = {
+				set_graphical_culture = lithoid_01
+				set_city_graphical_culture = necroid_01
+			}
+
+			flag = {
+				icon = {
+					category = "ornate"
+					file = "flag_ornate_21.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_45.dds"
+				}
+				colors = {
+					"intense_blue"
+					"dark_blue"
+					"black"
+					"null"
+				}
+			}
+
+			ethos = {
+				ethic = "ethic_authoritarian"
+				ethic = "ethic_xenophobe"
+				ethic = "ethic_spiritualist"
+			}
+
+			civics = {
+				civic = "civic_dimensional_worship"
+				civic = "civic_pompous_purists"
+			}
+			origin = "origin_default"
+
+			species = event_target:creuss_species
+			effect = {
+				save_global_event_target_as = creuss
+				set_country_flag = creuss
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:creuss = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:creuss
+			}
+		}
+	}
+}
+
+create_empyrean = {
+	if = {
+		limit = { NOT = { exists = event_target:empyrean } }
+		create_species = {
+			class = "FUN"
+			portrait = "fun7"
+			name = "Empyrean"
+			plural = "Empyrean"
+			adjective = "Empyrean"
+			namelist = "NECROID4"
+			gender = indeterminable
+			traits = {
+				ideal_planet_class = pc_habitat
+				trait = "trait_void_dweller_1"
+				trait = "trait_venerable"
+				trait = "trait_natural_physicists"
+				trait = "trait_slow_breeders"
+				trait = "trait_solitary"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = empyrean_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = NECROID4
+
+			name = "The Empyrean"
+			adjective = "Empyrean"
+			authority = "auth_democratic"
+
+			effect = {
+				set_graphical_culture = necroid_01
+				set_city_graphical_culture = necroid_01
+			}
+
+			flag = {
+				icon = {
+					category = "pointy"
+					file = "flag_pointy_7.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_8.dds"
+				}
+				colors = {
+					"shadow_purple"
+					"dark_red"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Conservator"
+				set_female_ruler_title = "Conservator"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_xenophobe"
+				ethic = "ethic_materialist"
+			}
+
+			civics = {
+				civic = "civic_pompous_purists"
+				civic = "civic_hyperspace_specialty"
+			}
+			origin = "origin_void_dwellers"
+
+			species = event_target:empyrean_species
+			effect = {
+				save_global_event_target_as = empyrean
+				set_country_flag = empyrean
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:empyrean = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:empyrean
+			}
+		}
+	}
 }
 
 create_hacan = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:hacan } }
+		create_species = {
+			class = "MAM"
+			portrait = "mam14"
+			name = "Hacan"
+			plural = "Hacan"
+			adjective = "Hacan"
+			namelist = "HUM1"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_desert
+				trait = "trait_thrifty"
+				trait = "trait_ingenious"
+				trait = "trait_nomadic"
+				trait = "trait_humanoid_psychological_infertility"
+				trait = "trait_weak"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = hacan_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUM1
+
+			name = "The Emirates of Hacan"
+			adjective = "Hacan"
+			authority = "auth_corporate"
+
+			effect = {
+				set_graphical_culture = toxoid_01
+				set_city_graphical_culture = mammalian_01
+			}
+
+			flag = {
+				icon = {
+					category = "toxoid"
+					file = "toxoid_07.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_51.dds"
+				}
+				colors = {
+					"light_orange"
+					"dark_orange"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Quieron"
+				set_female_ruler_title = "Quieron"
+			}
+
+			ethos = {
+				ethic = "ethic_xenophile"
+				ethic = "ethic_fanatic_materialist"
+			}
+
+			civics = {
+				civic = "civic_free_traders"
+				civic = "civic_corporate_crafters"
+			}
+			origin = "origin_default"
+
+			species = event_target:hacan_species
+			effect = {
+				save_global_event_target_as = hacan
+				set_country_flag = hacan
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:hacan = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:hacan
+			}
+		}
+	}
 }
 
-create_l1x1z = {
-	
+create_jol_nar = {
+	if = {
+		limit = { NOT = { exists = event_target:jol_nar } }
+		create_species = {
+			class = "NECROID"
+			portrait = "nec9"
+			name = "Hylar"
+			plural = "Hylars"
+			adjective = "Hylar"
+			namelist = "HUM2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_ocean
+				trait = "trait_intelligent"
+				trait = "trait_aquatic"
+				trait = "trait_natural_physicists"
+				trait = "trait_repugnant"
+				trait = "trait_weak"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = jol_nar_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUM2
+
+			name = "The Universities of Jol-Nar"
+			adjective = "Jol-Nar"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = aquatic_01
+				set_city_graphical_culture = aquatic_01
+			}
+
+			flag = {
+				icon = {
+					category = "spherical"
+					file = "flag_spherical_3.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"indigo"
+					"light_blue"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Headmaster"
+				set_female_ruler_title = "Headmaster"
+			}
+
+			ethos = {
+				ethic = "ethic_authoritarian"
+				ethic = "ethic_fanatic_materialist"
+			}
+
+			civics = {
+				civic = "civic_technocracy"
+				civic = "civic_functional_architecture"
+			}
+			origin = "origin_default"
+
+			species = event_target:jol_nar_species
+			effect = {
+				save_global_event_target_as = jol_nar
+				set_country_flag = jol_nar
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:jol_nar = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:jol_nar
+			}
+		}
+	}
+}
+
+create_l1z1x = {
+	if = {
+		limit = { NOT = { exists = event_target:l1z1x } }
+		create_species = {
+			class = "NECROID"
+			portrait = "nec2"
+			name = "L1Z1X"
+			plural = "L1Z1X"
+			adjective = "L1Z1X"
+			namelist = "MACHINE1"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_tundra
+				trait = "trait_intelligent"
+				trait = "trait_adaptive"
+				trait = "trait_natural_engineers"
+				trait = "trait_repugnant"
+				trait = "trait_solitary"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = l1z1x_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = MACHINE1
+
+			name = "The L1Z1X Mindnet"
+			adjective = "L1Z1X"
+			authority = "auth_imperial"
+
+			effect = {
+				set_graphical_culture = necroid_01
+				set_city_graphical_culture = necroid_01
+			}
+
+			flag = {
+				icon = {
+					category = "blocky"
+					file = "flag_blocky_6.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_18.dds"
+				}
+				colors = {
+					"black"
+					"red"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Primary"
+				set_male_heir_title = "Secondary"
+				set_female_ruler_title = "Primary"
+				set_female_heir_title = "Secondary"
+			}
+
+			ethos = {
+				ethic = "ethic_authoritarian"
+				ethic = "ethic_xenophobe"
+				ethic = "ethic_materialist"
+			}
+
+			civics = {
+				civic = "civic_technocracy"
+				civic = "civic_dark_consortium"
+			}
+			origin = "origin_default"
+
+			species = event_target:l1z1x_species
+			effect = {
+				save_global_event_target_as = l1z1x
+				set_country_flag = l1z1x
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:l1z1x = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:l1z1x
+			}
+		}
+	}
 }
 
 create_letnev = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:letnev } }
+		create_species = {
+			class = "HUM"
+			portrait = "humanoid_03"
+			name = "Letnev"
+			plural = "Letnev"
+			adjective = "Letnev"
+			namelist = "NECROID1"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_arctic
+				trait = "trait_cave_dweller"
+				trait = "trait_agrarian"
+				trait = "trait_strong"
+				trait = "trait_communal"
+				trait = "trait_sedentary"
+				trait = "trait_deviants"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = letnev_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = NECROID1
+
+			name = "The Barony of Letnev"
+			adjective = "Letnev"
+			authority = "auth_imperial"
+
+			effect = {
+				set_graphical_culture = nemesis_01
+				set_city_graphical_culture = necroid_01
+			}
+
+			flag = {
+				icon = {
+					category = "imperial"
+					file = "imperial_06.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"dark_grey"
+					"red"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Baron"
+				set_female_ruler_title = "Baroness"
+			}
+
+			ethos = {
+				ethic = "ethic_xenophobe"
+				ethic = "ethic_militarist"
+				ethic = "ethic_materialist"
+			}
+
+			civics = {
+				civic = "civic_feudal_realm"
+				civic = "civic_aristocratic_elite"
+			}
+			origin = "origin_subterranean"
+
+			species = event_target:letnev_species
+			effect = {
+				save_global_event_target_as = letnev
+				set_country_flag = letnev
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:letnev = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:letnev
+			}
+		}
+	}
 }
 
-create_muaat = {
-	
+create_mahact = {
+	if = {
+		limit = { NOT = { exists = event_target:mahact } }
+		create_species = {
+			class = "NECROID"
+			portrait = "nec5"
+			name = "Mahact"
+			plural = "Mahacts"
+			adjective = "Mahact"
+			namelist = "HUM4"
+			gender = indeterminable
+			traits = {
+				ideal_planet_class = pc_tundra
+				trait = "trait_survivor"
+				trait = "trait_very_strong"
+				trait = "trait_intelligent"
+				trait = "trait_slow_breeders"
+				trait = "trait_quarrelsome"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = mahact_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUM4
+
+			name = "The Mahact Gene-Sorcerers"
+			adjective = "Mahact"
+			authority = "auth_dictatorial"
+
+			effect = {
+				set_graphical_culture = necroid_01
+				set_city_graphical_culture = necroid_01
+			}
+
+			flag = {
+				icon = {
+					category = "blocky"
+					file = "flag_blocky_6.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_18.dds"
+				}
+				colors = {
+					"dark_purple"
+					"yellow"
+					"orange"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "King of Kings"
+				set_female_ruler_title = "King of Kings"
+			}
+
+			ethos = {
+				ethic = "ethic_authoritarian"
+				ethic = "ethic_xenophobe"
+				ethic = "ethic_militarist"
+			}
+
+			civics = {
+				civic = "civic_barbaric_despoilers"
+				civic = "civic_slaver_guilds"
+			}
+			origin = "origin_post_apocalyptic"
+
+			species = event_target:mahact_species
+			effect = {
+				save_global_event_target_as = mahact
+				set_country_flag = mahact
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:mahact = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:mahact
+			}
+		}
+	}
 }
 
 create_mentak = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:mentak } }
+		create_species = {
+			class = "HUM"
+			portrait = "human"
+			name = "Human"
+			plural = "Humans"
+			adjective = "Human"
+			namelist = "AQUATIC2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_savannah
+				trait = "trait_adaptive"
+				trait = "trait_nomadic"
+				trait = "trait_wasteful"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = mentak_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = AQUATIC2
+
+			name = "The Mentak Coalition"
+			adjective = "Mentak"
+			authority = "auth_democratic"
+
+			effect = {
+				set_graphical_culture = toxoid_01
+				set_city_graphical_culture = mammalian_01
+			}
+
+			flag = {
+				icon = {
+					category = "pointy"
+					file = "flag_pointy_22.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_29.dds"
+				}
+				colors = {
+					"light_orange"
+					"black"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Erwan's Hand"
+				set_female_ruler_title = "Erwan's Hand"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_xenophile"
+				ethic = "ethic_militarist"
+			}
+
+			civics = {
+				civic = "civic_scavengers"
+				civic = "civic_warrior_culture"
+			}
+			origin = "origin_default"
+
+			species = event_target:mentak_species
+			effect = {
+				save_global_event_target_as = mentak
+				set_country_flag = mentak
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:mentak = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:mentak
+			}
+		}
+	}
+}
+
+create_muaat = {
+	if = {
+		limit = { NOT = { exists = event_target:muaat } }
+		create_species = {
+			class = "LITHOID"
+			portrait = "lith2"
+			name = "Gashlai"
+			plural = "Gashlai"
+			adjective = "Gashlai"
+			namelist = "NECROID4"
+			gender = indeterminable
+			traits = {
+				ideal_planet_class = pc_desert
+				trait = "trait_lithoid"
+				trait = "trait_survivor"
+				trait = "trait_lithoid_radiotrophic"
+				trait = "trait_lithoid_scintillating"
+				trait = "trait_natural_engineers"
+				trait = "trait_repugnant"
+				trait = "trait_sedentary"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = muaat_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = NECROID4
+
+			name = "The Embers of Muaat"
+			adjective = "Muaat"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = lithoid_01
+				set_city_graphical_culture = arthropoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "domination"
+					file = "domination_23.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_2.dds"
+				}
+				colors = {
+					"orange"
+					"red"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "High Fire Warden"
+				set_female_ruler_title = "High Fire Warden"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_militarist"
+				ethic = "ethic_materialist"
+			}
+
+			civics = {
+				civic = "civic_mining_guilds"
+				civic = "civic_relentless_industrialists"
+			}
+			origin = "origin_default"
+
+			species = event_target:muaat_species
+			effect = {
+				save_global_event_target_as = muaat
+				set_country_flag = muaat
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:muaat = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:muaat
+			}
+		}
+	}
 }
 
 create_naalu = {
-	
-}
+	if = {
+		limit = { NOT = { exists = event_target:naalu } }
+		create_species = {
+			class = "HUM"
+			portrait = "humanoid_hp_09"
+			name = "Druaa"
+			plural = "Druaa"
+			adjective = "Druaan"
+			namelist = "MAM1"
+			gender = female
+			traits = {
+				ideal_planet_class = pc_tropical
+				trait = "trait_latent_psionic"
+				trait = "trait_charismatic"
+				trait = "trait_natural_sociologists"
+				trait = "trait_decadent"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = naalu_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = MAM1
 
-create_nekro = {
-	
+			name = "The Naalu Collective"
+			adjective = "Naalu"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = molluscoid_01
+				set_city_graphical_culture = molluscoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "blocky"
+					file = "flag_blocky_5.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"shadow_green"
+					"green"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Q'uesh Sish"
+				set_female_ruler_title = "Q'uesh Sish"
+			}
+
+			ethos = {
+				ethic = "ethic_authoritarian"
+				ethic = "ethic_militarist"
+				ethic = "ethic_spiritualist"
+			}
+
+			civics = {
+				civic = "civic_slaver_guilds"
+				civic = "civic_exalted_priesthood"
+			}
+			origin = "origin_shroudwalker_apprentice"
+
+			species = event_target:naalu_species
+			effect = {
+				save_global_event_target_as = naalu
+				set_country_flag = naalu
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:naalu = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:naalu
+			}
+		}
+	}
 }
 
 create_naaz_rokha = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:naaz_species } }
+		create_species = {
+			class = "TOX"
+			portrait = "tox8"
+			name = "Naaz"
+			plural = "Naaz"
+			adjective = "Naaz"
+			namelist = "FUN4"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_tropical
+				trait = "trait_intelligent"
+				trait = "trait_traditional"
+				trait = "trait_communal"
+				trait = "trait_weak"
+				trait = "trait_fleeting"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = naaz_species }
+	}
+	if = {
+		limit = { NOT = { exists = event_target:rokha_species } }
+		create_species = {
+			class = "MAM"
+			portrait = "mam3"
+			name = "Rokha"
+			plural = "Rokhas"
+			adjective = "Rokha"
+			name_list = "REP2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_continental
+				trait = "trait_syncretic_proles"
+				trait = "trait_nomadic"
+				trait = "trait_communal"
+				trait = "trait_strong"
+				trait = "trait_unruly"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = rokha_species }
+	}
+	if = {
+		limit = { NOT = { exists = event_target:naaz_rokha } }
+
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = FUN4
+
+			name = "The Naaz-Rokha Alliance"
+			adjective = "Naaz-Rokha"
+			authority = "auth_democratic"
+
+			effect = {
+				set_graphical_culture = reptilian_01
+				set_city_graphical_culture = reptilian_01
+			}
+
+			flag = {
+				icon = {
+					category = "domination"
+					file = "domination_9.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "double_hemispheres.dds"
+				}
+				colors = {
+					"green"
+					"shadow_teal"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Speaker"
+				set_female_ruler_title = "Speaker"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_fanatic_xenophile"
+			}
+
+			civics = {
+				civic = "civic_idealistic_foundation"
+				civic = "civic_parliamentary_system"
+			}
+			origin = "origin_default"
+
+			species = event_target:naaz_species
+			effect = {
+				save_global_event_target_as = naaz_rokha
+				set_country_flag = naaz_rokha
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:naaz_rokha = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:naaz_rokha
+			}
+		}
+	}
+}
+
+create_nekro = {
+	if = {
+		limit = { NOT = { exists = event_target:nekro } }
+		create_species = {
+			class = "MACHINE"
+			portrait = "nec_machine"
+			name = "Virus"
+			plural = "Viruses"
+			adjective = "Viral"
+			namelist = "MACHINE1"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_arctic
+				trait = "trait_machine_unit"
+				trait = "trait_robot_efficient_processors"
+				trait = "trait_robot_mass_produced"
+				trait = "trait_robot_high_maintenance"
+				trait = "trait_robot_repurposed_hardware"
+				trait = "trait_robot_uncanny"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = nekro_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = MACHINE1
+
+			name = "The Nekro Virus"
+			adjective = "Nekro"
+			authority = "auth_machine_intelligence"
+
+			effect = {
+				set_graphical_culture = nemesis_01
+				set_city_graphical_culture = arthropoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "toxoid"
+					file = "toxoid_12.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"red"
+					"black"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Nekro"
+				set_female_ruler_title = "Nekro"
+			}
+
+			ethos = {
+				ethic = "ethic_gestalt_consciousness"
+			}
+
+			civics = {
+				civic = "civic_machine_terminator"
+				civic = "civic_machine_replication"
+			}
+			origin = "origin_machine"
+
+			species = event_target:nekro_species
+			effect = {
+				save_global_event_target_as = nekro
+				set_country_flag = nekro
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:nekro = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:nekro
+			}
+		}
+	}
 }
 
 create_nomad = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:nomad } }
+		create_species = {
+			class = "TOX"
+			portrait = "tox2"
+			name = "Nomad"
+			plural = "Nomads"
+			adjective = "Nomadic"
+			namelist = "HUMAN2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_arctic
+				trait = "trait_thrifty"
+				trait = "trait_nomadic"
+				trait = "trait_deviants"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = nomad_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUMAN2
+
+			name = "The Nomad"
+			adjective = "Nomadic"
+			authority = "auth_corporate"
+
+			effect = {
+				set_graphical_culture = nemesis_01
+				set_city_graphical_culture = humanoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "pirate"
+					file = "flag_pirate_2.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_24.dds"
+				}
+				colors = {
+					"shadow_blue"
+					"purple"
+					"purple"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "The Nomad"
+				set_female_ruler_title = "The Nomad"
+			}
+
+			ethos = {
+				ethic = "ethic_authoritarian"
+				ethic = "ethic_militarist"
+				ethic = "ethic_materialist"
+			}
+
+			civics = {
+				civic = "civic_corporate_dark_consortium"
+				civic = "civic_naval_contractors"
+			}
+			origin = "origin_default"
+
+			species = event_target:nomad_species
+			effect = {
+				save_global_event_target_as = nomad
+				set_country_flag = nomad
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:nomad = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:nomad
+			}
+		}
+	}
 }
 
 create_saar = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:saar } }
+		create_species = {
+			class = "MAM"
+			portrait = "mam11"
+			name = "Saar"
+			plural = "Saar"
+			adjective = "Saar"
+			namelist = "HUM1"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_habitat
+				trait = "trait_void_dweller_1"
+				trait = "trait_rapid_breeders"
+				trait = "trait_strong"
+				trait = "trait_nomadic"
+				trait = "trait_fleeting"
+				trait = "trait_decadent"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = saar_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUM1
+
+			name = "The Clan of Saar"
+			adjective = "Saar"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = nemesis_01
+				set_city_graphical_culture = mammalian_01
+			}
+
+			flag = {
+				icon = {
+					category = "spherical"
+					file = "flag_spherical_11.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"yellow"
+					"dark_green"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Chief Captain"
+				set_female_ruler_title = "Chief Captain"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_fanatic_spiritualist"
+			}
+
+			civics = {
+				civic = "civic_idealistic_foundation"
+				civic = "civic_hyperspace_specialty"
+			}
+			origin = "origin_void_dwellers"
+
+			species = event_target:saar_species
+			effect = {
+				save_global_event_target_as = saar
+				set_country_flag = saar
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:saar = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:saar
+			}
+		}
+	}
 }
 
 create_sardakk = {
-	
-}
+	if = {
+		limit = { NOT = { exists = event_target:sardakk } }
+		create_species = {
+			class = "ART"
+			portrait = "art17"
+			name = "N'orr"
+			plural = "N'orrs"
+			adjective = "N'orr"
+			namelist = "ART4"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_desert
+				trait = "trait_very_strong"
+				trait = "trait_adaptive"
+				trait = "trait_communal"
+				trait = "trait_unruly"
+				trait = "trait_repugnant"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = sardakk_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = ART4
 
-create_sol = {
-	
+			name = "Sardakk N'orr"
+			adjective = "Sardakk"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = arthropoid_01
+				set_city_graphical_culture = arthropoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "domination"
+					file = "domination_19.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_13.dds"
+				}
+				colors = {
+					"red"
+					"black"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Envoy of the Queen"
+				set_female_ruler_title = "Envoy of the Queen"
+			}
+
+			ethos = {
+				ethic = "ethic_xenophobe"
+				ethic = "ethic_militarist"
+				ethic = "ethic_spiritualist"
+			}
+
+			civics = {
+				civic = "civic_warrior_culture"
+				civic = "civic_barbaric_despoilers"
+			}
+			origin = "origin_default"
+
+			species = event_target:sardakk_species
+			effect = {
+				save_global_event_target_as = sardakk
+				set_country_flag = sardakk
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:sardakk = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:sardakk
+			}
+		}
+	}
 }
 
 create_titans = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:titans } }
+		create_species = {
+			class = "LITHOID"
+			portrait = "lith1"
+			name = "Titan"
+			plural = "Titans"
+			adjective = "Titanic"
+			namelist = "LITHOID2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_ringworld_habitable
+				trait = "trait_lithoid"
+				trait = "trait_venerable"
+				trait = "trait_strong"
+				trait = "trait_sedentary"
+				trait = "trait_slow_learners"
+				trait = "trait_solitary"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = titans_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = LITHOID2
+
+			name = "The Titans of Ul"
+			adjective = "Titanic"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = lithoid_01
+				set_city_graphical_culture = lithoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "spherical"
+					file = "flag_spherical_4.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"pink"
+					"shadow_purple"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Ul"
+				set_female_ruler_title = "Ul"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_xenophile"
+				ethic = "ethic_pacifist"
+			}
+
+			civics = {
+				civic = "civic_environmentalist"
+				civic = "civic_memory_vault"
+			}
+			origin = "origin_shattered_ring"
+
+			species = event_target:titans_species
+			effect = {
+				save_global_event_target_as = titans
+				set_country_flag = titans
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:titans = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:titans
+			}
+		}
+	}
+}
+
+create_vuil_raith = {
+	if = {
+		limit = { NOT = { exists = event_target:vuil_raith } }
+		create_species = {
+			class = "AQUATIC"
+			portrait = "aqu10"
+			name = "Vuil'Raith"
+			plural = "Vuil'Raiths"
+			adjective = "Vuil'Raith"
+			namelist = "TOX4"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_nuked
+				trait = "trait_very_strong"
+				trait = "trait_humanoid_existential_iteroparity"
+				trait = "trait_repugnant"
+				trait = "trait_quarrelsome"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = vuil_raith_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = TOX4
+
+			name = "The Vuil'Raith Cabal"
+			adjective = "Vuil'Raith"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = lithoid_01
+				set_city_graphical_culture = lithoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "spherical"
+					file = "flag_spherical_18.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_39.dds"
+				}
+				colors = {
+					"red"
+					"burgundy"
+					"black"
+					"null"
+				}
+			}
+
+			ethos = {
+				ethic = "ethic_fanatic_xenophobe"
+				ethic = "ethic_militarist"
+			}
+
+			civics = {
+				civic = "civic_warrior_culture"
+				civic = "civic_barbaric_despoilers"
+			}
+			origin = "origin_default"
+
+			species = event_target:vuil_raith_species
+			effect = {
+				save_global_event_target_as = vuil_raith
+				set_country_flag = vuil_raith
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:vuil_raith = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:vuil_raith
+			}
+		}
+	}
 }
 
 create_winnu = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:winnu } }
+		create_species = {
+			class = "HUM"
+			portrait = "humanoid_elf"
+			name = "Winnu"
+			plural = "Winnu"
+			adjective = "Winnu"
+			namelist = "HUM2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_tundra
+				trait = "trait_perfected_genes"
+				trait = "trait_docile"
+				trait = "trait_traditional"
+				trait = "trait_enduring"
+				trait = "trait_sedentary"
+				trait = "trait_wasteful"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = winnu_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUM2
+
+			name = "The Winnu"
+			adjective = "Winnu"
+			authority = "auth_dictatorial"
+
+			effect = {
+				set_graphical_culture = reptilian_01
+				set_city_graphical_culture = reptilian_01
+			}
+
+			flag = {
+				icon = {
+					category = "ornate"
+					file = "flag_ornate_8.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_56.dds"
+				}
+				colors = {
+					"yellow"
+					"shadow_purple"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Emperor"
+				set_male_heir_title = "Primier"
+				set_female_ruler_title = "Emperor"
+				set_female_heir_title = "Primier"
+			}
+
+			ethos = {
+				ethic = "ethic_fanatic_authoritarian"
+				ethic = "ethic_militarist"
+			}
+
+			civics = {
+				civic = "civic_byzantine_bureaucracy"
+				civic = "civic_memorialist"
+			}
+			origin = "origin_default"
+
+			species = event_target:winnu_species
+			effect = {
+				save_global_event_target_as = winnu
+				set_country_flag = winnu
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:winnu = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:winnu
+			}
+		}
+	}
 }
 
 create_xxcha = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:xxcha } }
+		create_species = {
+			class = "REP"
+			portrait = "rep14"
+			name = "Xxcha"
+			plural = "Xxcha"
+			adjective = "Xxcha"
+			namelist = "REP3"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_tropical
+				trait = "trait_docile"
+				trait = "trait_traditional"
+				trait = "trait_strong"
+				trait = "trait_slow_learners"
+				trait = "trait_sedentary"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = xxcha_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = REP3
+
+			name = "The Xxcha Kingdom"
+			adjective = "Xxcha"
+			authority = "auth_imperial"
+
+			effect = {
+				set_graphical_culture = fungoid_01
+				set_city_graphical_culture = reptilian_01
+			}
+
+			flag = {
+				icon = {
+					category = "pointy"
+					file = "flag_pointy_6.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_19.dds"
+				}
+				colors = {
+					"shadow_teal"
+					"green"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "King"
+				set_male_heir_title = "Crown Prince"
+				set_female_ruler_title = "Queen"
+				set_female_heir_title = "Crown Princess"
+			}
+
+			ethos = {
+				ethic = "ethic_xenophile"
+				ethic = "ethic_pacifist"
+				ethic = "ethic_spiritualist"
+			}
+
+			civics = {
+				civic = "civic_diplomatic_corps"
+				civic = "civic_philosopher_king"
+			}
+			origin = "origin_default"
+
+			species = event_target:xxcha_species
+			effect = {
+				save_global_event_target_as = xxcha
+				set_country_flag = xxcha
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:xxcha = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:xxcha
+			}
+		}
+	}
 }
 
 create_yin = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:yin } }
+		create_species = {
+			class = "HUM"
+			portrait = "human_legacy"
+			name = "Yin"
+			plural = "Yins"
+			adjective = "Yin"
+			namelist = "HUMAN2"
+			gender = male
+			traits = {
+				ideal_planet_class = pc_savannah
+				trait = "trait_preplanned_growth"
+				trait = "trait_artificial_intelligence"
+				trait = "trait_expressed_tradition"
+				trait = "trait_repugnant"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = yin_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUMAN2
+
+			name = "The Yin Brotherhood"
+			adjective = "Yin"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = toxoid_01
+				set_city_graphical_culture = toxoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "domination"
+					file = "domination_15.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = {
+					"black"
+					"shadow_purple"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Elder Brother"
+				set_female_ruler_title = "Elder Brother"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_fanatic_spiritualist"
+			}
+
+			civics = {
+				civic = "civic_death_cult"
+				civic = "civic_exalted_priesthood"
+			}
+			origin = "origin_overtuned"
+
+			species = event_target:yin_species
+			effect = {
+				save_global_event_target_as = yin
+				set_country_flag = yin
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:yin = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:yin
+			}
+		}
+	}
 }
 
 create_yssaril = {
-	
+	if = {
+		limit = { NOT = { exists = event_target:yssaril } }
+		create_species = {
+			class = "AQUATIC"
+			portrait = "aqu4"
+			name = "Yssaril"
+			plural = "Yssaril"
+			adjective = "Yssaril"
+			namelist = "REP4"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_tropical
+				trait = "trait_quick_learners"
+				trait = "trait_resilient"
+				trait = "trait_strong"
+				trait = "trait_quarrelsome"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = yssaril_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = REP4
+
+			name = "The Yssaril Tribes"
+			adjective = "Yssaril"
+			authority = "auth_oligarchic"
+
+			effect = {
+				set_graphical_culture = toxoid_01
+				set_city_graphical_culture = fungoid_01
+			}
+
+			flag = {
+				icon = {
+					category = "pirate"
+					file = "flag_pirate_11.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_55.dds"
+				}
+				colors = {
+					"dark_green"
+					"brown"
+					"black"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "Cqaark"
+				set_female_ruler_title = "Cqaark"
+			}
+
+			ethos = {
+				ethic = "ethic_authoritarian"
+				ethic = "ethic_xenophobe"
+				ethic = "ethic_militarist"
+			}
+
+			civics = {
+				civic = "civic_shadow_council"
+				civic = "civic_warrior_culture"
+			}
+			origin = "origin_default"
+
+			species = event_target:yssaril_species
+			effect = {
+				save_global_event_target_as = yssaril
+				set_country_flag = yssaril
+				add_resource = {
+					minerals = 100
+					energy = 100
+					alloys = 100
+					consumer_goods = 100
+					influence = 100
+				}
+			}
+		}
+		generate_start_deposits_and_blockers = yes
+		clear_blockers = yes
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		event_target:yssaril = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:yssaril
+			}
+		}
+	}
 }
