@@ -339,7 +339,7 @@ create_ti_empires = {
 
 create_arborec = {
 	if = {
-		limit = { NOT = { exists = event_target:arborec } }
+		limit = { NOT = { exists = event_target:arborec_empire } }
 		create_species = {
 			class = "PLANT"
 			portrait = "pla11"
@@ -403,7 +403,7 @@ create_arborec = {
 
 			species = event_target:arborec_species
 			effect = {
-				save_global_event_target_as = arborec
+				save_global_event_target_as = arborec_empire
 				set_country_flag = arborec
 				add_resource = {
 					minerals = 100
@@ -418,7 +418,7 @@ create_arborec = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:arborec = {
+		event_target:arborec_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -436,7 +436,7 @@ create_arborec = {
 
 create_argent_flight = {
 	if = {
-		limit = { NOT = { exists = event_target:argent_flight } }
+		limit = { NOT = { exists = event_target:argent_flight_empire } }
 		create_species = {
 			class = "AVI"
 			portrait = "avi11"
@@ -502,8 +502,8 @@ create_argent_flight = {
 
 			species = event_target:argent_flight_species
 			effect = {
-				save_global_event_target_as = argent_flight
-				set_country_flag = argent_flight
+				save_global_event_target_as = argent_flight_empire_empire
+				set_country_flag = argent_flight_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -517,7 +517,7 @@ create_argent_flight = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:argent_flight = {
+		event_target:argent_flight_empire_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -535,7 +535,7 @@ create_argent_flight = {
 
 create_creuss = {
 	if = {
-		limit = { NOT = { exists = event_target:creuss } }
+		limit = { NOT = { exists = event_target:creuss_empire } }
 		create_species = {
 			class = "NECROID"
 			portrait = "nec7"
@@ -600,7 +600,7 @@ create_creuss = {
 
 			species = event_target:creuss_species
 			effect = {
-				save_global_event_target_as = creuss
+				save_global_event_target_as = creuss_empire
 				set_country_flag = creuss
 				add_resource = {
 					minerals = 100
@@ -615,7 +615,7 @@ create_creuss = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:creuss = {
+		event_target:creuss_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -633,7 +633,7 @@ create_creuss = {
 
 create_empyrean = {
 	if = {
-		limit = { NOT = { exists = event_target:empyrean } }
+		limit = { NOT = { exists = event_target:empyrean_empire } }
 		create_species = {
 			class = "FUN"
 			portrait = "fun7"
@@ -703,7 +703,7 @@ create_empyrean = {
 
 			species = event_target:empyrean_species
 			effect = {
-				save_global_event_target_as = empyrean
+				save_global_event_target_as = empyrean_empire
 				set_country_flag = empyrean
 				add_resource = {
 					minerals = 100
@@ -718,7 +718,7 @@ create_empyrean = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:empyrean = {
+		event_target:empyrean_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -736,7 +736,7 @@ create_empyrean = {
 
 create_hacan = {
 	if = {
-		limit = { NOT = { exists = event_target:hacan } }
+		limit = { NOT = { exists = event_target:hacan_empire } }
 		create_species = {
 			class = "MAM"
 			portrait = "mam14"
@@ -805,7 +805,7 @@ create_hacan = {
 
 			species = event_target:hacan_species
 			effect = {
-				save_global_event_target_as = hacan
+				save_global_event_target_as = hacan_empire
 				set_country_flag = hacan
 				add_resource = {
 					minerals = 100
@@ -820,7 +820,7 @@ create_hacan = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:hacan = {
+		event_target:hacan_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -838,7 +838,7 @@ create_hacan = {
 
 create_jol_nar = {
 	if = {
-		limit = { NOT = { exists = event_target:jol_nar } }
+		limit = { NOT = { exists = event_target:jol_nar_empire } }
 		create_species = {
 			class = "NECROID"
 			portrait = "nec9"
@@ -907,7 +907,7 @@ create_jol_nar = {
 
 			species = event_target:jol_nar_species
 			effect = {
-				save_global_event_target_as = jol_nar
+				save_global_event_target_as = jol_nar_empire
 				set_country_flag = jol_nar
 				add_resource = {
 					minerals = 100
@@ -922,7 +922,7 @@ create_jol_nar = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:jol_nar = {
+		event_target:jol_nar_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -940,7 +940,7 @@ create_jol_nar = {
 
 create_l1z1x = {
 	if = {
-		limit = { NOT = { exists = event_target:l1z1x } }
+		limit = { NOT = { exists = event_target:l1z1x_empire } }
 		create_species = {
 			class = "NECROID"
 			portrait = "nec2"
@@ -1012,7 +1012,7 @@ create_l1z1x = {
 
 			species = event_target:l1z1x_species
 			effect = {
-				save_global_event_target_as = l1z1x
+				save_global_event_target_as = l1z1x_empire
 				set_country_flag = l1z1x
 				add_resource = {
 					minerals = 100
@@ -1027,7 +1027,7 @@ create_l1z1x = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:l1z1x = {
+		event_target:l1z1x_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1045,7 +1045,7 @@ create_l1z1x = {
 
 create_letnev = {
 	if = {
-		limit = { NOT = { exists = event_target:letnev } }
+		limit = { NOT = { exists = event_target:letnev_empire } }
 		create_species = {
 			class = "HUM"
 			portrait = "humanoid_03"
@@ -1116,7 +1116,7 @@ create_letnev = {
 
 			species = event_target:letnev_species
 			effect = {
-				save_global_event_target_as = letnev
+				save_global_event_target_as = letnev_empire
 				set_country_flag = letnev
 				add_resource = {
 					minerals = 100
@@ -1131,7 +1131,7 @@ create_letnev = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:letnev = {
+		event_target:letnev_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1149,7 +1149,7 @@ create_letnev = {
 
 create_mahact = {
 	if = {
-		limit = { NOT = { exists = event_target:mahact } }
+		limit = { NOT = { exists = event_target:mahact_empire } }
 		create_species = {
 			class = "NECROID"
 			portrait = "nec5"
@@ -1219,7 +1219,7 @@ create_mahact = {
 
 			species = event_target:mahact_species
 			effect = {
-				save_global_event_target_as = mahact
+				save_global_event_target_as = mahact_empire
 				set_country_flag = mahact
 				add_resource = {
 					minerals = 100
@@ -1234,7 +1234,7 @@ create_mahact = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:mahact = {
+		event_target:mahact_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1252,7 +1252,7 @@ create_mahact = {
 
 create_mentak = {
 	if = {
-		limit = { NOT = { exists = event_target:mentak } }
+		limit = { NOT = { exists = event_target:mentak_empire } }
 		create_species = {
 			class = "HUM"
 			portrait = "human"
@@ -1320,7 +1320,7 @@ create_mentak = {
 
 			species = event_target:mentak_species
 			effect = {
-				save_global_event_target_as = mentak
+				save_global_event_target_as = mentak_empire
 				set_country_flag = mentak
 				add_resource = {
 					minerals = 100
@@ -1335,7 +1335,7 @@ create_mentak = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:mentak = {
+		event_target:mentak_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1353,7 +1353,7 @@ create_mentak = {
 
 create_muaat = {
 	if = {
-		limit = { NOT = { exists = event_target:muaat } }
+		limit = { NOT = { exists = event_target:muaat_empire } }
 		create_species = {
 			class = "LITHOID"
 			portrait = "lith2"
@@ -1425,7 +1425,7 @@ create_muaat = {
 
 			species = event_target:muaat_species
 			effect = {
-				save_global_event_target_as = muaat
+				save_global_event_target_as = muaat_empire
 				set_country_flag = muaat
 				add_resource = {
 					minerals = 100
@@ -1440,7 +1440,7 @@ create_muaat = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:muaat = {
+		event_target:muaat_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1458,7 +1458,7 @@ create_muaat = {
 
 create_naalu = {
 	if = {
-		limit = { NOT = { exists = event_target:naalu } }
+		limit = { NOT = { exists = event_target:naalu_empire } }
 		create_species = {
 			class = "HUM"
 			portrait = "humanoid_hp_09"
@@ -1527,7 +1527,7 @@ create_naalu = {
 
 			species = event_target:naalu_species
 			effect = {
-				save_global_event_target_as = naalu
+				save_global_event_target_as = naalu_empire
 				set_country_flag = naalu
 				add_resource = {
 					minerals = 100
@@ -1542,7 +1542,7 @@ create_naalu = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:naalu = {
+		event_target:naalu_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1604,7 +1604,7 @@ create_naaz_rokha = {
 		last_created_species = { save_global_event_target_as = rokha_species }
 	}
 	if = {
-		limit = { NOT = { exists = event_target:naaz_rokha } }
+		limit = { NOT = { exists = event_target:naaz_rokha_empire } }
 
 		create_country = {
 			type = default
@@ -1655,7 +1655,7 @@ create_naaz_rokha = {
 
 			species = event_target:naaz_species
 			effect = {
-				save_global_event_target_as = naaz_rokha
+				save_global_event_target_as = naaz_rokha_empire
 				set_country_flag = naaz_rokha
 				add_resource = {
 					minerals = 100
@@ -1670,7 +1670,7 @@ create_naaz_rokha = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:naaz_rokha = {
+		event_target:naaz_rokha_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1688,7 +1688,7 @@ create_naaz_rokha = {
 
 create_nekro = {
 	if = {
-		limit = { NOT = { exists = event_target:nekro } }
+		limit = { NOT = { exists = event_target:nekro_empire } }
 		create_species = {
 			class = "MACHINE"
 			portrait = "nec_machine"
@@ -1757,7 +1757,7 @@ create_nekro = {
 
 			species = event_target:nekro_species
 			effect = {
-				save_global_event_target_as = nekro
+				save_global_event_target_as = nekro_empire
 				set_country_flag = nekro
 				add_resource = {
 					minerals = 100
@@ -1772,7 +1772,7 @@ create_nekro = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:nekro = {
+		event_target:nekro_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1790,7 +1790,7 @@ create_nekro = {
 
 create_nomad = {
 	if = {
-		limit = { NOT = { exists = event_target:nomad } }
+		limit = { NOT = { exists = event_target:nomad_empire } }
 		create_species = {
 			class = "TOX"
 			portrait = "tox2"
@@ -1858,7 +1858,7 @@ create_nomad = {
 
 			species = event_target:nomad_species
 			effect = {
-				save_global_event_target_as = nomad
+				save_global_event_target_as = nomad_empire
 				set_country_flag = nomad
 				add_resource = {
 					minerals = 100
@@ -1873,7 +1873,7 @@ create_nomad = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:nomad = {
+		event_target:nomad_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1891,7 +1891,7 @@ create_nomad = {
 
 create_saar = {
 	if = {
-		limit = { NOT = { exists = event_target:saar } }
+		limit = { NOT = { exists = event_target:saar_empire } }
 		create_species = {
 			class = "MAM"
 			portrait = "mam11"
@@ -1961,7 +1961,7 @@ create_saar = {
 
 			species = event_target:saar_species
 			effect = {
-				save_global_event_target_as = saar
+				save_global_event_target_as = saar_empire
 				set_country_flag = saar
 				add_resource = {
 					minerals = 100
@@ -1976,7 +1976,7 @@ create_saar = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:saar = {
+		event_target:saar_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -1994,7 +1994,7 @@ create_saar = {
 
 create_sardakk = {
 	if = {
-		limit = { NOT = { exists = event_target:sardakk } }
+		limit = { NOT = { exists = event_target:sardakk_empire } }
 		create_species = {
 			class = "ART"
 			portrait = "art17"
@@ -2064,7 +2064,7 @@ create_sardakk = {
 
 			species = event_target:sardakk_species
 			effect = {
-				save_global_event_target_as = sardakk
+				save_global_event_target_as = sardakk_empire
 				set_country_flag = sardakk
 				add_resource = {
 					minerals = 100
@@ -2079,7 +2079,7 @@ create_sardakk = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:sardakk = {
+		event_target:sardakk_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -2095,9 +2095,11 @@ create_sardakk = {
 	}
 }
 
+# ADD SOL
+
 create_titans = {
 	if = {
-		limit = { NOT = { exists = event_target:titans } }
+		limit = { NOT = { exists = event_target:titans_empire } }
 		create_species = {
 			class = "LITHOID"
 			portrait = "lith1"
@@ -2168,7 +2170,7 @@ create_titans = {
 
 			species = event_target:titans_species
 			effect = {
-				save_global_event_target_as = titans
+				save_global_event_target_as = titans_empire
 				set_country_flag = titans
 				add_resource = {
 					minerals = 100
@@ -2183,7 +2185,7 @@ create_titans = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:titans = {
+		event_target:titans_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -2201,7 +2203,7 @@ create_titans = {
 
 create_vuil_raith = {
 	if = {
-		limit = { NOT = { exists = event_target:vuil_raith } }
+		limit = { NOT = { exists = event_target:vuil_raith_empire } }
 		create_species = {
 			class = "AQUATIC"
 			portrait = "aqu10"
@@ -2264,7 +2266,7 @@ create_vuil_raith = {
 
 			species = event_target:vuil_raith_species
 			effect = {
-				save_global_event_target_as = vuil_raith
+				save_global_event_target_as = vuil_raith_empire
 				set_country_flag = vuil_raith
 				add_resource = {
 					minerals = 100
@@ -2279,7 +2281,7 @@ create_vuil_raith = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:vuil_raith = {
+		event_target:vuil_raith_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -2297,7 +2299,7 @@ create_vuil_raith = {
 
 create_winnu = {
 	if = {
-		limit = { NOT = { exists = event_target:winnu } }
+		limit = { NOT = { exists = event_target:winnu_empire } }
 		create_species = {
 			class = "HUM"
 			portrait = "humanoid_elf"
@@ -2369,7 +2371,7 @@ create_winnu = {
 
 			species = event_target:winnu_species
 			effect = {
-				save_global_event_target_as = winnu
+				save_global_event_target_as = winnu_empire
 				set_country_flag = winnu
 				add_resource = {
 					minerals = 100
@@ -2384,7 +2386,7 @@ create_winnu = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:winnu = {
+		event_target:winnu_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -2402,7 +2404,7 @@ create_winnu = {
 
 create_xxcha = {
 	if = {
-		limit = { NOT = { exists = event_target:xxcha } }
+		limit = { NOT = { exists = event_target:xxcha_empire } }
 		create_species = {
 			class = "REP"
 			portrait = "rep14"
@@ -2474,7 +2476,7 @@ create_xxcha = {
 
 			species = event_target:xxcha_species
 			effect = {
-				save_global_event_target_as = xxcha
+				save_global_event_target_as = xxcha_empire
 				set_country_flag = xxcha
 				add_resource = {
 					minerals = 100
@@ -2489,7 +2491,7 @@ create_xxcha = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:xxcha = {
+		event_target:xxcha_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -2507,7 +2509,7 @@ create_xxcha = {
 
 create_yin = {
 	if = {
-		limit = { NOT = { exists = event_target:yin } }
+		limit = { NOT = { exists = event_target:yin_empire } }
 		create_species = {
 			class = "HUM"
 			portrait = "human_legacy"
@@ -2575,7 +2577,7 @@ create_yin = {
 
 			species = event_target:yin_species
 			effect = {
-				save_global_event_target_as = yin
+				save_global_event_target_as = yin_empire
 				set_country_flag = yin
 				add_resource = {
 					minerals = 100
@@ -2590,7 +2592,7 @@ create_yin = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:yin = {
+		event_target:yin_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
@@ -2608,7 +2610,7 @@ create_yin = {
 
 create_yssaril = {
 	if = {
-		limit = { NOT = { exists = event_target:yssaril } }
+		limit = { NOT = { exists = event_target:yssaril_empire } }
 		create_species = {
 			class = "AQUATIC"
 			portrait = "aqu4"
@@ -2677,7 +2679,7 @@ create_yssaril = {
 
 			species = event_target:yssaril_species
 			effect = {
-				save_global_event_target_as = yssaril
+				save_global_event_target_as = yssaril_empire
 				set_country_flag = yssaril
 				add_resource = {
 					minerals = 100
@@ -2692,7 +2694,7 @@ create_yssaril = {
 		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
-		event_target:yssaril = {
+		event_target:yssaril_empire = {
 			country_event = { id = game_start.9 }
 			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}

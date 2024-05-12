@@ -1,5 +1,5 @@
 arborec = {
-	flags = { arborec }
+	flags = { arborec_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -64,7 +64,7 @@ arborec = {
 	origin = "origin_tree_of_life"
 }
 argent_flight = {
-	flags = { argent_flight }
+	flags = { argent_flight_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -129,7 +129,7 @@ argent_flight = {
 	origin = "origin_default"
 }
 creuss = {
-	flags = { creuss }
+	flags = { creuss_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -196,7 +196,7 @@ creuss = {
 	origin = "origin_default"
 }
 empyrean = {
-	flags = { empyrean }
+	flags = { empyrean_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -265,7 +265,7 @@ empyrean = {
 	origin = "origin_void_dwellers"
 }
 hacan = {
-	flags = { hacan }
+	flags = { hacan_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -333,7 +333,7 @@ hacan = {
 	origin = "origin_default"
 }
 jol_nar = {
-	flags = { jol_nar }
+	flags = { jol_nar_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -400,7 +400,7 @@ jol_nar = {
 	origin = "origin_default"
 }
 l1z1x = {
-	flags = { l1z1x }
+	flags = { l1z1x_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -471,7 +471,7 @@ l1z1x = {
 	origin = "origin_default"
 }
 letnev = {
-	flags = { letnev }
+	flags = { letnev_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -540,7 +540,7 @@ letnev = {
 	origin = "origin_subterranean"
 }
 mahact = {
-	flags = { mahact }
+	flags = { mahact_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -607,7 +607,7 @@ mahact = {
 	origin = "origin_post_apocalyptic"
 }
 mentak = {
-	flags = { mentak }
+	flags = { mentak_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -674,7 +674,7 @@ mentak = {
 	origin = "origin_default"
 }
 muaat = {
-	flags = { muaat }
+	flags = { muaat_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -743,7 +743,7 @@ muaat = {
 	origin = "origin_default"
 }
 naalu = {
-	flags = { naalu }
+	flags = { naalu_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -809,7 +809,7 @@ naalu = {
 	origin = "origin_shroudwalker_apprentice"
 }
 naaz_rokha = {
-	flags = { naaz_rokha }
+	flags = { naaz_rokha_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -877,7 +877,7 @@ naaz_rokha = {
 	origin = "origin_default"
 }
 nekro = {
-	flags = { nekro }
+	flags = { nekro_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -943,7 +943,7 @@ nekro = {
 	origin = "origin_machine"
 }
 nomad = {
-	flags = { nomad }
+	flags = { nomad_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1010,7 +1010,7 @@ nomad = {
 	origin = "origin_default"
 }
 saar = {
-	flags = { saar }
+	flags = { saar_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1079,7 +1079,7 @@ saar = {
 	origin = "origin_void_dwellers"
 }
 sardakk = {
-	flags = { sardakk }
+	flags = { sardakk_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1148,7 +1148,7 @@ sardakk = {
 	origin = "origin_default"
 }
 sol = {
-	flags = { sol }
+	flags = { sol_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1214,7 +1214,7 @@ sol = {
 	origin = "origin_default"
 }
 titans = {
-	flags = { titans }
+	flags = { titans_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1283,7 +1283,7 @@ titans = {
 	origin = "origin_shattered_ring"
 }
 vuil_raith = {
-	flags = { vuil_raith }
+	flags = { vuil_raith_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1347,7 +1347,7 @@ vuil_raith = {
 	origin = "origin_here_be_dragons"
 }
 winnu = {
-	flags = { winnu }
+	flags = { winnu_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1418,7 +1418,7 @@ winnu = {
 	origin = "origin_legendary_leader"
 }
 xxcha = {
-	flags = { xxcha }
+	flags = { xxcha_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1485,7 +1485,7 @@ xxcha = {
 	origin = "origin_default"
 }
 yin = {
-	flags = { yin }
+	flags = { yin_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
@@ -1550,7 +1550,7 @@ yin = {
 	origin = "origin_overtuned"
 }
 yssaril = {
-	flags = { yssaril }
+	flags = { yssaril_empire }
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 

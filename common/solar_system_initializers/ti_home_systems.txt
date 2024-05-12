@@ -125,12 +125,12 @@ ti_argent_flight_system = {
 				set_name = "Avar"
 				random_country = {
 					limit = { has_country_flag = argent_flight }
-					save_global_event_target_as = argent_flight
+					save_global_event_target_as = argent_flight_empire
 					species = { save_global_event_target_as = argent_flight_species }
 				}
 				if = {
-					limit = { exists = event_target:argent_flight }
-					set_owner = event_target:argent_flight
+					limit = { exists = event_target:argent_flight_empire }
+					set_owner = event_target:argent_flight_empire
 				}
 				create_argent_flight = yes
 			}
