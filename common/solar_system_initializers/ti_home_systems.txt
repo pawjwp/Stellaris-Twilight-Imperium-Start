@@ -365,7 +365,18 @@ ti_hacan_system = {
 			init_effect = {
 				prevent_anomaly = yes
 				set_name = "Hercant"
-				create_hacan = yes
+				random_country = {
+					limit = { has_country_flag = hacan_empire }
+					save_global_event_target_as = hacan_empire
+					species = { save_global_event_target_as = hacan_species }
+				}
+				if = {
+					limit = { exists = event_target:hacan_empire }
+					set_owner = event_target:hacan_empire
+				}
+				else = {
+					create_hacan = yes
+				}
 			}
 		}
 
@@ -494,7 +505,18 @@ ti_jol_nar_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Jol"
-			create_jol_nar = yes
+			random_country = {
+				limit = { has_country_flag = jol_nar_empire }
+				save_global_event_target_as = jol_nar_empire
+				species = { save_global_event_target_as = jol_nar_species }
+			}
+			if = {
+				limit = { exists = event_target:jol_nar_empire }
+				set_owner = event_target:jol_nar_empire
+			}
+			else = {
+				create_jol_nar = yes
+			}
 		}
 	}
 
@@ -580,7 +602,18 @@ ti_letnev_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Arc Prime"
-			create_letnev = yes
+			random_country = {
+				limit = { has_country_flag = letnev_empire }
+				save_global_event_target_as = letnev_empire
+				species = { save_global_event_target_as = letnev_species }
+			}
+			if = {
+				limit = { exists = event_target:letnev_empire }
+				set_owner = event_target:letnev_empire
+			}
+			else = {
+				create_letnev = yes
+			}
 		}
 	}
 
@@ -692,7 +725,18 @@ ti_mentak_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Moll Primus"
-			create_mentak = yes
+			random_country = {
+				limit = { has_country_flag = mentak_empire }
+				save_global_event_target_as = mentak_empire
+				species = { save_global_event_target_as = mentak_species }
+			}
+			if = {
+				limit = { exists = event_target:mentak_empire }
+				set_owner = event_target:mentak_empire
+			}
+			else = {
+				create_mentak = yes
+			}
 		}
 
 		moon = {
@@ -821,7 +865,18 @@ ti_muaat_system = {
 				atmosphere_intensity = 0.1
 				atmosphere_width = 1.0
 			}
-			create_muaat = yes
+			random_country = {
+				limit = { has_country_flag = muaat_empire }
+				save_global_event_target_as = muaat_empire
+				species = { save_global_event_target_as = muaat_species }
+			}
+			if = {
+				limit = { exists = event_target:muaat_empire }
+				set_owner = event_target:muaat_empire
+			}
+			else = {
+				create_muaat = yes
+			}
 		}
 	}
 
@@ -948,7 +1003,18 @@ ti_naalu_system = {
 		init_effect = {
 			set_name = "Druaa"
 			prevent_anomaly = yes
-			create_naalu = yes
+			random_country = {
+				limit = { has_country_flag = naalu_empire }
+				save_global_event_target_as = naalu_empire
+				species = { save_global_event_target_as = naalu_species }
+			}
+			if = {
+				limit = { exists = event_target:naalu_empire }
+				set_owner = event_target:naalu_empire
+			}
+			else = {
+				create_naalu = yes
+			}
 		}
 	}
 
@@ -1086,7 +1152,18 @@ ti_naaz_rokha_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Naazir"
-			create_naaz_rokha = yes
+			random_country = {
+				limit = { has_country_flag = naaz_rokha_empire }
+				save_global_event_target_as = naaz_rokha_empire
+				species = { save_global_event_target_as = naaz_rokha_species }
+			}
+			if = {
+				limit = { exists = event_target:naaz_rokha_empire }
+				set_owner = event_target:naaz_rokha_empire
+			}
+			else = {
+				create_naaz_rokha = yes
+			}
 		}
 	}
 
@@ -1213,7 +1290,18 @@ ti_nomad_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Arcturus"
-			create_nomad = yes
+			random_country = {
+				limit = { has_country_flag = nomad_empire }
+				save_global_event_target_as = nomad_empire
+				species = { save_global_event_target_as = nomad_species }
+			}
+			if = {
+				limit = { exists = event_target:nomad_empire }
+				set_owner = event_target:nomad_empire
+			}
+			else = {
+				create_nomad = yes
+			}
 		}
 	}
 
@@ -1375,7 +1463,19 @@ ti_saar_system = {
 					modifier = master_builders_habitats
 					days = -1
 				}
-				create_saar = yes
+				
+				random_country = {
+					limit = { has_country_flag = saar_empire }
+					save_global_event_target_as = saar_empire
+					species = { save_global_event_target_as = saar_species }
+				}
+				if = {
+					limit = { exists = event_target:saar_empire }
+					set_owner = event_target:saar_empire
+				}
+				else = {
+					create_saar = yes
+				}
 			}
 			deposit_blockers = none
 		}
@@ -1581,7 +1681,18 @@ ti_sardakk_system = {
 		init_effect = {
 			set_name = "Quinnara"
 			prevent_anomaly = yes
-			create_sardakk = yes
+			random_country = {
+				limit = { has_country_flag = sardakk_empire }
+				save_global_event_target_as = sardakk_empire
+				species = { save_global_event_target_as = sardakk_species }
+			}
+			if = {
+				limit = { exists = event_target:sardakk_empire }
+				set_owner = event_target:sardakk_empire
+			}
+			else = {
+				create_sardakk = yes
+			}
 		}
 	}
 
@@ -1733,7 +1844,18 @@ ti_xxcha_system = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Archon Ren"
-			create_xxcha = yes
+			random_country = {
+				limit = { has_country_flag = xxcha_empire }
+				save_global_event_target_as = xxcha_empire
+				species = { save_global_event_target_as = xxcha_species }
+			}
+			if = {
+				limit = { exists = event_target:xxcha_empire }
+				set_owner = event_target:xxcha_empire
+			}
+			else = {
+				create_xxcha = yes
+			}
 		}
 	}
 
@@ -1871,7 +1993,18 @@ ti_yssaril_system = {
 		init_effect = {
 			set_name = "Retillion"
 			prevent_anomaly = yes
-			create_yssaril = yes
+			random_country = {
+				limit = { has_country_flag = yssaril_empire }
+				save_global_event_target_as = yssaril_empire
+				species = { save_global_event_target_as = yssaril_species }
+			}
+			if = {
+				limit = { exists = event_target:yssaril_empire }
+				set_owner = event_target:yssaril_empire
+			}
+			else = {
+				create_yssaril = yes
+			}
 		}
 	}
 
