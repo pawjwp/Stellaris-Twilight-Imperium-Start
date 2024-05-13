@@ -415,7 +415,6 @@ create_arborec = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:arborec_empire = {
@@ -428,7 +427,7 @@ create_arborec = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:arborec
+				owner = event_target:arborec_empire
 			}
 		}
 	}
@@ -514,7 +513,6 @@ create_argent_flight = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:argent_flight_empire_empire = {
@@ -527,7 +525,7 @@ create_argent_flight = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:argent_flight
+				owner = event_target:argent_flight_empire
 			}
 		}
 	}
@@ -566,7 +564,7 @@ create_creuss = {
 
 			effect = {
 				set_graphical_culture = lithoid_01
-				set_city_graphical_culture = necroid_01
+				set_city_graphical_culture = lithoid_01
 			}
 
 			flag = {
@@ -612,7 +610,6 @@ create_creuss = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:creuss_empire = {
@@ -625,7 +622,7 @@ create_creuss = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:creuss
+				owner = event_target:creuss_empire
 			}
 		}
 	}
@@ -715,7 +712,6 @@ create_empyrean = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:empyrean_empire = {
@@ -728,7 +724,7 @@ create_empyrean = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:empyrean
+				owner = event_target:empyrean_empire
 			}
 		}
 	}
@@ -817,7 +813,6 @@ create_hacan = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:hacan_empire = {
@@ -830,7 +825,7 @@ create_hacan = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:hacan
+				owner = event_target:hacan_empire
 			}
 		}
 	}
@@ -919,7 +914,6 @@ create_jol_nar = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:jol_nar_empire = {
@@ -932,7 +926,7 @@ create_jol_nar = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:jol_nar
+				owner = event_target:jol_nar_empire
 			}
 		}
 	}
@@ -1024,7 +1018,6 @@ create_l1z1x = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:l1z1x_empire = {
@@ -1037,7 +1030,7 @@ create_l1z1x = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:l1z1x
+				owner = event_target:l1z1x_empire
 			}
 		}
 	}
@@ -1128,7 +1121,6 @@ create_letnev = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:letnev_empire = {
@@ -1141,7 +1133,7 @@ create_letnev = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:letnev
+				owner = event_target:letnev_empire
 			}
 		}
 	}
@@ -1231,7 +1223,6 @@ create_mahact = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:mahact_empire = {
@@ -1244,7 +1235,7 @@ create_mahact = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:mahact
+				owner = event_target:mahact_empire
 			}
 		}
 	}
@@ -1332,7 +1323,6 @@ create_mentak = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:mentak_empire = {
@@ -1345,7 +1335,7 @@ create_mentak = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:mentak
+				owner = event_target:mentak_empire
 			}
 		}
 	}
@@ -1437,7 +1427,6 @@ create_muaat = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:muaat_empire = {
@@ -1450,7 +1439,7 @@ create_muaat = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:muaat
+				owner = event_target:muaat_empire
 			}
 		}
 	}
@@ -1539,7 +1528,6 @@ create_naalu = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:naalu_empire = {
@@ -1552,7 +1540,7 @@ create_naalu = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:naalu
+				owner = event_target:naalu_empire
 			}
 		}
 	}
@@ -1667,7 +1655,6 @@ create_naaz_rokha = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:naaz_rokha_empire = {
@@ -1680,7 +1667,7 @@ create_naaz_rokha = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:naaz_rokha
+				owner = event_target:naaz_rokha_empire
 			}
 		}
 	}
@@ -1769,7 +1756,6 @@ create_nekro = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:nekro_empire = {
@@ -1782,7 +1768,7 @@ create_nekro = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:nekro
+				owner = event_target:nekro_empire
 			}
 		}
 	}
@@ -1870,7 +1856,6 @@ create_nomad = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:nomad_empire = {
@@ -1883,7 +1868,7 @@ create_nomad = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:nomad
+				owner = event_target:nomad_empire
 			}
 		}
 	}
@@ -1973,7 +1958,6 @@ create_saar = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:saar_empire = {
@@ -1986,7 +1970,7 @@ create_saar = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:saar
+				owner = event_target:saar_empire
 			}
 		}
 	}
@@ -2076,7 +2060,6 @@ create_sardakk = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:sardakk_empire = {
@@ -2089,7 +2072,7 @@ create_sardakk = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:sardakk
+				owner = event_target:sardakk_empire
 			}
 		}
 	}
@@ -2182,7 +2165,6 @@ create_titans = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:titans_empire = {
@@ -2195,7 +2177,7 @@ create_titans = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:titans
+				owner = event_target:titans_empire
 			}
 		}
 	}
@@ -2278,7 +2260,6 @@ create_vuil_raith = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:vuil_raith_empire = {
@@ -2291,7 +2272,7 @@ create_vuil_raith = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:vuil_raith
+				owner = event_target:vuil_raith_empire
 			}
 		}
 	}
@@ -2383,7 +2364,6 @@ create_winnu = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:winnu_empire = {
@@ -2396,7 +2376,7 @@ create_winnu = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:winnu
+				owner = event_target:winnu_empire
 			}
 		}
 	}
@@ -2488,7 +2468,6 @@ create_xxcha = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:xxcha_empire = {
@@ -2501,7 +2480,7 @@ create_xxcha = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:xxcha
+				owner = event_target:xxcha_empire
 			}
 		}
 	}
@@ -2589,7 +2568,6 @@ create_yin = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:yin_empire = {
@@ -2602,7 +2580,7 @@ create_yin = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:yin
+				owner = event_target:yin_empire
 			}
 		}
 	}
@@ -2691,7 +2669,6 @@ create_yssaril = {
 			}
 		}
 		generate_start_deposits_and_blockers = yes
-		clear_blockers = yes
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		event_target:yssaril_empire = {
@@ -2704,7 +2681,7 @@ create_yssaril = {
 				module = trading_hub
 				module = shipyard
 				building = crew_quarters
-				owner = event_target:yssaril
+				owner = event_target:yssaril_empire
 			}
 		}
 	}

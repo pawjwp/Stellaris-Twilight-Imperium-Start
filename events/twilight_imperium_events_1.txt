@@ -1033,16 +1033,6 @@ planet_event = {
 					add_district = district_farming
 					add_district = district_farming
 				}
-				# set sardakk on trenlak to arctic
-				if = {
-					limit = { has_planet_flag = ti_trenlak }
-					every_owned_pop = {
-						modify_species = {
-							species = this
-							ideal_planet_class = pc_arctic
-						}
-					}
-				}
 				# add survivor trait and tomb deposits to Archon Tau
 				if = {
 					limit = { has_planet_flag = ti_archon_tau }
