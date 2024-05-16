@@ -313,30 +313,6 @@ spawn_orbital_ring_effect = {
     }
 }
 
-
-create_ti_empires = {
-	create_arborec = yes
-	create_argent_flight = yes
-	create_creuss = yes
-	create_hacan = yes
-	create_l1x1z = yes
-	create_letnev = yes
-	create_mentak = yes
-	create_muaat = yes
-	create_naalu = yes
-	create_nekro = yes
-	create_naaz_rokha = yes
-	create_nomad = yes
-	create_saar = yes
-	create_sardakk = yes
-	create_sol = yes
-	create_titans = yes
-	create_winnu = yes
-	create_xxcha = yes
-	create_yin = yes
-	create_yssaril = yes
-}
-
 create_arborec = {
 	if = {
 		limit = { NOT = { exists = event_target:arborec_empire } }
@@ -386,7 +362,7 @@ create_arborec = {
 				colors = {
 					"dark_green"
 					"moss_green"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -404,7 +380,7 @@ create_arborec = {
 			species = event_target:arborec_species
 			effect = {
 				save_global_event_target_as = arborec_empire
-				set_country_flag = arborec
+				set_country_flag = arborec_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -414,13 +390,6 @@ create_arborec = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:arborec_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -429,6 +398,11 @@ create_arborec = {
 				building = crew_quarters
 				owner = event_target:arborec_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:arborec_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -478,7 +452,7 @@ create_argent_flight = {
 				colors = {
 					"dark_teal"
 					"orange"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -501,7 +475,7 @@ create_argent_flight = {
 
 			species = event_target:argent_flight_species
 			effect = {
-				save_global_event_target_as = argent_flight_empire_empire
+				save_global_event_target_as = argent_flight_empire
 				set_country_flag = argent_flight_empire
 				add_resource = {
 					minerals = 100
@@ -512,13 +486,6 @@ create_argent_flight = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:argent_flight_empire_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -527,6 +494,11 @@ create_argent_flight = {
 				building = crew_quarters
 				owner = event_target:argent_flight_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:argent_flight_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -579,7 +551,7 @@ create_creuss = {
 				colors = {
 					"intense_blue"
 					"dark_blue"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -599,7 +571,7 @@ create_creuss = {
 			species = event_target:creuss_species
 			effect = {
 				save_global_event_target_as = creuss_empire
-				set_country_flag = creuss
+				set_country_flag = creuss_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -609,13 +581,6 @@ create_creuss = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:creuss_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -624,6 +589,11 @@ create_creuss = {
 				building = crew_quarters
 				owner = event_target:creuss_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:creuss_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -676,7 +646,7 @@ create_empyrean = {
 				colors = {
 					"shadow_purple"
 					"dark_red"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -694,14 +664,14 @@ create_empyrean = {
 
 			civics = {
 				civic = "civic_pompous_purists"
-				civic = "civic_hyperspace_specialty"
+				civic = "civic_dark_consortium"
 			}
 			origin = "origin_void_dwellers"
 
 			species = event_target:empyrean_species
 			effect = {
 				save_global_event_target_as = empyrean_empire
-				set_country_flag = empyrean
+				set_country_flag = empyrean_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -711,13 +681,6 @@ create_empyrean = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:empyrean_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -726,6 +689,11 @@ create_empyrean = {
 				building = crew_quarters
 				owner = event_target:empyrean_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:empyrean_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -778,7 +746,7 @@ create_hacan = {
 				colors = {
 					"light_orange"
 					"dark_orange"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -802,7 +770,7 @@ create_hacan = {
 			species = event_target:hacan_species
 			effect = {
 				save_global_event_target_as = hacan_empire
-				set_country_flag = hacan
+				set_country_flag = hacan_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -812,13 +780,6 @@ create_hacan = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:hacan_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -827,6 +788,11 @@ create_hacan = {
 				building = crew_quarters
 				owner = event_target:hacan_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:hacan_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -879,7 +845,7 @@ create_jol_nar = {
 				colors = {
 					"indigo"
 					"light_blue"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -903,7 +869,7 @@ create_jol_nar = {
 			species = event_target:jol_nar_species
 			effect = {
 				save_global_event_target_as = jol_nar_empire
-				set_country_flag = jol_nar
+				set_country_flag = jol_nar_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -913,13 +879,6 @@ create_jol_nar = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:jol_nar_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -928,6 +887,11 @@ create_jol_nar = {
 				building = crew_quarters
 				owner = event_target:jol_nar_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:jol_nar_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -980,7 +944,7 @@ create_l1z1x = {
 				colors = {
 					"black"
 					"red"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -995,19 +959,19 @@ create_l1z1x = {
 			ethos = {
 				ethic = "ethic_authoritarian"
 				ethic = "ethic_xenophobe"
-				ethic = "ethic_materialist"
+				ethic = "ethic_spiritualist"
 			}
 
 			civics = {
-				civic = "civic_technocracy"
-				civic = "civic_dark_consortium"
+				civic = "civic_imperial_cult"
+				civic = "civic_philosopher_king"
 			}
-			origin = "origin_default"
+			origin = "origin_cybernetic_creed"
 
 			species = event_target:l1z1x_species
 			effect = {
 				save_global_event_target_as = l1z1x_empire
-				set_country_flag = l1z1x
+				set_country_flag = l1z1x_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1017,13 +981,6 @@ create_l1z1x = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:l1z1x_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1032,6 +989,11 @@ create_l1z1x = {
 				building = crew_quarters
 				owner = event_target:l1z1x_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:l1z1x_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1085,7 +1047,7 @@ create_letnev = {
 				colors = {
 					"dark_grey"
 					"red"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -1110,7 +1072,7 @@ create_letnev = {
 			species = event_target:letnev_species
 			effect = {
 				save_global_event_target_as = letnev_empire
-				set_country_flag = letnev
+				set_country_flag = letnev_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1120,13 +1082,6 @@ create_letnev = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:letnev_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1135,6 +1090,11 @@ create_letnev = {
 				building = crew_quarters
 				owner = event_target:letnev_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:letnev_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1212,7 +1172,7 @@ create_mahact = {
 			species = event_target:mahact_species
 			effect = {
 				save_global_event_target_as = mahact_empire
-				set_country_flag = mahact
+				set_country_flag = mahact_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1222,13 +1182,6 @@ create_mahact = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:mahact_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1237,6 +1190,11 @@ create_mahact = {
 				building = crew_quarters
 				owner = event_target:mahact_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:mahact_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1287,7 +1245,7 @@ create_mentak = {
 				colors = {
 					"light_orange"
 					"black"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -1312,7 +1270,7 @@ create_mentak = {
 			species = event_target:mentak_species
 			effect = {
 				save_global_event_target_as = mentak_empire
-				set_country_flag = mentak
+				set_country_flag = mentak_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1322,13 +1280,6 @@ create_mentak = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:mentak_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1337,6 +1288,11 @@ create_mentak = {
 				building = crew_quarters
 				owner = event_target:mentak_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:mentak_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1391,7 +1347,7 @@ create_muaat = {
 				colors = {
 					"orange"
 					"red"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -1416,7 +1372,7 @@ create_muaat = {
 			species = event_target:muaat_species
 			effect = {
 				save_global_event_target_as = muaat_empire
-				set_country_flag = muaat
+				set_country_flag = muaat_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1426,13 +1382,6 @@ create_muaat = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:muaat_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1441,6 +1390,11 @@ create_muaat = {
 				building = crew_quarters
 				owner = event_target:muaat_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:muaat_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1492,7 +1446,7 @@ create_naalu = {
 				colors = {
 					"shadow_green"
 					"green"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -1517,7 +1471,7 @@ create_naalu = {
 			species = event_target:naalu_species
 			effect = {
 				save_global_event_target_as = naalu_empire
-				set_country_flag = naalu
+				set_country_flag = naalu_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1527,13 +1481,6 @@ create_naalu = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:naalu_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1542,6 +1489,11 @@ create_naalu = {
 				building = crew_quarters
 				owner = event_target:naalu_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:naalu_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1620,7 +1572,7 @@ create_naaz_rokha = {
 				colors = {
 					"green"
 					"shadow_teal"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -1644,7 +1596,7 @@ create_naaz_rokha = {
 			species = event_target:naaz_species
 			effect = {
 				save_global_event_target_as = naaz_rokha_empire
-				set_country_flag = naaz_rokha
+				set_country_flag = naaz_rokha_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1654,13 +1606,6 @@ create_naaz_rokha = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:naaz_rokha_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1669,6 +1614,11 @@ create_naaz_rokha = {
 				building = crew_quarters
 				owner = event_target:naaz_rokha_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:naaz_rokha_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1722,7 +1672,7 @@ create_nekro = {
 				colors = {
 					"red"
 					"black"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -1745,22 +1695,14 @@ create_nekro = {
 			species = event_target:nekro_species
 			effect = {
 				save_global_event_target_as = nekro_empire
-				set_country_flag = nekro
+				set_country_flag = nekro_empire
 				add_resource = {
 					minerals = 100
-					energy = 100
+					energy = 200
 					alloys = 100
-					consumer_goods = 100
 					influence = 100
 				}
 			}
-		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:nekro_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 		solar_system = {
 			create_starbase = {
@@ -1770,6 +1712,11 @@ create_nekro = {
 				building = crew_quarters
 				owner = event_target:nekro_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:nekro_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1845,7 +1792,7 @@ create_nomad = {
 			species = event_target:nomad_species
 			effect = {
 				save_global_event_target_as = nomad_empire
-				set_country_flag = nomad
+				set_country_flag = nomad_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1855,13 +1802,6 @@ create_nomad = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:nomad_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1870,6 +1810,11 @@ create_nomad = {
 				building = crew_quarters
 				owner = event_target:nomad_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:nomad_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -1923,7 +1868,7 @@ create_saar = {
 				colors = {
 					"yellow"
 					"dark_green"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -1947,7 +1892,7 @@ create_saar = {
 			species = event_target:saar_species
 			effect = {
 				save_global_event_target_as = saar_empire
-				set_country_flag = saar
+				set_country_flag = saar_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -1957,13 +1902,6 @@ create_saar = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:saar_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -1972,6 +1910,11 @@ create_saar = {
 				building = crew_quarters
 				owner = event_target:saar_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:saar_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -2024,7 +1967,7 @@ create_sardakk = {
 				colors = {
 					"red"
 					"black"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -2049,7 +1992,7 @@ create_sardakk = {
 			species = event_target:sardakk_species
 			effect = {
 				save_global_event_target_as = sardakk_empire
-				set_country_flag = sardakk
+				set_country_flag = sardakk_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -2059,13 +2002,6 @@ create_sardakk = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:sardakk_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -2074,6 +2010,11 @@ create_sardakk = {
 				building = crew_quarters
 				owner = event_target:sardakk_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:sardakk_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -2129,7 +2070,7 @@ create_titans = {
 				colors = {
 					"pink"
 					"shadow_purple"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -2154,7 +2095,7 @@ create_titans = {
 			species = event_target:titans_species
 			effect = {
 				save_global_event_target_as = titans_empire
-				set_country_flag = titans
+				set_country_flag = titans_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -2163,13 +2104,6 @@ create_titans = {
 					influence = 100
 				}
 			}
-		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:titans_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 		solar_system = {
 			create_starbase = {
@@ -2180,6 +2114,11 @@ create_titans = {
 				owner = event_target:titans_empire
 			}
 		}
+		planet_event = { id = game_start.12 }
+		event_target:titans_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+		}
 	}
 }
 
@@ -2187,8 +2126,8 @@ create_vuil_raith = {
 	if = {
 		limit = { NOT = { exists = event_target:vuil_raith_empire } }
 		create_species = {
-			class = "AQUATIC"
-			portrait = "aqu10"
+			class = "REP"
+			portrait = "rep17"
 			name = "Vuil'Raith"
 			plural = "Vuil'Raiths"
 			adjective = "Vuil'Raith"
@@ -2230,7 +2169,7 @@ create_vuil_raith = {
 				colors = {
 					"red"
 					"burgundy"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -2242,14 +2181,14 @@ create_vuil_raith = {
 
 			civics = {
 				civic = "civic_warrior_culture"
-				civic = "civic_barbaric_despoilers"
+				civic = "civic_fanatic_purifiers"
 			}
 			origin = "origin_default"
 
 			species = event_target:vuil_raith_species
 			effect = {
 				save_global_event_target_as = vuil_raith_empire
-				set_country_flag = vuil_raith
+				set_country_flag = vuil_raith_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -2257,14 +2196,9 @@ create_vuil_raith = {
 					consumer_goods = 100
 					influence = 100
 				}
+				save_global_event_target_as = chosen_empire
+				set_country_flag = chosen_empire
 			}
-		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:vuil_raith_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 		solar_system = {
 			create_starbase = {
@@ -2274,6 +2208,11 @@ create_vuil_raith = {
 				building = crew_quarters
 				owner = event_target:vuil_raith_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:vuil_raith_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -2327,7 +2266,7 @@ create_winnu = {
 				colors = {
 					"yellow"
 					"shadow_purple"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -2353,7 +2292,7 @@ create_winnu = {
 			species = event_target:winnu_species
 			effect = {
 				save_global_event_target_as = winnu_empire
-				set_country_flag = winnu
+				set_country_flag = winnu_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -2363,13 +2302,6 @@ create_winnu = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:winnu_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -2378,6 +2310,11 @@ create_winnu = {
 				building = crew_quarters
 				owner = event_target:winnu_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:winnu_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -2430,7 +2367,7 @@ create_xxcha = {
 				colors = {
 					"shadow_teal"
 					"green"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -2457,7 +2394,7 @@ create_xxcha = {
 			species = event_target:xxcha_species
 			effect = {
 				save_global_event_target_as = xxcha_empire
-				set_country_flag = xxcha
+				set_country_flag = xxcha_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -2467,13 +2404,6 @@ create_xxcha = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:xxcha_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -2482,6 +2412,11 @@ create_xxcha = {
 				building = crew_quarters
 				owner = event_target:xxcha_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:xxcha_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -2533,7 +2468,7 @@ create_yin = {
 				colors = {
 					"black"
 					"shadow_purple"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -2557,7 +2492,7 @@ create_yin = {
 			species = event_target:yin_species
 			effect = {
 				save_global_event_target_as = yin_empire
-				set_country_flag = yin
+				set_country_flag = yin_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -2567,13 +2502,6 @@ create_yin = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:yin_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -2582,6 +2510,11 @@ create_yin = {
 				building = crew_quarters
 				owner = event_target:yin_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:yin_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }
@@ -2633,7 +2566,7 @@ create_yssaril = {
 				colors = {
 					"dark_green"
 					"brown"
-					"black"
+					"null"
 					"null"
 				}
 			}
@@ -2658,7 +2591,7 @@ create_yssaril = {
 			species = event_target:yssaril_species
 			effect = {
 				save_global_event_target_as = yssaril_empire
-				set_country_flag = yssaril
+				set_country_flag = yssaril_empire
 				add_resource = {
 					minerals = 100
 					energy = 100
@@ -2668,13 +2601,6 @@ create_yssaril = {
 				}
 			}
 		}
-		generate_start_deposits_and_blockers = yes
-		generate_start_buildings_and_districts = yes
-		generate_start_pops = yes
-		event_target:yssaril_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-		}
 		solar_system = {
 			create_starbase = {
 				size = starbase_starport
@@ -2683,6 +2609,11 @@ create_yssaril = {
 				building = crew_quarters
 				owner = event_target:yssaril_empire
 			}
+		}
+		planet_event = { id = game_start.12 }
+		event_target:yssaril_empire = {
+			country_event = { id = game_start.9 }
+			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 		}
 	}
 }

@@ -1,154 +1,89 @@
 ti_is_arborec = {
-	has_origin = origin_tree_of_life
-	has_civic = civic_hive_cordyceptic_drones
-	has_civic = civic_hive_divided_attention
+	has_country_flag = arborec_empire
 }
 
 ti_is_argent_flight = {
-	has_origin = origin_default
-	OR = {
-		AND = {
-			has_civic = civic_memorialist
-			has_civic = civic_sovereign_guardianship
-		}
-		AND = {
-			has_civic = civic_memorialist
-			has_civic = civic_citizen_service
-		}
-		AND = {
-			has_civic = civic_sovereign_guardianship
-			has_civic = civic_citizen_service
-		}
-	}
+	has_country_flag = argent_flight_empire
 }
 
 ti_is_creuss = {
-	has_origin = origin_star_slingshot
-	has_civic = civic_dimensional_worship
-	has_civic = civic_pompous_purists
+	has_country_flag = creuss_empire
 }
 
 ti_is_hacan = {
-	has_origin = origin_default
-	has_civic = civic_free_traders
-	has_civic = civic_corporate_crafters
+	has_country_flag = hacan_empire
 }
 
 ti_is_jol_nar = {
-	has_origin = origin_default
-	has_civic = civic_technocracy
-	has_civic = civic_functional_architecture
+	has_country_flag = jol_nar_empire
 }
 
 ti_is_l1z1x = {
-	has_origin = origin_mechanists
-	has_civic = civic_technocracy
-	has_civic = civic_dark_consortium
+	has_country_flag = l1z1x_empire
 }
 
 ti_is_letnev = {
-	has_origin = origin_subterranean
-	has_civic = civic_feudal_realm
-	has_civic = civic_aristocratic_elite
+	has_country_flag = letnev_empire
 }
 
 ti_is_mahact = {
-	OR = {
-		has_origin = origin_remnants
-		has_origin = origin_post_apocalyptic
-	}
-	has_civic = civic_slaver_guilds
-	has_civic = civic_barbaric_despoilers
+	has_country_flag = mahact_empire
 }
 
 ti_is_mentak = {
-	has_origin = origin_default
-	has_civic = civic_scavengers
-	has_civic = civic_warrior_culture
+	has_country_flag = mahact_empire
 }
 
 ti_is_muaat = {
-	has_origin = origin_post_apocalyptic
-	has_civic = civic_mining_guilds
-	has_civic = civic_relentless_industrialists
+	has_country_flag = muaat_empire
 }
 
 ti_is_naaz_rokha = {
-	has_origin = origin_syncretic_evolution
-	has_civic = civic_idealistic_foundation
-	has_civic = civic_parliamentary_system
+	has_country_flag = naaz_rokha_empire
 }
 
 ti_is_naalu = {
-	has_origin = origin_shroudwalker_apprentice
-	has_civic = civic_slaver_guilds
-	has_civic = civic_exalted_priesthood
+	has_country_flag = naalu_empire
 }
 
 ti_is_nekro = {
-	has_origin = origin_machine
-	has_civic = civic_machine_terminator
-	has_civic = civic_machine_replication
+	has_country_flag = nekro_empire
 }
 
 ti_is_nomad = {
-	has_origin = origin_default
-	has_civic = civic_corporate_dark_consortium
-	has_civic = civic_naval_contractors
+	has_country_flag = nomad_empire
 }
 
 ti_is_saar = {
-	has_origin = origin_void_dwellers
-	has_civic = civic_idealistic_foundation
-	has_civic = civic_hyperspace_specialty
+	has_country_flag = saar_empire
 }
 
 ti_is_sardakk = {
-	has_origin = origin_default
-	has_civic = civic_warrior_culture
-	has_civic = civic_barbaric_despoilers
+	has_country_flag = sardakk_empire
 }
 
 ti_is_sol = {
-	has_origin = origin_default
-	has_civic = civic_parliamentary_system
-	has_civic = civic_byzantine_bureaucracy
+	has_country_flag = sol_empire
 }
 
 ti_is_titans = {
-	has_origin = origin_shattered_ring
-	has_civic = civic_environmentalist
-	has_civic = civic_memory_vault
+	has_country_flag = titans_empire
 }
 
 ti_is_winnu = {
-	OR = {
-		has_origin = origin_default
-		has_origin = origin_legendary_leader
-	}
-	has_civic = civic_byzantine_bureaucracy
-	has_civic = civic_memorialist
+	has_country_flag = winnu_empire
 }
 
 ti_is_xxcha = {
-	has_origin = origin_default
-	has_civic = civic_diplomatic_corps
-	has_civic = civic_philosopher_king
+	has_country_flag = xxcha_empire
 }
 
 ti_is_yin = {
-	OR = {
-		has_origin = origin_overtuned
-		has_origin = origin_clone_army
-	}	
-	has_civic = civic_death_cult
-	has_civic = civic_exalted_priesthood
+	has_country_flag = yin_empire
 }
 
 ti_is_yssaril = {
-	has_origin = origin_default
-	has_civic = civic_shadow_council
-	has_civic = civic_warrior_culture
+	has_country_flag = yssaril_empire
 }
 
 has_reduced_pop_origin = {

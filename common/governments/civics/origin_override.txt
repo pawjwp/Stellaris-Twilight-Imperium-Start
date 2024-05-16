@@ -1,0 +1,109 @@
+origin_void_dwellers = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_void_dwellers.dds"
+	picture = GFX_origin_void_dwellers
+
+	starting_colony = pc_habitat
+	initializers = { void_dweller_system sol_system_void_dweller_system ti_saar_system ti_empyrean_system }
+	habitability_preference = pc_habitat
+	preferred_planet_class_neighbor = no
+
+	playable = {
+		host_has_dlc = Federations
+	}
+
+	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
+		civics = {
+			NOR = {
+				text = civic_tooltip_not_idyllic_bloom
+				value = civic_idyllic_bloom
+				value = civic_hive_idyllic_bloom
+			}
+			NOT = { value = civic_agrarian_idyll }
+			NOR = {
+				text = civic_tooltip_not_anglers
+				value = civic_anglers
+				value = civic_corporate_anglers
+				value = civic_machine_anglers
+				value = civic_corporate_machine_anglers
+			}
+		}
+	}
+
+	description = "origin_tooltip_void_dwellers_effects"
+
+	potential = {
+		species_archetype = { NOT = { value = MACHINE } }
+	}
+
+	modifier = {
+		megastructures_habitat_cost_mult = -0.25
+		habitat_districts_building_slots_add = 0.25
+		habitat_max_districts_add = 2
+		habitat_district_jobs_add = 1
+	}
+
+	flags = { custom_start_screen }
+
+	traits = {
+		trait = trait_void_dweller_1
+	}
+
+	blocks_random_machine_empire_generation	= yes
+
+	random_weight = {
+		base = 3
+	}
+}
+
+origin_shattered_ring = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
+	picture = GFX_origin_shattered_ring
+
+	starting_colony = pc_shattered_ring_habitable
+	habitability_preference = pc_shattered_ring_habitable
+	initializers = { shattered_ring_start ti_titans_system }
+	max_once_global = yes
+	non_colonizable_planet_class_neighbor = yes
+
+	playable = {
+		host_has_dlc = Federations
+	}
+
+	possible = {
+		civics = {
+			NOT = { value = civic_agrarian_idyll }
+			NOR = {
+				text = civic_tooltip_not_anglers
+				value = civic_anglers
+				value = civic_corporate_anglers
+				value = civic_machine_anglers
+				value = civic_corporate_machine_anglers
+			}
+		}
+	}
+
+	description = "origin_tooltip_shattered_ring_effects"
+
+	flags = { custom_start_screen }
+
+	traits = {
+
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 2
+	}
+
+	#swap_type = {
+	#	description = "origin_tooltip_shattered_ring_effects_lithoid"
+	#
+	#	trigger = {
+	#		local_human_species_class = LITHOID
+	#	}
+	#}
+}

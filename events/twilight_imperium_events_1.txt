@@ -47,6 +47,9 @@ country_event = {
 			}
 			give_technology = { message = no tech = tech_hyper_drive_2 }
 			give_technology = { message = no tech = tech_wormhole_stabilization }
+
+			set_country_flag = encountered_first_wormhole
+			add_seen_bypass_type = wormhole
 		}
 		if = {
 			limit = {
@@ -162,7 +165,7 @@ planet_event = {
 			}
 		}
 
-		# muaat set relic habitability
+		# muaat set relic habitability and survivor
 		if = {
 			limit = {
 				owner = {
@@ -180,6 +183,15 @@ planet_event = {
 						add_traits_at_start_of_list = yes
 					}
 				}
+				if = {
+					limit = {
+						NOT = { has_trait = trait_survivor }
+					}
+					change_species_characteristics = {
+						add_trait = trait_survivor
+						add_traits_at_start_of_list = yes
+					}
+				}
 			}
 		}
 
@@ -187,7 +199,7 @@ planet_event = {
 		if = {
 			limit = {
 				owner = {
-					ti_is_muaat = yes
+					ti_is_sardakk = yes
 				}
 			}
 			owner_species = {
@@ -401,24 +413,10 @@ event = {
 			country_event = { id = twilight_imperium.12 }
 		}
 
-		random_playable_country = {
-			limit = {
-				ti_is_titans = yes
-			}
-			capital_scope.solar_system = {
-				random_system_planet = {
-					limit = { is_star = yes }
-					change_pc = pc_black_hole
-				}
-				set_star_class = sc_black_hole
-			}
-		}
-
 		random_country = {
 			limit = {
 				ti_is_letnev = yes
 			}
-			save_event_target_as = letnev_country
 			capital_scope = {
 				solar_system = {
 					closest_system = {
@@ -426,9 +424,22 @@ event = {
 						max_steps = 2
 						create_starbase = {
 							size = starbase_outpost
-							owner = event_target:letnev_country
+							owner = event_target:letnev_empire
 						}
 					}
+				}
+			}
+		}
+
+		random_country = {
+			limit = {
+				ti_is_creuss = yes
+			}
+			random_system = {
+				limit = { has_star_flag = shaleri_passage }
+				create_starbase = {
+					size = starbase_outpost
+					owner = event_target:creuss_empire
 				}
 			}
 		}

@@ -220,9 +220,9 @@ empyrean = {
 	authority = "auth_democratic"
 	government = "gov_direct_democracy"
 	advisor_voice_type = "l_necroid_vir"
-	planet_name = "Erebian Void"
+	planet_name = "Erebis Habitat Complex"
 	planet_class = "pc_arctic"
-	system_name = "The Dark"
+	system_name = "Erebian Void"
 	initializer = "ti_empyrean_system"
 	graphical_culture = "necroid_01"
 	city_graphical_culture = "necroid_01"
@@ -260,7 +260,7 @@ empyrean = {
 	ethic = "ethic_materialist"
 	civics = {
 		"civic_pompous_purists"
-		"civic_hyperspace_specialty"
+		"civic_dark_consortium"
 	}
 	origin = "origin_void_dwellers"
 }
@@ -422,7 +422,7 @@ l1z1x = {
 	name = "The L1Z1X Mindnet"
 	adjective = "L1Z1X"
 	authority = "auth_imperial"
-	government = "gov_illuminated_autocracy"
+	government = "gov_divine_empire"
 	advisor_voice_type = "l_necroid_vir"
 	planet_name = "0.0.0"
 	planet_class = "pc_tundra"
@@ -463,12 +463,12 @@ l1z1x = {
 	room = "machine_room"
 	ethic = "ethic_authoritarian"
 	ethic = "ethic_xenophobe"
-	ethic = "ethic_materialist"
+	ethic = "ethic_spiritualist"
 	civics = {
-		"civic_technocracy"
-		"civic_dark_consortium"
+		"civic_imperial_cult"
+		"civic_philosopher_king"
 	}
-	origin = "origin_default"
+	origin = "origin_cybernetic_creed"
 }
 letnev = {
 	flags = { letnev_empire }
@@ -688,7 +688,6 @@ muaat = {
 		name_list = "NECROID4"
 		gender = indeterminable
 		trait = "trait_lithoid"
-		trait = "trait_survivor"
 		trait = "trait_lithoid_radiotrophic"
 		trait = "trait_lithoid_scintillating"
 		trait = "trait_natural_engineers"
@@ -1289,8 +1288,8 @@ vuil_raith = {
 
 	ship_prefix = ""
 	species = {
-		class = "AQUATIC"
-		portrait = "aqu10"
+		class = "REP"
+		portrait = "rep17"
 		name = "Vuil'Raith"
 		plural = "Vuil'Raiths"
 		adjective = "Vuil'Raith"
@@ -1342,9 +1341,9 @@ vuil_raith = {
 	ethic = "ethic_militarist"
 	civics = {
 		"civic_warrior_culture"
-		"civic_barbaric_despoilers"
+		"civic_fanatic_purifiers"
 	}
-	origin = "origin_here_be_dragons"
+	origin = "origin_default"
 }
 winnu = {
 	flags = { winnu_empire }

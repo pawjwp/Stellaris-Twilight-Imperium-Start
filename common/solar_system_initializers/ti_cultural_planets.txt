@@ -22,11 +22,11 @@ ti_cealdri_system = {
 	
 }
 
-ti_centuri_system = {
+ti_centauri_system = {
 	
 }
 
-ti_corneeq_system = {
+ti_coorneeq_system = {
 	
 }
 
@@ -34,7 +34,7 @@ ti_dal_bootha_system = {
 	
 }
 
-ti_evarra_system = {
+ti_everra_system = {
 	
 }
 
