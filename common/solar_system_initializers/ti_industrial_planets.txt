@@ -11,73 +11,1513 @@
 # industrial
 
 ti_accoen_system = {
-	
+	class = rl_all_stars
+
+	name = "Accoen"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Accoen"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_ang_system = {
-	
+	class = rl_all_stars
+
+	name = "Ang"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Ang"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_arinam_system = {
-	
+	class = rl_all_stars
+
+	name = "Arinam"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Arinam"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_arnor_system = {
-	
+	class = rl_all_stars
+
+	name = "Arnor"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Arnor"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_bakal_system = {
-	
+	class = rl_all_stars
+
+	name = "Bakal"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Bakal"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_gral_system = {
-	
+	class = rl_all_stars
+
+	name = "Gral"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Gral"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_jeol_ir_system = {
-	
+	class = rl_all_stars
+
+	name = "Jeol Ir"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Jeol Ir"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_lazar_system = {
-	
+	class = rl_all_stars
+
+	name = "Lazar"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Lazar"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_lisis_system = {
-	
+	class = rl_all_stars
+
+	name = "Lisis"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Lisis"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_lor_system = {
-	
+	class = rl_all_stars
+
+	name = "Lor"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Lor"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_new_albion_system = {
-	
+	class = rl_all_stars
+
+	name = "New Albion"
+
+	planet = {
+		count = 1
+		class = star
+		name = "New Albion"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_perimeter_system = {
-	
+	class = rl_all_stars
+
+	name = "Perimeter"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Perimeter"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_qucenn_system = {
-	
+	class = rl_all_stars
+
+	name = "Qucenn"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Qucenn"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_saudor_system = {
-	
+	class = rl_all_stars
+
+	name = "Saudor"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Saudor"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_tarmann_system = {
-	
+	class = rl_all_stars
+
+	name = "Tarmann"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Tarmann"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_thibah_system = {
-	
+	class = rl_all_stars
+
+	name = "Thibah"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Thibah"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_velnor_system = {
-	
+	class = rl_all_stars
+
+	name = "Velnor"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Velnor"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ti_wellon_system = {
-	
+	class = rl_all_stars
+
+	name = "Wellon"
+
+	planet = {
+		count = 1
+		class = star
+		name = "Wellon"
+		orbit_distance = 0
+		orbit_angle = 1
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "random_colonizable"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 16 max = 21 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 15 max = 35 }
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
