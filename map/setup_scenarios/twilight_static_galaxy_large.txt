@@ -106,7 +106,7 @@ static_galaxy_scenario = {
 	system = { id = "39" name = "" position = { x = 152 y = 76 } initializer = ti_abaddon_system spawn_weight = { base = 0 } }
 	system = { id = "40" name = "" position = { x = -188 y = -145 } initializer = ti_alio_prima_system spawn_weight = { base = 0 } }
 	system = { id = "41" name = "" position = { x = 206 y = 252 } initializer = ti_cealdri_system spawn_weight = { base = 0 } }
-	system = { id = "42" name = "" position = { x = 20 y = 258 } initializer = ti_centauri_system spawn_weight = { base = 0 } }
+	system = { id = "42" name = "" position = { x = 20 y = 258 } initializer = ti_sol_neighbor_t1_first_colony spawn_weight = { base = 0 } }
 	system = { id = "43" name = "" position = { x = 94 y = 269 } initializer = ti_coorneeq_system spawn_weight = { base = 0 } }
 	system = { id = "44" name = "" position = { x = -243 y = -179 } initializer = ti_dal_bootha_system spawn_weight = { base = 0 } }
 	system = { id = "45" name = "" position = { x = 3 y = -130 } initializer = ti_everra_system spawn_weight = { base = 0 } }

@@ -977,6 +977,34 @@ create_l1z1x = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
 		}
+		
+		event_target:jol_nar_species = {
+			modify_species = {
+				effect = {
+					create_species = {
+						is_mod = yes
+						class = "NECROID"
+						portrait = "nec9"
+						name = "H4l1r"
+						plural = "H4l1rs"
+						adjective = "H4l1r"
+						namelist = "HUM2"
+						gender = not_set
+						traits = {
+							ideal_planet_class = pc_ocean
+							trait = "trait_intelligent"
+							trait = "trait_aquatic"
+							trait = "trait_natural_physicists"
+							trait = "trait_repugnant"
+							trait = "trait_weak"
+						}
+						homeworld = this
+					}
+					set_name = "H4l1r"
+				}
+			}
+		}
+		last_created_species = { save_global_event_target_as = h4l1r_species }
 	}
 }
 
@@ -1932,7 +1960,96 @@ create_sardakk = {
 	}
 }
 
-# ADD SOL
+create_sol = {
+	if = {
+		limit = { NOT = { exists = event_target:sol_empire } }
+		create_species = {
+			class = "HUM"
+			portrait = "human"
+			name = "Human"
+			plural = "Humans"
+			adjective = "Human"
+			namelist = "HUMAN1"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_continental
+				trait = "trait_adaptive"
+				trait = "trait_nomadic"
+				trait = "trait_wasteful"
+			}
+			homeworld = this
+		}
+		last_created_species = { save_global_event_target_as = sol_species }
+		create_country = {
+			type = default
+			ignore_initial_colony_error = yes
+			name_list = HUMAN1
+
+			name = "The Federation of Sol"
+			adjective = "Human"
+			authority = "auth_democratic"
+
+			effect = {
+				set_graphical_culture = humanoid_01
+				set_city_graphical_culture = mammalian_01
+			}
+
+			flag = {
+				icon = {
+					category = "blocky"
+					file = "flag_blocky_24.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "new_dawn.dds"
+				}
+				colors = {
+					"dark_blue"
+					"teal"
+					"null"
+					"null"
+				}
+			}
+			
+			effect = {
+				set_male_ruler_title = "High Minister"
+				set_female_ruler_title = "High Minister"
+			}
+
+			ethos = {
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_militarist"
+				ethic = "ethic_materialist"
+			}
+
+			civics = {
+				civic = "civic_parliamentary_system"
+				civic = "civic_byzantine_bureaucracy"
+			}
+			origin = "origin_default"
+
+			species = event_target:sol_species
+			effect = {
+				save_global_event_target_as = sol_empire
+				set_country_flag = sol_empire
+			}
+		}
+		solar_system = {
+			create_starbase = {
+				size = starbase_starport
+				module = trading_hub
+				module = shipyard
+				building = crew_quarters
+				owner = event_target:sol_empire
+			}
+		}
+		fire_on_action = { on_action = empire_init_capital_planet }
+		event_target:sol_empire = {
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+		}
+	}
+}
 
 create_titans = {
 	if = {
