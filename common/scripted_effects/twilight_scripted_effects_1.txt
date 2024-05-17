@@ -545,11 +545,11 @@ create_creuss = {
 			ethos = {
 				ethic = "ethic_authoritarian"
 				ethic = "ethic_xenophobe"
-				ethic = "ethic_spiritualist"
+				ethic = "ethic_materialist"
 			}
 
 			civics = {
-				civic = "civic_dimensional_worship"
+				civic = "civic_hyperspace_specialty"
 				civic = "civic_pompous_purists"
 			}
 			origin = "origin_default"
@@ -1723,12 +1723,13 @@ create_nomad = {
 			class = "TOX"
 			portrait = "tox2"
 			name = "Nomad"
-			plural = "Nomads"
+			plural = "Nomad"
 			adjective = "Nomadic"
 			namelist = "HUMAN2"
 			gender = not_set
 			traits = {
 				ideal_planet_class = pc_arctic
+				trait = "trait_perfected_genes"
 				trait = "trait_thrifty"
 				trait = "trait_nomadic"
 				trait = "trait_deviants"
@@ -1782,7 +1783,7 @@ create_nomad = {
 				civic = "civic_corporate_dark_consortium"
 				civic = "civic_naval_contractors"
 			}
-			origin = "origin_default"
+			origin = "origin_legendary_leader"
 
 			species = event_target:nomad_species
 			effect = {
@@ -2431,7 +2432,7 @@ create_xxcha = {
 			ethos = {
 				ethic = "ethic_xenophile"
 				ethic = "ethic_pacifist"
-				ethic = "ethic_spiritualist"
+				ethic = "ethic_materialist"
 			}
 
 			civics = {

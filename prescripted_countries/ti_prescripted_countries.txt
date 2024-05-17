@@ -188,9 +188,9 @@ creuss = {
 	room = "personality_hive_mind_room"
 	ethic = "ethic_authoritarian"
 	ethic = "ethic_xenophobe"
-	ethic = "ethic_spiritualist"
+	ethic = "ethic_materialist"
 	civics = {
-		"civic_dimensional_worship"
+		"civic_hyperspace_specialty"
 		"civic_pompous_purists"
 	}
 	origin = "origin_default"
@@ -955,6 +955,7 @@ nomad = {
 		adjective = "Nomadic"
 		name_list = "HUMAN2"
 		gender = not_set
+		trait = "trait_perfected_genes"
 		trait = "trait_thrifty"
 		trait = "trait_nomadic"
 		trait = "trait_deviants"
@@ -1006,7 +1007,7 @@ nomad = {
 		"civic_corporate_dark_consortium"
 		"civic_naval_contractors"
 	}
-	origin = "origin_default"
+	origin = "origin_legendary_leader"
 }
 saar = {
 	flags = { saar_empire }
@@ -1476,7 +1477,7 @@ xxcha = {
 	room = "personality_federation_builders_room"
 	ethic = "ethic_xenophile"
 	ethic = "ethic_pacifist"
-	ethic = "ethic_spiritualist"
+	ethic = "ethic_materialist"
 	civics = {
 		"civic_diplomatic_corps"
 		"civic_philosopher_king"
