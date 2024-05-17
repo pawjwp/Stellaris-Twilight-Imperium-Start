@@ -858,24 +858,55 @@ create_l1z1x = {
 	if = {
 		limit = { NOT = { exists = event_target:l1z1x_empire } }
 		create_species = {
-			class = "NECROID"
-			portrait = "nec2"
-			name = "L1Z1X"
-			plural = "L1Z1X"
-			adjective = "L1Z1X"
-			namelist = "MACHINE1"
+			class = "HUM"
+			portrait = "humanoid_hp_10"
+			name = "Lazax"
+			plural = "Lazax"
+			adjective = "Lazax"
+			namelist = "NECROID1"
 			gender = not_set
 			traits = {
 				ideal_planet_class = pc_tundra
 				trait = "trait_intelligent"
-				trait = "trait_adaptive"
-				trait = "trait_natural_engineers"
-				trait = "trait_repugnant"
+				trait = "trait_traditional"
+				trait = "trait_quick_learners"
+				trait = "trait_decadent"
 				trait = "trait_solitary"
 			}
-			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = l1z1x_species }
+		last_created_species = { save_global_event_target_as = lazax_species }
+		event_target:lazax_species = {
+			modify_species = {
+				effect = {
+					create_species = {
+						is_mod = yes
+						class = "NECROID"
+						portrait = "nec2"
+						name = "L1Z1X"
+						plural = "L1Z1X"
+						adjective = "L1Z1X"
+						namelist = "MACHINE1"
+						gender = not_set
+						traits = {
+							ideal_planet_class = pc_tundra
+							trait = "trait_intelligent"
+							trait = "trait_adaptive"
+							trait = "trait_natural_engineers"
+							trait = "trait_repugnant"
+							trait = "trait_solitary"
+						}
+						homeworld = this
+					}
+					set_name = "L1Z1X"
+				}
+			}
+			change_species_characteristics = {
+				can_be_modified = no
+			}
+		}
+		last_created_species = {
+			save_global_event_target_as = l1z1x_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes

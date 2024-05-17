@@ -613,6 +613,12 @@ country_event = {
 			}
 
 			capital_scope = { spawn_orbital_ring_effect = yes }
+			
+			set_policy = {
+				policy = slavery
+				option = slavery_not_allowed
+				cooldown = no
+			}
 		}
 	}
 }
