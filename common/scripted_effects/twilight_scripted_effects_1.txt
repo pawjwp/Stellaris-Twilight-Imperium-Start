@@ -977,7 +977,7 @@ create_l1z1x = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
 		}
-		
+
 		event_target:jol_nar_species = {
 			modify_species = {
 				effect = {
@@ -1198,23 +1198,56 @@ create_mahact = {
 create_mentak = {
 	if = {
 		limit = { NOT = { exists = event_target:mentak_empire } }
-		create_species = {
-			class = "HUM"
-			portrait = "human"
-			name = "Human"
-			plural = "Humans"
-			adjective = "Human"
-			namelist = "AQUATIC2"
-			gender = not_set
-			traits = {
-				ideal_planet_class = pc_savannah
-				trait = "trait_adaptive"
-				trait = "trait_nomadic"
-				trait = "trait_wasteful"
+		if = {
+			limit = { NOT = { exists = event_target:sol_species } }
+			random_galaxy_planet = {
+				limit = { has_planet_flag = planet_earth }
+				save_event_target_as = planet_earth
 			}
-			homeworld = this
+			create_species = {
+				class = "HUM"
+				portrait = "human"
+				name = "Human"
+				plural = "Humans"
+				adjective = "Human"
+				namelist = "HUMAN1"
+				gender = not_set
+				traits = {
+					ideal_planet_class = pc_savannah
+					trait = "trait_adaptive"
+					trait = "trait_nomadic"
+					trait = "trait_wasteful"
+				}
+				homeworld = event_target:planet_earth
+			}
+			last_created_species = { save_global_event_target_as = sol_species }
+		}
+		event_target:sol_species = {
+			modify_species = {
+				effect = {
+					create_species = {
+						is_mod = yes
+						class = "HUM"
+						portrait = "human"
+						name = "NAME_Human"
+						plural = "NAME_Human_plural"
+						namelist = "AQUATIC2"
+						gender = not_set
+						traits = {
+							ideal_planet_class = pc_savannah
+							trait = "trait_thrifty"
+							trait = "trait_adaptive"
+							trait = "trait_nomadic"
+							trait = "trait_unruly"
+							trait = "trait_wasteful"
+						}
+						homeworld = event_target:planet_earth
+					}
+				}
+			}
 		}
 		last_created_species = { save_global_event_target_as = mentak_species }
+
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1963,23 +1996,30 @@ create_sardakk = {
 create_sol = {
 	if = {
 		limit = { NOT = { exists = event_target:sol_empire } }
-		create_species = {
-			class = "HUM"
-			portrait = "human"
-			name = "Human"
-			plural = "Humans"
-			adjective = "Human"
-			namelist = "HUMAN1"
-			gender = not_set
-			traits = {
-				ideal_planet_class = pc_continental
-				trait = "trait_adaptive"
-				trait = "trait_nomadic"
-				trait = "trait_wasteful"
+		if = {
+			limit = { NOT = { exists = event_target:sol_species } }
+			random_galaxy_planet = {
+				limit = { has_planet_flag = planet_earth }
+				save_event_target_as = planet_earth
 			}
-			homeworld = this
+			create_species = {
+				class = "HUM"
+				portrait = "human"
+				name = "Human"
+				plural = "Humans"
+				adjective = "Human"
+				namelist = "HUMAN1"
+				gender = not_set
+				traits = {
+					ideal_planet_class = pc_continental
+					trait = "trait_adaptive"
+					trait = "trait_nomadic"
+					trait = "trait_wasteful"
+				}
+				homeworld = event_target:planet_earth
+			}
+			last_created_species = { save_global_event_target_as = sol_species }
 		}
-		last_created_species = { save_global_event_target_as = sol_species }
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
