@@ -7,6 +7,8 @@ namespace = twilight_imperium
 
 # adds technologies to factions
 # should happen after game_start.8
+
+# empire_init_add_technologies
 country_event = {
 	id = twilight_imperium.1
 	hide_window = yes
@@ -125,6 +127,8 @@ country_event = {
 }
 
 # starting planet and pop effects
+
+# empire_init_capital_planet
 planet_event = {
 	id = twilight_imperium.2
 	hide_window = yes
@@ -274,6 +278,8 @@ planet_event = {
 
 # modify starting ships
 # should happen after game_start.9
+
+# empire_init_create_ships
 country_event = {
 	id = twilight_imperium.3
 	hide_window = yes
@@ -358,6 +364,8 @@ country_event = {
 }
 
 # should happen after game_start.1
+
+# on_game_start
 event = {
 	id = twilight_imperium.4
 	hide_window = yes
@@ -483,7 +491,7 @@ event = {
 	}
 }
 
-# country start
+# on_game_start_country
 country_event = {
 	id = twilight_imperium.5
 	hide_window = yes

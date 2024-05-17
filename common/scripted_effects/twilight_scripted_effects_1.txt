@@ -381,13 +381,6 @@ create_arborec = {
 			effect = {
 				save_global_event_target_as = arborec_empire
 				set_country_flag = arborec_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -399,10 +392,11 @@ create_arborec = {
 				owner = event_target:arborec_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:arborec_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -477,13 +471,6 @@ create_argent_flight = {
 			effect = {
 				save_global_event_target_as = argent_flight_empire
 				set_country_flag = argent_flight_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -495,10 +482,11 @@ create_argent_flight = {
 				owner = event_target:argent_flight_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:argent_flight_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -572,13 +560,6 @@ create_creuss = {
 			effect = {
 				save_global_event_target_as = creuss_empire
 				set_country_flag = creuss_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -590,10 +571,11 @@ create_creuss = {
 				owner = event_target:creuss_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:creuss_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -672,13 +654,6 @@ create_empyrean = {
 			effect = {
 				save_global_event_target_as = empyrean_empire
 				set_country_flag = empyrean_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -690,10 +665,11 @@ create_empyrean = {
 				owner = event_target:empyrean_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:empyrean_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -771,13 +747,6 @@ create_hacan = {
 			effect = {
 				save_global_event_target_as = hacan_empire
 				set_country_flag = hacan_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -789,10 +758,11 @@ create_hacan = {
 				owner = event_target:hacan_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:hacan_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -870,13 +840,6 @@ create_jol_nar = {
 			effect = {
 				save_global_event_target_as = jol_nar_empire
 				set_country_flag = jol_nar_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -888,10 +851,11 @@ create_jol_nar = {
 				owner = event_target:jol_nar_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:jol_nar_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -972,13 +936,6 @@ create_l1z1x = {
 			effect = {
 				save_global_event_target_as = l1z1x_empire
 				set_country_flag = l1z1x_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -990,10 +947,11 @@ create_l1z1x = {
 				owner = event_target:l1z1x_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:l1z1x_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1073,13 +1031,6 @@ create_letnev = {
 			effect = {
 				save_global_event_target_as = letnev_empire
 				set_country_flag = letnev_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1091,10 +1042,11 @@ create_letnev = {
 				owner = event_target:letnev_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:letnev_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1173,13 +1125,6 @@ create_mahact = {
 			effect = {
 				save_global_event_target_as = mahact_empire
 				set_country_flag = mahact_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1191,10 +1136,11 @@ create_mahact = {
 				owner = event_target:mahact_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:mahact_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1271,13 +1217,6 @@ create_mentak = {
 			effect = {
 				save_global_event_target_as = mentak_empire
 				set_country_flag = mentak_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1289,10 +1228,11 @@ create_mentak = {
 				owner = event_target:mentak_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:mentak_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1373,13 +1313,6 @@ create_muaat = {
 			effect = {
 				save_global_event_target_as = muaat_empire
 				set_country_flag = muaat_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1391,10 +1324,11 @@ create_muaat = {
 				owner = event_target:muaat_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:muaat_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1472,13 +1406,6 @@ create_naalu = {
 			effect = {
 				save_global_event_target_as = naalu_empire
 				set_country_flag = naalu_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1490,10 +1417,11 @@ create_naalu = {
 				owner = event_target:naalu_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:naalu_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1597,13 +1525,6 @@ create_naaz_rokha = {
 			effect = {
 				save_global_event_target_as = naaz_rokha_empire
 				set_country_flag = naaz_rokha_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1615,10 +1536,11 @@ create_naaz_rokha = {
 				owner = event_target:naaz_rokha_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:naaz_rokha_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1696,12 +1618,6 @@ create_nekro = {
 			effect = {
 				save_global_event_target_as = nekro_empire
 				set_country_flag = nekro_empire
-				add_resource = {
-					minerals = 100
-					energy = 200
-					alloys = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1713,10 +1629,11 @@ create_nekro = {
 				owner = event_target:nekro_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:nekro_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1793,13 +1710,6 @@ create_nomad = {
 			effect = {
 				save_global_event_target_as = nomad_empire
 				set_country_flag = nomad_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1811,10 +1721,11 @@ create_nomad = {
 				owner = event_target:nomad_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:nomad_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1893,13 +1804,6 @@ create_saar = {
 			effect = {
 				save_global_event_target_as = saar_empire
 				set_country_flag = saar_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -1911,10 +1815,11 @@ create_saar = {
 				owner = event_target:saar_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:saar_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1993,13 +1898,6 @@ create_sardakk = {
 			effect = {
 				save_global_event_target_as = sardakk_empire
 				set_country_flag = sardakk_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -2011,10 +1909,11 @@ create_sardakk = {
 				owner = event_target:sardakk_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:sardakk_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2096,13 +1995,6 @@ create_titans = {
 			effect = {
 				save_global_event_target_as = titans_empire
 				set_country_flag = titans_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -2114,10 +2006,11 @@ create_titans = {
 				owner = event_target:titans_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:titans_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2189,13 +2082,6 @@ create_vuil_raith = {
 			effect = {
 				save_global_event_target_as = vuil_raith_empire
 				set_country_flag = vuil_raith_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 				save_global_event_target_as = chosen_empire
 				set_country_flag = chosen_empire
 			}
@@ -2209,10 +2095,11 @@ create_vuil_raith = {
 				owner = event_target:vuil_raith_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:vuil_raith_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2293,13 +2180,6 @@ create_winnu = {
 			effect = {
 				save_global_event_target_as = winnu_empire
 				set_country_flag = winnu_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -2311,10 +2191,11 @@ create_winnu = {
 				owner = event_target:winnu_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:winnu_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2395,13 +2276,6 @@ create_xxcha = {
 			effect = {
 				save_global_event_target_as = xxcha_empire
 				set_country_flag = xxcha_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -2413,10 +2287,11 @@ create_xxcha = {
 				owner = event_target:xxcha_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:xxcha_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2493,13 +2368,6 @@ create_yin = {
 			effect = {
 				save_global_event_target_as = yin_empire
 				set_country_flag = yin_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -2511,10 +2379,11 @@ create_yin = {
 				owner = event_target:yin_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:yin_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2592,13 +2461,6 @@ create_yssaril = {
 			effect = {
 				save_global_event_target_as = yssaril_empire
 				set_country_flag = yssaril_empire
-				add_resource = {
-					minerals = 100
-					energy = 100
-					alloys = 100
-					consumer_goods = 100
-					influence = 100
-				}
 			}
 		}
 		solar_system = {
@@ -2610,10 +2472,11 @@ create_yssaril = {
 				owner = event_target:yssaril_empire
 			}
 		}
-		planet_event = { id = game_start.12 }
+		fire_on_action = { on_action = empire_init_capital_planet }
 		event_target:yssaril_empire = {
-			country_event = { id = game_start.9 }
-			country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+			fire_on_action = { on_action = empire_init_add_technologies }
+			fire_on_action = { on_action = empire_init_create_ships }
+			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }

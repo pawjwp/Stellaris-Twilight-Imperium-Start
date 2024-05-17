@@ -164,6 +164,7 @@ ti_arborec_system = {
 			else = {
 				create_arborec = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -352,6 +353,7 @@ ti_argent_flight_system = {
 				else = {
 					create_argent_flight = yes
 				}
+				generate_empire_home_planet = yes
 			}
 		}
 
@@ -583,6 +585,7 @@ ti_creuss_system = {
 			else = {
 				create_creuss = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 }
@@ -814,6 +817,7 @@ ti_empyrean_system = {
 			else = {
 				create_empyrean = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -918,6 +922,7 @@ ti_hacan_system = {
 				else = {
 					create_hacan = yes
 				}
+				generate_empire_home_planet = yes
 			}
 		}
 
@@ -1058,6 +1063,7 @@ ti_jol_nar_system = {
 			else = {
 				create_jol_nar = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -1165,6 +1171,7 @@ ti_l1z1x_system = {
 			else = {
 				create_l1z1x = yes
 			}
+			generate_empire_home_planet = yes
 			change_pc = pc_relic
 		}
 	}
@@ -1261,6 +1268,7 @@ ti_letnev_system = {
 			else = {
 				create_letnev = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -1385,6 +1393,7 @@ ti_mentak_system = {
 			else = {
 				create_mentak = yes
 			}
+			generate_empire_home_planet = yes
 		}
 
 		moon = {
@@ -1527,6 +1536,7 @@ ti_muaat_system = {
 			else = {
 				create_muaat = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -1666,6 +1676,7 @@ ti_naalu_system = {
 			else = {
 				create_naalu = yes
 			}
+			generate_empire_home_planet = yes
 			change_pc = pc_gaia
 		}
 	}
@@ -1817,6 +1828,7 @@ ti_naaz_rokha_system = {
 			else = {
 				create_naaz_rokha = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -1931,6 +1943,7 @@ ti_nekro_system = {
 			else = {
 				create_nekro = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2061,6 +2074,7 @@ ti_nomad_system = {
 			else = {
 				create_nomad = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2383,6 +2397,7 @@ ti_saar_system = {
 			else = {
 				create_saar = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2468,6 +2483,7 @@ ti_sardakk_system = {
 			else = {
 				create_sardakk = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2576,6 +2592,7 @@ ti_sol_system = {
 			else = {
 				create_sol = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2703,6 +2720,7 @@ ti_titans_system = {
 			else = {
 				create_titans = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2851,6 +2869,7 @@ ti_vuil_raith_system = {
 			else = {
 				create_vuil_raith = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2948,6 +2967,7 @@ ti_winnu_system = {
 			else = {
 				create_winnu = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -3094,6 +3114,7 @@ ti_xxcha_system = {
 			else = {
 				create_xxcha = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -3216,6 +3237,7 @@ ti_yin_system = {
 			else = {
 				create_yin = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -3348,6 +3370,7 @@ ti_yssaril_system = {
 			else = {
 				create_yssaril = yes
 			}
+			generate_empire_home_planet = yes
 		}
 	}
 
