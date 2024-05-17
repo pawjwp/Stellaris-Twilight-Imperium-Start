@@ -396,7 +396,6 @@ create_arborec = {
 		event_target:arborec_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -486,7 +485,6 @@ create_argent_flight = {
 		event_target:argent_flight_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -575,7 +573,6 @@ create_creuss = {
 		event_target:creuss_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -669,7 +666,6 @@ create_empyrean = {
 		event_target:empyrean_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -762,7 +758,6 @@ create_hacan = {
 		event_target:hacan_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -855,7 +850,6 @@ create_jol_nar = {
 		event_target:jol_nar_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -951,7 +945,6 @@ create_l1z1x = {
 		event_target:l1z1x_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1046,7 +1039,6 @@ create_letnev = {
 		event_target:letnev_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1140,7 +1132,6 @@ create_mahact = {
 		event_target:mahact_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1232,7 +1223,6 @@ create_mentak = {
 		event_target:mentak_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1328,7 +1318,6 @@ create_muaat = {
 		event_target:muaat_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1421,7 +1410,6 @@ create_naalu = {
 		event_target:naalu_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1540,7 +1528,6 @@ create_naaz_rokha = {
 		event_target:naaz_rokha_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1633,7 +1620,6 @@ create_nekro = {
 		event_target:nekro_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1725,7 +1711,6 @@ create_nomad = {
 		event_target:nomad_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1819,7 +1804,6 @@ create_saar = {
 		event_target:saar_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -1913,7 +1897,6 @@ create_sardakk = {
 		event_target:sardakk_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2010,7 +1993,6 @@ create_titans = {
 		event_target:titans_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2099,7 +2081,6 @@ create_vuil_raith = {
 		event_target:vuil_raith_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2195,7 +2176,6 @@ create_winnu = {
 		event_target:winnu_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2291,7 +2271,6 @@ create_xxcha = {
 		event_target:xxcha_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2383,7 +2362,6 @@ create_yin = {
 		event_target:yin_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
@@ -2476,7 +2454,6 @@ create_yssaril = {
 		event_target:yssaril_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
-			fire_on_action = { on_action = on_game_start_country }
 		}
 	}
 }
