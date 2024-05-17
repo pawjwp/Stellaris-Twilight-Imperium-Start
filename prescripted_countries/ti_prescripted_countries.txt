@@ -237,7 +237,7 @@ empyrean = {
 		}
 		colors = {
 			"shadow_purple"
-			"dark_red"
+			"black"
 			"black"
 			"null"
 		}
@@ -428,12 +428,12 @@ l1z1x = {
 	planet_class = "pc_tundra"
 	system_name = "Hazz"
 	initializer = "ti_l1z1x_system"
-	graphical_culture = "necroid_01"
-	city_graphical_culture = "necroid_01"
+	graphical_culture = "cybernetics_01"
+	city_graphical_culture = "cybernetics_01"
 	empire_flag = {
 		icon = {
-			category = "blocky"
-			file = "flag_blocky_6.dds"
+			category = "legion"
+			file = "legion_03.dds"
 		}
 		background = {
 			category = "backgrounds"
@@ -955,7 +955,6 @@ nomad = {
 		adjective = "Nomadic"
 		name_list = "HUMAN2"
 		gender = not_set
-		trait = "trait_perfected_genes"
 		trait = "trait_thrifty"
 		trait = "trait_nomadic"
 		trait = "trait_deviants"
@@ -969,8 +968,8 @@ nomad = {
 	planet_class = "pc_arctic"
 	system_name = "Arcturus"
 	initializer = "ti_nomad_system"
-	graphical_culture = "nemesis_01"
-	city_graphical_culture = "humanoid_01"
+	graphical_culture = "synthetics_01"
+	city_graphical_culture = "mammalian_01"
 	empire_flag = {
 		icon = {
 			category = "pirate"
@@ -989,7 +988,7 @@ nomad = {
 	}
 	ruler = {
 		gender = male
-		name = "Fred Nathanson"
+		name = "The Nomad"
 		portrait = "tox2"
 		texture = 2
 		attachment = 0
@@ -1007,7 +1006,7 @@ nomad = {
 		"civic_corporate_dark_consortium"
 		"civic_naval_contractors"
 	}
-	origin = "origin_legendary_leader"
+	origin = "origin_default"
 }
 saar = {
 	flags = { saar_empire }

@@ -624,7 +624,7 @@ create_empyrean = {
 				}
 				colors = {
 					"shadow_purple"
-					"dark_red"
+					"black"
 					"null"
 					"null"
 				}
@@ -905,6 +905,7 @@ create_l1z1x = {
 			}
 		}
 		last_created_species = {
+			set_name = "L1Z1X"
 			save_global_event_target_as = l1z1x_species
 		}
 		create_country = {
@@ -917,14 +918,14 @@ create_l1z1x = {
 			authority = "auth_imperial"
 
 			effect = {
-				set_graphical_culture = necroid_01
-				set_city_graphical_culture = necroid_01
+				set_graphical_culture = cybernetics_01
+				set_city_graphical_culture = cybernetics_01
 			}
 
 			flag = {
 				icon = {
-					category = "blocky"
-					file = "flag_blocky_6.dds"
+					category = "legion"
+					file = "legion_03.dds"
 				}
 				background = {
 					category = "backgrounds"
@@ -1246,7 +1247,10 @@ create_mentak = {
 				}
 			}
 		}
-		last_created_species = { save_global_event_target_as = mentak_species }
+		last_created_species = {
+			set_name = { key = "NAME_Human" }
+			save_global_event_target_as = mentak_species
+		}
 
 		create_country = {
 			type = default
@@ -1729,7 +1733,6 @@ create_nomad = {
 			gender = not_set
 			traits = {
 				ideal_planet_class = pc_arctic
-				trait = "trait_perfected_genes"
 				trait = "trait_thrifty"
 				trait = "trait_nomadic"
 				trait = "trait_deviants"
@@ -1747,8 +1750,8 @@ create_nomad = {
 			authority = "auth_corporate"
 
 			effect = {
-				set_graphical_culture = nemesis_01
-				set_city_graphical_culture = humanoid_01
+				set_graphical_culture = synthetics_01
+				set_city_graphical_culture = mammalian_01
 			}
 
 			flag = {
@@ -1783,7 +1786,7 @@ create_nomad = {
 				civic = "civic_corporate_dark_consortium"
 				civic = "civic_naval_contractors"
 			}
-			origin = "origin_legendary_leader"
+			origin = "origin_default"
 
 			species = event_target:nomad_species
 			effect = {
@@ -2006,9 +2009,8 @@ create_sol = {
 			create_species = {
 				class = "HUM"
 				portrait = "human"
-				name = "Human"
-				plural = "Humans"
-				adjective = "Human"
+				name = "NAME_Human"
+				plural = "NAME_Human_plural"
 				namelist = "HUMAN1"
 				gender = not_set
 				traits = {
