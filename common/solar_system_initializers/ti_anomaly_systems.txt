@@ -34,7 +34,7 @@ ti_ghost_worlds_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_non_colonizable"
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -141,7 +141,7 @@ ti_shattered_ring_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -225,7 +225,7 @@ ti_tor_mantal_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_non_colonizable"
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -309,7 +309,7 @@ ti_torali_pulsar_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_non_colonizable"
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}

@@ -35,7 +35,7 @@ ti_abyz_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -119,7 +119,7 @@ ti_archon_vail_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -203,7 +203,7 @@ ti_ashtroth_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -287,7 +287,7 @@ ti_atlas_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -371,7 +371,7 @@ ti_bereg_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -455,7 +455,7 @@ ti_cormund_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -539,7 +539,7 @@ ti_fria_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -623,7 +623,7 @@ ti_kraag_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -707,7 +707,7 @@ ti_hopes_end_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -791,7 +791,7 @@ ti_industrex_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -875,7 +875,7 @@ ti_lirta_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -959,7 +959,7 @@ ti_meer_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1043,7 +1043,7 @@ ti_mehar_xull_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1127,7 +1127,7 @@ ti_sakulag_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1211,7 +1211,7 @@ ti_siig_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1295,7 +1295,7 @@ ti_starpoint_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1379,7 +1379,7 @@ ti_tequran_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1463,7 +1463,7 @@ ti_vefut_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1547,7 +1547,7 @@ ti_vira_pics_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1631,7 +1631,7 @@ ti_xanact_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1715,7 +1715,7 @@ ti_zohbat_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}

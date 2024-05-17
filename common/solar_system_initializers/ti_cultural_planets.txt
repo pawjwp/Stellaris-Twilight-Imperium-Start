@@ -35,7 +35,7 @@ ti_abaddon_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -119,7 +119,7 @@ ti_alio_prima_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -203,7 +203,7 @@ ti_cealdri_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -287,7 +287,7 @@ ti_centauri_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -371,7 +371,7 @@ ti_coorneeq_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -455,7 +455,7 @@ ti_dal_bootha_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -539,7 +539,7 @@ ti_everra_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -623,7 +623,7 @@ ti_lodor_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -707,7 +707,7 @@ ti_loki_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -791,7 +791,7 @@ ti_mellon_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -875,7 +875,7 @@ ti_primor_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -959,7 +959,7 @@ ti_quann_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1043,7 +1043,7 @@ ti_rarron_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1127,7 +1127,7 @@ ti_resculon_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1211,7 +1211,7 @@ ti_sem_lore_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1295,7 +1295,7 @@ ti_torkan_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1379,7 +1379,7 @@ ti_vega_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1463,7 +1463,7 @@ ti_vorhal_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
@@ -1547,7 +1547,7 @@ ti_xxehan_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = "random_colonizable"
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 21 }
 	}
