@@ -313,6 +313,20 @@ spawn_orbital_ring_effect = {
     }
 }
 
+set_met_empire_flags = {
+	set_country_flag = encountered_first_primitive
+	set_country_flag = first_contact_event
+	set_country_flag = first_alien_life
+	set_country_flag = Story1
+	set_country_flag = Story2
+	set_country_flag = Story3
+	set_country_flag = Story4
+	set_country_flag = Story5
+	set_country_flag = Story6
+	set_country_flag = Story7
+	set_country_flag = has_encountered_other_empire
+}
+
 create_arborec = {
 	if = {
 		limit = { NOT = { exists = event_target:arborec_empire } }
@@ -396,6 +410,7 @@ create_arborec = {
 		event_target:arborec_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -485,6 +500,7 @@ create_argent_flight = {
 		event_target:argent_flight_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -573,6 +589,7 @@ create_creuss = {
 		event_target:creuss_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -666,6 +683,7 @@ create_empyrean = {
 		event_target:empyrean_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -758,6 +776,7 @@ create_hacan = {
 		event_target:hacan_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -850,6 +869,7 @@ create_jol_nar = {
 		event_target:jol_nar_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -897,7 +917,6 @@ create_l1z1x = {
 						}
 						homeworld = this
 					}
-					set_name = "L1Z1X"
 				}
 			}
 			change_species_characteristics = {
@@ -905,7 +924,9 @@ create_l1z1x = {
 			}
 		}
 		last_created_species = {
-			set_name = "L1Z1X"
+			rename_species = {
+				name = "L1Z1X"
+			}
 			save_global_event_target_as = l1z1x_species
 		}
 		create_country = {
@@ -977,6 +998,7 @@ create_l1z1x = {
 		event_target:l1z1x_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 
 		event_target:jol_nar_species = {
@@ -1001,11 +1023,15 @@ create_l1z1x = {
 						}
 						homeworld = this
 					}
-					set_name = "H4l1r"
 				}
 			}
 		}
-		last_created_species = { save_global_event_target_as = h4l1r_species }
+		last_created_species = {
+			rename_species = {
+				name = "H4l1r"
+			}
+			save_global_event_target_as = h4l1r_species
+		}
 	}
 }
 
@@ -1099,6 +1125,7 @@ create_letnev = {
 		event_target:letnev_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1192,6 +1219,7 @@ create_mahact = {
 		event_target:mahact_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1248,7 +1276,9 @@ create_mentak = {
 			}
 		}
 		last_created_species = {
-			set_name = { key = "NAME_Human" }
+			rename_species = {
+				name = alari
+			}
 			save_global_event_target_as = mentak_species
 		}
 
@@ -1319,6 +1349,7 @@ create_mentak = {
 		event_target:mentak_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1414,6 +1445,7 @@ create_muaat = {
 		event_target:muaat_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1506,6 +1538,7 @@ create_naalu = {
 		event_target:naalu_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1624,6 +1657,7 @@ create_naaz_rokha = {
 		event_target:naaz_rokha_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1716,6 +1750,7 @@ create_nekro = {
 		event_target:nekro_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1807,6 +1842,7 @@ create_nomad = {
 		event_target:nomad_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1900,6 +1936,7 @@ create_saar = {
 		event_target:saar_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -1993,6 +2030,7 @@ create_sardakk = {
 		event_target:sardakk_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -2090,6 +2128,7 @@ create_sol = {
 		event_target:sol_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -2124,7 +2163,7 @@ create_titans = {
 
 			name = "The Titans of Ul"
 			adjective = "Titanic"
-			authority = "auth_oligarchic"
+			authority = "auth_dictatorial"
 
 			effect = {
 				set_graphical_culture = lithoid_01
@@ -2154,7 +2193,7 @@ create_titans = {
 			}
 
 			ethos = {
-				ethic = "ethic_egalitarian"
+				ethic = "ethic_materialist"
 				ethic = "ethic_xenophile"
 				ethic = "ethic_pacifist"
 			}
@@ -2184,6 +2223,7 @@ create_titans = {
 		event_target:titans_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -2272,6 +2312,7 @@ create_vuil_raith = {
 		event_target:vuil_raith_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -2367,6 +2408,7 @@ create_winnu = {
 		event_target:winnu_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -2462,6 +2504,7 @@ create_xxcha = {
 		event_target:xxcha_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -2553,6 +2596,7 @@ create_yin = {
 		event_target:yin_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
 }
@@ -2645,6 +2689,50 @@ create_yssaril = {
 		event_target:yssaril_empire = {
 			fire_on_action = { on_action = empire_init_add_technologies }
 			fire_on_action = { on_action = empire_init_create_ships }
+			set_met_empire_flags = yes
 		}
 	}
+}
+
+reset_pops = {
+	while = {
+		limit = { num_pops > 1 }
+		random_owned_pop = {
+			kill_pop = yes
+		}
+	}
+}
+
+ti_spawn_pops = {
+	while = {
+		count = $NUM$
+		if = {
+			limit = { exists = event_target:$TARGET_POP$ }
+			create_pop = { species = event_target:$TARGET_POP$ }
+		}
+	}
+}
+
+spawn_emergency_pops = {
+	while = {
+		limit = { num_pops < $NUM$ }
+		create_pop = {
+			species = owner_main_species
+			ethos = random
+		}
+	}
+	check_planet_employment = yes
+}
+
+spawn_kenara_pops = {
+	reset_pops = yes
+
+	ti_spawn_pops = { NUM = 16 TARGET_POP = hacan_species }
+	ti_spawn_pops = { NUM = 1 TARGET_POP = mentak_species }
+	ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
+	ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
+	ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
+	ti_spawn_pops = { NUM = 1 TARGET_POP = rokha_species }
+
+	spawn_emergency_pops = { NUM = 22 }
 }

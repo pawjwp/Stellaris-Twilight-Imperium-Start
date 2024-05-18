@@ -1693,11 +1693,12 @@ ti_naalu_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { naalu_capital }
+		flags = { naalu_capital special_start_planet }
 
 		init_effect = {
-			set_name = "Druaa"
 			prevent_anomaly = yes
+			set_name = "Druaa"
+
 			random_country = {
 				limit = { has_country_flag = naalu_empire }
 				save_global_event_target_as = naalu_empire
@@ -1712,6 +1713,31 @@ ti_naalu_system = {
 			}
 			generate_empire_home_planet = yes
 			change_pc = pc_gaia
+
+			clear_deposits = yes
+
+			# 5 + 3 energy
+			add_deposit = d_searing_desert
+			add_deposit = d_underwater_vent
+			add_deposit = d_tempestous_mountain
+			# 5 + 3 mining
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_prosperous_mesa
+			add_deposit = d_submerged_ore_veins
+			# 5 + 3 farming
+			add_deposit = d_lush_jungle
+			add_deposit = d_teeming_reef
+			add_deposit = d_black_soil
+			# 1 random medium deposit
+			random_list = {
+				50 = { add_deposit = d_frozen_gas_lake }
+				50 = { add_deposit = d_fertile_lands }
+			}
+			add_deposit = d_crystalline_caverns
+			
+			generate_start_buildings_and_districts = yes
+			generate_start_pops = yes
+			generate_home_planet_final_pass = yes
 		}
 	}
 

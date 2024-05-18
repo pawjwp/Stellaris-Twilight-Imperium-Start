@@ -372,54 +372,54 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-		# Diverse pops
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_mentak = yes
-					ti_is_nomad = yes
-				}
-			}
-			country_event = { id = twilight_imperium.6 }
-		}
-
-		# Slightly diverse pops
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_hacan = yes
-					ti_is_sol = yes
-					ti_is_xxcha = yes
-				}
-			}
-			country_event = { id = twilight_imperium.7 }
-		}
-
-		# Empty barren worlds instead of starting habitables
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_hacan = yes
-					ti_is_naalu = yes
-					ti_is_sardakk = yes
-				}
-			}
-			country_event = { id = twilight_imperium.10 }
-		}
-
-		# Empty barren worlds instead of one starting habitable
-		every_playable_country = {
-			limit = {
-				OR = {
-					ti_is_jol_nar = yes
-					ti_is_xxcha = yes
-					ti_is_yssaril = yes
-					ti_is_argent_flight = yes
-					ti_is_naaz_rokha = yes
-				}
-			}
-			country_event = { id = twilight_imperium.12 }
-		}
+#		# Diverse pops
+#		every_playable_country = {
+#			limit = {
+#				OR = {
+#					ti_is_mentak = yes
+#					ti_is_nomad = yes
+#				}
+#			}
+#			country_event = { id = twilight_imperium.6 }
+#		}
+#
+#		# Slightly diverse pops
+#		every_playable_country = {
+#			limit = {
+#				OR = {
+#					ti_is_hacan = yes
+#					ti_is_sol = yes
+#					ti_is_xxcha = yes
+#				}
+#			}
+#			country_event = { id = twilight_imperium.7 }
+#		}
+#
+#		# Empty barren worlds instead of starting habitables
+#		every_playable_country = {
+#			limit = {
+#				OR = {
+#					ti_is_hacan = yes
+#					ti_is_naalu = yes
+#					ti_is_sardakk = yes
+#				}
+#			}
+#			country_event = { id = twilight_imperium.10 }
+#		}
+#
+#		# Empty barren worlds instead of one starting habitable
+#		every_playable_country = {
+#			limit = {
+#				OR = {
+#					ti_is_jol_nar = yes
+#					ti_is_xxcha = yes
+#					ti_is_yssaril = yes
+#					ti_is_argent_flight = yes
+#					ti_is_naaz_rokha = yes
+#				}
+#			}
+#			country_event = { id = twilight_imperium.12 }
+#		}
 
 		random_country = {
 			limit = {
@@ -451,7 +451,6 @@ event = {
 				}
 			}
 		}
-
 
 		# multiple starting planets
 		every_playable_country = {

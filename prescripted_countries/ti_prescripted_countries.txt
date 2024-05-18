@@ -1235,7 +1235,7 @@ titans = {
 	}
 	name = "The Titans of Ul"
 	adjective = "Titanic"
-	authority = "auth_oligarchic"
+	authority = "auth_dictatorial"
 	government = "gov_irenic_bureaucracy"
 	planet_name = "Elysium"
 	planet_class = "pc_continental"
@@ -1272,7 +1272,7 @@ titans = {
 		leader_class = "official"
 	}
 	room = "lithoid_room"
-	ethic = "ethic_egalitarian"
+	ethic = "ethic_materialist"
 	ethic = "ethic_xenophile"
 	ethic = "ethic_pacifist"
 	civics = {
