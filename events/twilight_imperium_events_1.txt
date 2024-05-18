@@ -135,9 +135,6 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		# set species flags and event targets
-		owner = { country_event = { id = twilight_imperium.20 } }
-
 		# naaz-rokha change species characteristics
 		if = {
 			limit = {
@@ -227,7 +224,7 @@ planet_event = {
 					ti_is_mentak = yes
 				}
 			}
-			
+
 			remove_building = building_commercial_zone
 			add_building = building_clinic
 
@@ -259,7 +256,7 @@ planet_event = {
 					ti_is_jol_nar = yes
 				}
 			}
-			
+
 			add_building = building_research_lab_1
 		}
 
@@ -270,7 +267,7 @@ planet_event = {
 					ti_is_xxcha = yes
 				}
 			}
-			
+
 			add_building = building_planetary_shield_generator
 		}
 	}
@@ -319,7 +316,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		# jol-nar bonus science ships
 		if = {
 			limit = {
@@ -487,6 +484,219 @@ event = {
 				remove_planet = yes
 			}
 		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = hercant_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 16 TARGET_POP = hacan_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = mentak_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = rokha_species }
+
+			spawn_emergency_pops = { NUM = 22 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = jol_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 17 TARGET_POP = jol_nar_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = mentak_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = argent_flight_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = hacan_species }
+
+			spawn_emergency_pops = { NUM = 22 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = nar_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 6 TARGET_POP = jol_nar_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
+
+			spawn_emergency_pops = { NUM = 10 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = 000_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 25 TARGET_POP = l1z1x_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = h4l1r_species }
+
+			spawn_emergency_pops = { NUM = 28 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = wren_terra_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 2 TARGET_POP = letnev_species }
+			ti_spawn_pops = { NUM = 3 TARGET_POP = sol_species }
+
+			spawn_emergency_pops = { NUM = 6 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = ixth_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 10 TARGET_POP = mahact_species }
+			ti_spawn_pops = { NUM = 3 TARGET_POP = sol_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = jol_nar_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = hacan_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = xxcha_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = winnu_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = sardakk_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = letnev_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = naaz_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = rokha_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = naalu_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = saar_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = argent_flight_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = lazax_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = yssaril_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = creuss_species }
+
+			spawn_emergency_pops = { NUM = 32 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = moll_primus_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 4 TARGET_POP = mentak_species }
+			ti_spawn_pops = { NUM = 5 TARGET_POP = hacan_species }
+			ti_spawn_pops = { NUM = 5 TARGET_POP = xxcha_species }
+			ti_spawn_pops = { NUM = 4 TARGET_POP = letnev_species }
+			ti_spawn_pops = { NUM = 3 TARGET_POP = yssaril_species }
+			ti_spawn_pops = { NUM = 3 TARGET_POP = jol_nar_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = naaz_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = rokha_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = saar_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = naalu_species }
+
+			spawn_emergency_pops = { NUM = 32 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = druaa_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 19 TARGET_POP = naalu_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = miashan_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = yssaril_species }
+
+			spawn_emergency_pops = { NUM = 22 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = maaluuk_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 2 TARGET_POP = naalu_species }
+			ti_spawn_pops = { NUM = 7 TARGET_POP = miashan_species }
+
+			spawn_emergency_pops = { NUM = 10 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = naazir_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 10 TARGET_POP = naaz_species }
+			ti_spawn_pops = { NUM = 10 TARGET_POP = rokha_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
+
+			spawn_emergency_pops = { NUM = 22 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = rokha_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 3 TARGET_POP = naaz_species }
+			ti_spawn_pops = { NUM = 5 TARGET_POP = rokha_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = hacan_species }
+
+			spawn_emergency_pops = { NUM = 10 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = space_station_sumerian_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 10 TARGET_POP = sol_species }
+			ti_spawn_pops = { NUM = 5 TARGET_POP = mentak_species }
+			ti_spawn_pops = { NUM = 5 TARGET_POP = hacan_species }
+			ti_spawn_pops = { NUM = 3 TARGET_POP = saar_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
+			ti_spawn_pops = { NUM = 3 TARGET_POP = jol_nar_species }
+			ti_spawn_pops = { NUM = 4 TARGET_POP = letnev_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = naaz_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = rokha_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_spawn_pops = { NUM = 3 TARGET_POP = yssaril_species }
+
+			random_owned_pop = { limit = { species = { has_species_flag = nomad_species } } kill_pop = yes }
+			spawn_emergency_pops = { NUM = 22 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = jord_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 29 TARGET_POP = sol_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = hacan_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
+
+			spawn_emergency_pops = { NUM = 32 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = elysium_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 19 TARGET_POP = titans_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = hacan_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = sardakk_species }
+			ti_spawn_pops = { NUM = 2 TARGET_POP = yin_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
+
+			spawn_emergency_pops = { NUM = 28 }
+		}
+
+		random_galaxy_planet = {
+			limit = { has_planet_flag = archon_tau_planet }
+			reset_pops = yes
+
+			ti_spawn_pops = { NUM = 8 TARGET_POP = xxcha_species }
+			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
+
+			spawn_emergency_pops = { NUM = 10 }
+
+			every_owned_pop = {
+				if = {
+					limit = { NOT = { has_trait = trait_survivor } }
+					modify_species = {
+						species = this
+						add_trait = trait_survivor
+						add_traits_at_start_of_list = yes
+					}
+				}
+			}
+			add_deposit = d_tomb_world_ruins
+			add_deposit = d_tomb_world_wasteland
+		}
 	}
 }
 
@@ -504,7 +714,7 @@ country_event = {
 					ti_is_nomad = yes
 				}
 			}
-			
+
 			while = {
 				count = 3
 				random_owned_leader = {
@@ -551,7 +761,7 @@ country_event = {
 					set_council_position = councilor_research
 				}
 			}
-			
+
 			random_owned_pop = {
 				species = {
 					save_event_target_as = defense_species
@@ -612,7 +822,7 @@ country_event = {
 			}
 
 			capital_scope = { spawn_orbital_ring_effect = yes }
-			
+
 			set_policy = {
 				policy = slavery
 				option = slavery_not_allowed
@@ -1057,22 +1267,6 @@ planet_event = {
 					add_district = district_farming
 					add_district = district_farming
 				}
-				# add survivor trait and tomb deposits to Archon Tau
-				if = {
-					limit = { has_planet_flag = ti_archon_tau }
-					every_owned_pop = {
-						if = {
-							limit = { NOT = { has_trait = trait_survivor } }
-							modify_species = {
-								species = this
-								add_trait = trait_survivor
-								add_traits_at_start_of_list = yes
-							}
-						}
-					}
-					add_deposit = d_tomb_world_ruins
-					add_deposit = d_tomb_world_wasteland
-				}
 				# add second home to rokha
 				if = {
 					limit = { owner = { ti_is_naaz_rokha = yes } }
@@ -1083,7 +1277,7 @@ planet_event = {
 					limit = { owner = { ti_is_nomad = yes } }
 					add_deposit = d_msi_air_freshener
 				}
-				
+
 				check_planet_employment = yes
 			}
 		}
@@ -1186,181 +1380,6 @@ country_event = {
 					}
 					change_pc = pc_barren
 				}
-			}
-		}
-	}
-}
-
-# Set species flags
-country_event = {
-	id = twilight_imperium.20
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		# Set species flags
-		if = {
-			limit = { ti_is_arborec = yes }
-			species = {
-				set_species_flag = arborec_species
-				save_global_event_target_as = arborec_species
-			}
-		}
-		if = {
-			limit = { ti_is_argent_flight = yes }
-			species = {
-				set_species_flag = argent_flight_species
-				save_global_event_target_as = argent_flight_species
-			}
-		}
-		if = {
-			limit = { ti_is_creuss = yes }
-			species = {
-				set_species_flag = creuss_species
-				save_global_event_target_as = creuss_species
-			}
-		}
-		if = {
-			limit = { ti_is_hacan = yes }
-			species = {
-				set_species_flag = hacan_species
-				save_global_event_target_as = hacan_species
-			}
-		}
-		if = {
-			limit = { ti_is_jol_nar = yes }
-			species = {
-				set_species_flag = jol_nar_species
-				save_global_event_target_as = jol_nar_species
-			}
-		}
-		if = {
-			limit = { ti_is_l1z1x = yes }
-			species = {
-				set_species_flag = l1z1x_species
-				save_global_event_target_as = l1z1x_species
-			}
-		}
-		if = {
-			limit = { ti_is_letnev = yes }
-			species = {
-				set_species_flag = letnev_species
-				save_global_event_target_as = letnev_species
-			}
-		}
-		if = {
-			limit = { ti_is_mahact = yes }
-			species = {
-				set_species_flag = mahact_species
-				save_global_event_target_as = mahact_species
-			}
-		}
-		if = {
-			limit = { ti_is_mentak = yes }
-			species = {
-				set_species_flag = mentak_species
-				save_global_event_target_as = mentak_species
-			}
-		}
-		if = {
-			limit = { ti_is_muaat = yes }
-			species = {
-				set_species_flag = muaat_species
-				save_global_event_target_as = muaat_species
-			}
-		}
-		if = {
-			limit = { ti_is_naaz_rokha = yes }
-			species = {
-				set_species_flag = naaz_species
-				save_global_event_target_as = naaz_species
-			}
-		}
-		if = {
-			limit = { ti_is_naaz_rokha = yes }
-			random_galaxy_species = {
-				limit = {
-					has_species_flag = syncretic_species@prev
-				}
-				set_species_flag = rokha_species
-				save_global_event_target_as = rokha_species
-			}
-		}
-		if = {
-			limit = { ti_is_naalu = yes }
-			species = {
-				set_species_flag = naalu_species
-				save_global_event_target_as = naalu_species
-			}
-		}
-		if = {
-			limit = { ti_is_nekro = yes }
-			species = {
-				set_species_flag = nekro_species
-				save_global_event_target_as = nekro_species
-			}
-		}
-		if = {
-			limit = { ti_is_nomad = yes }
-			species = {
-				set_species_flag = nomad_species
-				save_global_event_target_as = nomad_species
-			}
-		}
-		if = {
-			limit = { ti_is_saar = yes }
-			species = {
-				set_species_flag = saar_species
-				save_global_event_target_as = saar_species
-			}
-		}
-		if = {
-			limit = { ti_is_sardakk = yes }
-			species = {
-				set_species_flag = sardakk_species
-				save_global_event_target_as = sardakk_species
-			}
-		}
-		if = {
-			limit = { ti_is_sol = yes }
-			species = {
-				set_species_flag = sol_species
-				save_global_event_target_as = sol_species
-			}
-		}
-		if = {
-			limit = { ti_is_titans = yes }
-			species = {
-				set_species_flag = titans_species
-				save_global_event_target_as = titans_species
-			}
-		}
-		if = {
-			limit = { ti_is_winnu = yes }
-			species = {
-				set_species_flag = winnu_species
-				save_global_event_target_as = winnu_species
-			}
-		}
-		if = {
-			limit = { ti_is_xxcha = yes }
-			species = {
-				set_species_flag = xxcha_species
-				save_global_event_target_as = xxcha_species
-			}
-		}
-		if = {
-			limit = { ti_is_yin = yes }
-			species = {
-				set_species_flag = yin_species
-				save_global_event_target_as = yin_species
-			}
-		}
-		if = {
-			limit = { ti_is_yssaril = yes }
-			species = {
-				set_species_flag = yssaril_species
-				save_global_event_target_as = yssaril_species
 			}
 		}
 	}

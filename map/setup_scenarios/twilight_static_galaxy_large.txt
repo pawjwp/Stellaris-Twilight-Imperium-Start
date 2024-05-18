@@ -2,14 +2,14 @@ static_galaxy_scenario = {
 	name = "Twilight Imperium Large"
 	priority = 8
 	supports_shape = spiral_4
-	num_empires = { min = 0 max = 32 }
+	num_empires = { min = 0 max = 0 }
 	num_empire_default = 0
-	fallen_empire_default = 1
-	fallen_empire_max = 5
+	fallen_empire_default = 0
+	fallen_empire_max = 0
 	marauder_empire_default = 2
 	marauder_empire_max = 3
 	advanced_empire_default = 0
-	colonizable_planet_odds = 0.25
+	colonizable_planet_odds = 0
 	primitive_odds = 1.0
 	crisis_strength = 2.5
 	extra_crisis_strength = { 10 25 }

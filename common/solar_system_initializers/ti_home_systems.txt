@@ -149,13 +149,18 @@ ti_arborec_system = {
 		deposit_blockers = none
 		modifiers = none
 
+		flags = { nestphar_planet }
+
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Nestphar"
 			random_country = {
 				limit = { has_country_flag = arborec_empire }
 				save_global_event_target_as = arborec_empire
-				species = { save_global_event_target_as = arborec_species }
+				species = {
+					set_species_flag = arborec_species
+					save_global_event_target_as = arborec_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:arborec_empire }
@@ -336,7 +341,7 @@ ti_argent_flight_system = {
 			has_ring = no
 			deposit_blockers = none
 			modifiers = none
-			flags = { argent_flight_capital }
+			flags = { argent_flight_capital avar_planet }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -344,7 +349,10 @@ ti_argent_flight_system = {
 				random_country = {
 					limit = { has_country_flag = argent_flight_empire }
 					save_global_event_target_as = argent_flight_empire
-					species = { save_global_event_target_as = argent_flight_species }
+					species = {
+					set_species_flag = argent_flight_species
+					save_global_event_target_as = argent_flight_species
+				}
 				}
 				if = {
 					limit = { exists = event_target:argent_flight_empire }
@@ -363,7 +371,7 @@ ti_argent_flight_system = {
 			orbit_distance = 0
 			orbit_angle = 120
 			has_ring = no
-			flags = { ti_city_1_starting_planet ti_mining_starting_planet }
+			flags = { valk_planet ti_city_1_starting_planet ti_mining_starting_planet }
 
 			init_effect = {
 				set_name = "Valk"
@@ -376,7 +384,7 @@ ti_argent_flight_system = {
 			orbit_distance = 0
 			orbit_angle = 120
 			has_ring = no
-			flags = { ti_city_1_starting_planet ti_research_starting_planet ti_admin_starting_planet }
+			flags = { ylir_planet ti_city_1_starting_planet ti_research_starting_planet ti_admin_starting_planet }
 
 			init_effect = {
 				set_name = "Ylir"
@@ -532,6 +540,8 @@ ti_creuss_system = {
 		deposit_blockers = none
 		modifiers = none
 
+		flags = { creuss_capital creuss_planet }
+
 		init_effect = {
 			prevent_anomaly = yes
 			set_planet_entity = {
@@ -576,7 +586,10 @@ ti_creuss_system = {
 			random_country = {
 				limit = { has_country_flag = creuss_empire }
 				save_global_event_target_as = creuss_empire
-				species = { save_global_event_target_as = creuss_species }
+				species = {
+					set_species_flag = creuss_species
+					save_global_event_target_as = creuss_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:creuss_empire }
@@ -688,6 +701,7 @@ ti_empyrean_system = {
 			starting_planet = yes
 			flags = {
 				empyrean_capital
+				erebis_habitat_complex_planet
 				void_dweller_habitat_1
 				special_start_planet
 				megastructure habitat
@@ -807,7 +821,10 @@ ti_empyrean_system = {
 		random_country = {
 			limit = { has_country_flag = empyrean_empire }
 			save_global_event_target_as = empyrean_empire
-			species = { save_global_event_target_as = empyrean_species }
+			species = {
+					set_species_flag = empyrean_species
+					save_global_event_target_as = empyrean_species
+				}
 		}
 		event_target:empyrean_capital = {
 			if = {
@@ -905,7 +922,7 @@ ti_hacan_system = {
 			has_ring = no
 			deposit_blockers = none
 			modifiers = none
-			flags = { hacan_capital }
+			flags = { hacan_capital hercant_planet }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -913,7 +930,10 @@ ti_hacan_system = {
 				random_country = {
 					limit = { has_country_flag = hacan_empire }
 					save_global_event_target_as = hacan_empire
-					species = { save_global_event_target_as = hacan_species }
+					species = {
+					set_species_flag = hacan_species
+					save_global_event_target_as = hacan_species
+				}
 				}
 				if = {
 					limit = { exists = event_target:hacan_empire }
@@ -932,7 +952,7 @@ ti_hacan_system = {
 			orbit_distance = 0
 			orbit_angle = 120
 			has_ring = no
-			flags = { ti_city_1_starting_planet ti_industrial_starting_planet }
+			flags = { arretze_planet ti_city_1_starting_planet ti_industrial_starting_planet }
 
 			init_effect = {
 				set_name = "Arretze"
@@ -945,7 +965,7 @@ ti_hacan_system = {
 			orbit_distance = 0
 			orbit_angle = 120
 			has_ring = no
-			flags = { ti_city_1_starting_planet ti_research_starting_planet }
+			flags = { kamdorn_planet ti_city_1_starting_planet ti_research_starting_planet }
 
 			init_effect = {
 				set_name = "Kamdorn"
@@ -1046,7 +1066,7 @@ ti_jol_nar_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { jol_nar_capital }
+		flags = { jol_nar_capital jol_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1054,7 +1074,10 @@ ti_jol_nar_system = {
 			random_country = {
 				limit = { has_country_flag = jol_nar_empire }
 				save_global_event_target_as = jol_nar_empire
-				species = { save_global_event_target_as = jol_nar_species }
+				species = {
+					set_species_flag = jol_nar_species
+					save_global_event_target_as = jol_nar_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:jol_nar_empire }
@@ -1073,7 +1096,7 @@ ti_jol_nar_system = {
 		class = pc_ocean
 		size = 20
 		has_ring = no
-		flags = { ti_city_1_starting_planet ti_industrial_starting_planet ti_trade_starting_planet ti_research_starting_planet }
+		flags = { nar_planet ti_city_1_starting_planet ti_industrial_starting_planet ti_trade_starting_planet ti_research_starting_planet }
 
 		init_effect = {
 			set_name = "Nar"
@@ -1156,7 +1179,7 @@ ti_l1z1x_system = {
 		deposit_blockers = none
 		modifiers = none
 
-		flags = { special_start_planet }
+		flags = { l1z1x_capital 000_planet special_start_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1165,7 +1188,10 @@ ti_l1z1x_system = {
 			random_country = {
 				limit = { has_country_flag = l1z1x_empire }
 				save_global_event_target_as = l1z1x_empire
-				species = { save_global_event_target_as = l1z1x_species }
+				species = {
+					set_species_flag = l1z1x_species
+					save_global_event_target_as = l1z1x_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:l1z1x_empire }
@@ -1285,7 +1311,7 @@ ti_letnev_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { letnev_capital }
+		flags = { letnev_capital arc_prime_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1293,7 +1319,10 @@ ti_letnev_system = {
 			random_country = {
 				limit = { has_country_flag = letnev_empire }
 				save_global_event_target_as = letnev_empire
-				species = { save_global_event_target_as = letnev_species }
+				species = {
+					set_species_flag = letnev_species
+					save_global_event_target_as = letnev_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:letnev_empire }
@@ -1410,7 +1439,7 @@ ti_mentak_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { mentak_capital }
+		flags = { mentak_capital moll_primus_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1418,7 +1447,10 @@ ti_mentak_system = {
 			random_country = {
 				limit = { has_country_flag = mentak_empire }
 				save_global_event_target_as = mentak_empire
-				species = { save_global_event_target_as = mentak_species }
+				species = {
+					set_species_flag = mentak_species
+					save_global_event_target_as = mentak_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:mentak_empire }
@@ -1546,7 +1578,7 @@ ti_muaat_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { muaat_capital }
+		flags = { muaat_capital muaat_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1561,7 +1593,10 @@ ti_muaat_system = {
 			random_country = {
 				limit = { has_country_flag = muaat_empire }
 				save_global_event_target_as = muaat_empire
-				species = { save_global_event_target_as = muaat_species }
+				species = {
+					set_species_flag = muaat_species
+					save_global_event_target_as = muaat_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:muaat_empire }
@@ -1693,7 +1728,7 @@ ti_naalu_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { naalu_capital special_start_planet }
+		flags = { naalu_capital druaa_planet special_start_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1702,7 +1737,10 @@ ti_naalu_system = {
 			random_country = {
 				limit = { has_country_flag = naalu_empire }
 				save_global_event_target_as = naalu_empire
-				species = { save_global_event_target_as = naalu_species }
+				species = {
+					set_species_flag = naalu_species
+					save_global_event_target_as = naalu_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:naalu_empire }
@@ -1762,10 +1800,10 @@ ti_naalu_system = {
 		class = pc_tropical
 		size = 24
 		has_ring = no
-		flags = { ti_city_1_starting_planet ti_industrial_starting_planet ti_mining_starting_planet }
+		flags = { maaluuk_planet ti_city_1_starting_planet ti_industrial_starting_planet ti_mining_starting_planet }
 
 		init_effect = {
-			set_name = "Maaluk"
+			set_name = "Maaluuk"
 			add_deposit = d_decrepit_dwellings
 			add_deposit = d_failing_infrastructure
 			add_deposit = d_failing_infrastructure
@@ -1871,7 +1909,7 @@ ti_naaz_rokha_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { naaz_rokha_capital }
+		flags = { naaz_rokha_capital naazir_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1879,7 +1917,10 @@ ti_naaz_rokha_system = {
 			random_country = {
 				limit = { has_country_flag = naaz_rokha_empire }
 				save_global_event_target_as = naaz_rokha_empire
-				species = { save_global_event_target_as = naaz_rokha_species }
+				species = {
+					set_species_flag = naaz_rokha_species
+					save_global_event_target_as = naaz_rokha_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:naaz_rokha_empire }
@@ -1904,7 +1945,7 @@ ti_naaz_rokha_system = {
 		class = "pc_continental"
 		size = 20
 		has_ring = no
-		flags = { ti_city_1_starting_planet ti_mining_starting_planet ti_generator_starting_planet }
+		flags = { rokha_planet ti_city_1_starting_planet ti_mining_starting_planet ti_generator_starting_planet }
 
 		init_effect = {
 			set_name = "Rokha"
@@ -1988,13 +2029,18 @@ ti_nekro_system = {
 		deposit_blockers = none
 		modifiers = none
 
+		flags = { nekro_capital mordai_ii_planet }
+
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Mordai II"
 			random_country = {
 				limit = { has_country_flag = nekro_empire }
 				save_global_event_target_as = nekro_empire
-				species = { save_global_event_target_as = nekro_species }
+				species = {
+					set_species_flag = nekro_species
+					save_global_event_target_as = nekro_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:nekro_empire }
@@ -2117,7 +2163,7 @@ ti_nomad_system = {
 		starting_planet = yes
 		has_ring = no
 		deposit_blockers = none
-		flags = { nomad_capital }
+		flags = { nomad_capital arcturus_planet space_station_sumerian_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -2125,7 +2171,10 @@ ti_nomad_system = {
 			random_country = {
 				limit = { has_country_flag = nomad_empire }
 				save_global_event_target_as = nomad_empire
-				species = { save_global_event_target_as = nomad_species }
+				species = {
+					set_species_flag = nomad_species
+					save_global_event_target_as = nomad_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:nomad_empire }
@@ -2279,6 +2328,8 @@ ti_saar_system = {
 			starting_planet = yes
 			flags = {
 				saar_capital
+				ragh_planet
+
 				void_dweller_habitat_1
 				special_start_planet
 				megastructure habitat
@@ -2447,7 +2498,10 @@ ti_saar_system = {
 		random_country = {
 			limit = { has_country_flag = saar_empire }
 			save_global_event_target_as = saar_empire
-			species = { save_global_event_target_as = saar_species }
+			species = {
+					set_species_flag = saar_species
+					save_global_event_target_as = saar_species
+				}
 		}
 		event_target:saar_capital = {
 			if = {
@@ -2526,7 +2580,7 @@ ti_sardakk_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { sardakk_capital }
+		flags = { sardakk_capital quinarra_planet }
 
 		init_effect = {
 			set_name = "Quinnara"
@@ -2534,7 +2588,10 @@ ti_sardakk_system = {
 			random_country = {
 				limit = { has_country_flag = sardakk_empire }
 				save_global_event_target_as = sardakk_empire
-				species = { save_global_event_target_as = sardakk_species }
+				species = {
+					set_species_flag = sardakk_species
+					save_global_event_target_as = sardakk_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:sardakk_empire }
@@ -2553,7 +2610,7 @@ ti_sardakk_system = {
 		class = pc_arctic
 		size = 15
 		has_ring = no
-		flags = { ti_city_1_starting_planet ti_mining_starting_planet ti_trenlak }
+		flags = { trenlak_planet ti_city_1_starting_planet ti_mining_starting_planet  }
 
 		init_effect = {
 			set_name = "Tren'lak"
@@ -2671,7 +2728,7 @@ ti_sol_system = {
 		entity = "continental_planet_earth_entity"
 		deposit_blockers = none
 		modifiers = none
-		flags = { planet_earth }
+		flags = { sol_capital jord_planet planet_earth }
 
 		init_effect = {
 			save_global_event_target_as = sol_system_earth
@@ -2680,7 +2737,10 @@ ti_sol_system = {
 			random_country = {
 				limit = { has_country_flag = sol_empire }
 				save_global_event_target_as = sol_empire
-				species = { save_global_event_target_as = sol_species }
+				species = {
+					set_species_flag = sol_species
+					save_global_event_target_as = sol_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:sol_empire }
@@ -2984,7 +3044,7 @@ ti_titans_system = {
 		deposit_blockers = none
 		modifiers = none
 		starting_planet = yes
-		flags = { ignore_startup_effect megastructure }
+		flags = { titans_capital elysium_planet ignore_startup_effect megastructure }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -2992,7 +3052,10 @@ ti_titans_system = {
 			random_country = {
 				limit = { has_country_flag = titans_empire }
 				save_global_event_target_as = titans_empire
-				species = { save_global_event_target_as = titans_species }
+				species = {
+					set_species_flag = titans_species
+					save_global_event_target_as = titans_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:titans_empire }
@@ -3135,13 +3198,18 @@ ti_vuil_raith_system = {
 		deposit_blockers = none
 		modifiers = none
 
+		flags = { vuil_raith_capital vuil_planet }
+
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Nestphar"
 			random_country = {
 				limit = { has_country_flag = vuil_raith_empire }
 				save_global_event_target_as = vuil_raith_empire
-				species = { save_global_event_target_as = vuil_raith_species }
+				species = {
+					set_species_flag = vuil_raith_species
+					save_global_event_target_as = vuil_raith_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:vuil_raith_empire }
@@ -3233,13 +3301,18 @@ ti_winnu_system = {
 		deposit_blockers = none
 		modifiers = none
 
+		flags = { winnu_capital winnu_planet }
+
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Winnu"
 			random_country = {
 				limit = { has_country_flag = winnu_empire }
 				save_global_event_target_as = winnu_empire
-				species = { save_global_event_target_as = winnu_species }
+				species = {
+					set_species_flag = winnu_species
+					save_global_event_target_as = winnu_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:winnu_empire }
@@ -3378,7 +3451,7 @@ ti_xxcha_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { xxcha_capital }
+		flags = { xxcha_capital archon_ren_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -3386,7 +3459,10 @@ ti_xxcha_system = {
 			random_country = {
 				limit = { has_country_flag = xxcha_empire }
 				save_global_event_target_as = xxcha_empire
-				species = { save_global_event_target_as = xxcha_species }
+				species = {
+					set_species_flag = xxcha_species
+					save_global_event_target_as = xxcha_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:xxcha_empire }
@@ -3420,7 +3496,7 @@ ti_xxcha_system = {
 		class = pc_nuked
 		size = 24
 		has_ring = no
-		flags = { ti_city_1_starting_planet ti_industrial_starting_planet ti_mining_starting_planet ti_archon_tau }
+		flags = { archon_tau_planet ti_city_1_starting_planet ti_industrial_starting_planet ti_mining_starting_planet }
 
 		init_effect = {
 			set_name = "Archon Tau"
@@ -3503,13 +3579,18 @@ ti_yin_system = {
 		deposit_blockers = none
 		modifiers = none
 
+		flags = { yin_capital darien_planet }
+
 		init_effect = {
 			prevent_anomaly = yes
 			set_name = "Darien"
 			random_country = {
 				limit = { has_country_flag = yin_empire }
 				save_global_event_target_as = yin_empire
-				species = { save_global_event_target_as = yin_species }
+				species = {
+					set_species_flag = yin_species
+					save_global_event_target_as = yin_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:yin_empire }
@@ -3634,7 +3715,7 @@ ti_yssaril_system = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { yssaril_capital }
+		flags = { yssaril_capital retillion_planet }
 
 		init_effect = {
 			set_name = "Retillion"
@@ -3642,7 +3723,10 @@ ti_yssaril_system = {
 			random_country = {
 				limit = { has_country_flag = yssaril_empire }
 				save_global_event_target_as = yssaril_empire
-				species = { save_global_event_target_as = yssaril_species }
+				species = {
+					set_species_flag = yssaril_species
+					save_global_event_target_as = yssaril_species
+				}
 			}
 			if = {
 				limit = { exists = event_target:yssaril_empire }
@@ -3677,7 +3761,7 @@ ti_yssaril_system = {
 		class = pc_tropical
 		size = { min = 18 max = 21 }
 		has_ring = no
-		flags = { ti_city_1_starting_planet ti_mining_starting_planet }
+		flags = { shalloq_planet ti_city_1_starting_planet ti_mining_starting_planet }
 
 		init_effect = {
 			set_name = "Shalloq"
@@ -3717,8 +3801,6 @@ ti_yssaril_system = {
 
 ti_acheron_system = {
 	class = "sc_g"
-
-	flags = { empire_home_system }
 	
 	name = "Acheron"
 
@@ -3855,7 +3937,7 @@ ti_shaleri_passage_system = {
 
 	usage = custom_empire
 
-	flags = { empire_home_system delta_wormhole shaleri_passage }
+	flags = { delta_wormhole shaleri_passage }
 
 	name = "Shaleri"
 

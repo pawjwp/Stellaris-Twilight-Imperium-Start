@@ -349,7 +349,10 @@ create_arborec = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = arborec_species }
+		last_created_species = {
+			set_species_flag = arborec_species
+			save_global_event_target_as = arborec_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -433,7 +436,10 @@ create_argent_flight = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = argent_flight_species }
+		last_created_species = {
+			set_species_flag = argent_flight_species
+			save_global_event_target_as = argent_flight_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -526,7 +532,10 @@ create_creuss = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = creuss_species }
+		last_created_species = {
+			set_species_flag = creuss_species
+			save_global_event_target_as = creuss_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -615,7 +624,10 @@ create_empyrean = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = empyrean_species }
+		last_created_species = {
+			set_species_flag = empyrean_species
+			save_global_event_target_as = empyrean_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -709,7 +721,10 @@ create_hacan = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = hacan_species }
+		last_created_species = {
+			set_species_flag = hacan_species
+			save_global_event_target_as = hacan_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -802,7 +817,10 @@ create_jol_nar = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = jol_nar_species }
+		last_created_species = {
+			set_species_flag = jol_nar_species
+			save_global_event_target_as = jol_nar_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -894,7 +912,10 @@ create_l1z1x = {
 				trait = "trait_solitary"
 			}
 		}
-		last_created_species = { save_global_event_target_as = lazax_species }
+		last_created_species = {
+			set_species_flag = lazax_species
+			save_global_event_target_as = lazax_species
+		}
 		event_target:lazax_species = {
 			modify_species = {
 				effect = {
@@ -924,9 +945,7 @@ create_l1z1x = {
 			}
 		}
 		last_created_species = {
-			rename_species = {
-				name = "L1Z1X"
-			}
+			set_species_flag = l1z1x_species
 			save_global_event_target_as = l1z1x_species
 		}
 		create_country = {
@@ -1000,7 +1019,6 @@ create_l1z1x = {
 			fire_on_action = { on_action = empire_init_create_ships }
 			set_met_empire_flags = yes
 		}
-
 		event_target:jol_nar_species = {
 			modify_species = {
 				effect = {
@@ -1019,7 +1037,7 @@ create_l1z1x = {
 							trait = "trait_aquatic"
 							trait = "trait_natural_physicists"
 							trait = "trait_repugnant"
-							trait = "trait_weak"
+							trait = "trait_decadent"
 						}
 						homeworld = this
 					}
@@ -1027,9 +1045,7 @@ create_l1z1x = {
 			}
 		}
 		last_created_species = {
-			rename_species = {
-				name = "H4l1r"
-			}
+			set_species_flag = h4l1r_species
 			save_global_event_target_as = h4l1r_species
 		}
 	}
@@ -1057,7 +1073,10 @@ create_letnev = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = letnev_species }
+		last_created_species = {
+			set_species_flag = letnev_species
+			save_global_event_target_as = letnev_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1151,7 +1170,10 @@ create_mahact = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = mahact_species }
+		last_created_species = {
+			set_species_flag = mahact_species
+			save_global_event_target_as = mahact_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1242,14 +1264,17 @@ create_mentak = {
 				namelist = "HUMAN1"
 				gender = not_set
 				traits = {
-					ideal_planet_class = pc_savannah
+					ideal_planet_class = pc_continental
 					trait = "trait_adaptive"
 					trait = "trait_nomadic"
 					trait = "trait_wasteful"
 				}
 				homeworld = event_target:planet_earth
 			}
-			last_created_species = { save_global_event_target_as = sol_species }
+			last_created_species = {
+				set_species_flag = sol_species
+				save_global_event_target_as = sol_species
+			}
 		}
 		event_target:sol_species = {
 			modify_species = {
@@ -1276,9 +1301,7 @@ create_mentak = {
 			}
 		}
 		last_created_species = {
-			rename_species = {
-				name = alari
-			}
+			set_species_flag = mentak_species
 			save_global_event_target_as = mentak_species
 		}
 
@@ -1377,7 +1400,10 @@ create_muaat = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = muaat_species }
+		last_created_species = {
+			set_species_flag = muaat_species
+			save_global_event_target_as = muaat_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1470,7 +1496,31 @@ create_naalu = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = naalu_species }
+		last_created_species = {
+			set_species_flag = naalu_species
+			save_global_event_target_as = naalu_species
+		}
+		create_species = {
+			class = "ART"
+			portrait = "art1"
+			name = "Miashan"
+			plural = "Miashan"
+			adjective = "Miashan"
+			namelist = "REP2"
+			gender = not_set
+			traits = {
+				ideal_planet_class = pc_tropical
+				trait = "trait_syncretic_proles"
+				trait = "trait_docile"
+				trait = "trait_deviants"
+
+			}
+			homeworld = this
+		}
+		last_created_species = {
+			set_species_flag = miashan_species
+			save_global_event_target_as = miashan_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1557,14 +1607,17 @@ create_naaz_rokha = {
 			traits = {
 				ideal_planet_class = pc_tropical
 				trait = "trait_intelligent"
-				trait = "trait_traditional"
+				trait = "trait_natural_physicists"
 				trait = "trait_communal"
 				trait = "trait_weak"
 				trait = "trait_fleeting"
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = naaz_species }
+		last_created_species = {
+			set_species_flag = naaz_species
+			save_global_event_target_as = naaz_species
+		}
 	}
 	if = {
 		limit = { NOT = { exists = event_target:rokha_species } }
@@ -1578,7 +1631,7 @@ create_naaz_rokha = {
 			gender = not_set
 			traits = {
 				ideal_planet_class = pc_continental
-				trait = "trait_syncretic_proles"
+				trait = "trait_traditional"
 				trait = "trait_nomadic"
 				trait = "trait_communal"
 				trait = "trait_strong"
@@ -1586,7 +1639,10 @@ create_naaz_rokha = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = rokha_species }
+		last_created_species = {
+			set_species_flag = rokha_species
+			save_global_event_target_as = rokha_species
+		}
 	}
 	if = {
 		limit = { NOT = { exists = event_target:naaz_rokha_empire } }
@@ -1684,7 +1740,10 @@ create_nekro = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = nekro_species }
+		last_created_species = {
+			set_species_flag = nekro_species
+			save_global_event_target_as = nekro_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1774,7 +1833,10 @@ create_nomad = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = nomad_species }
+		last_created_species = {
+			set_species_flag = nomad_species
+			save_global_event_target_as = nomad_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1869,7 +1931,10 @@ create_saar = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = saar_species }
+		last_created_species = {
+			set_species_flag = saar_species
+			save_global_event_target_as = saar_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -1962,7 +2027,10 @@ create_sardakk = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = sardakk_species }
+		last_created_species = {
+			set_species_flag = sardakk_species
+			save_global_event_target_as = sardakk_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -2059,7 +2127,10 @@ create_sol = {
 				}
 				homeworld = event_target:planet_earth
 			}
-			last_created_species = { save_global_event_target_as = sol_species }
+			last_created_species = {
+			set_species_flag = sol_species
+			save_global_event_target_as = sol_species
+		}
 		}
 		create_country = {
 			type = default
@@ -2155,7 +2226,10 @@ create_titans = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = titans_species }
+		last_created_species = {
+			set_species_flag = titans_species
+			save_global_event_target_as = titans_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -2248,7 +2322,10 @@ create_vuil_raith = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = vuil_raith_species }
+		last_created_species = {
+			set_species_flag = vuil_raith_species
+			save_global_event_target_as = vuil_raith_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -2339,7 +2416,10 @@ create_winnu = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = winnu_species }
+		last_created_species = {
+			set_species_flag = winnu_species
+			save_global_event_target_as = winnu_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -2434,7 +2514,10 @@ create_xxcha = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = xxcha_species }
+		last_created_species = {
+			set_species_flag = xxcha_species
+			save_global_event_target_as = xxcha_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -2529,7 +2612,10 @@ create_yin = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = yin_species }
+		last_created_species = {
+			set_species_flag = yin_species
+			save_global_event_target_as = yin_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -2621,7 +2707,10 @@ create_yssaril = {
 			}
 			homeworld = this
 		}
-		last_created_species = { save_global_event_target_as = yssaril_species }
+		last_created_species = {
+			set_species_flag = yssaril_species
+			save_global_event_target_as = yssaril_species
+		}
 		create_country = {
 			type = default
 			ignore_initial_colony_error = yes
@@ -2708,7 +2797,10 @@ ti_spawn_pops = {
 		count = $NUM$
 		if = {
 			limit = { exists = event_target:$TARGET_POP$ }
-			create_pop = { species = event_target:$TARGET_POP$ }
+			create_pop = {
+				species = event_target:$TARGET_POP$
+				ethos = random
+			}
 		}
 	}
 }
@@ -2722,17 +2814,4 @@ spawn_emergency_pops = {
 		}
 	}
 	check_planet_employment = yes
-}
-
-spawn_kenara_pops = {
-	reset_pops = yes
-
-	ti_spawn_pops = { NUM = 16 TARGET_POP = hacan_species }
-	ti_spawn_pops = { NUM = 1 TARGET_POP = mentak_species }
-	ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
-	ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
-	ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
-	ti_spawn_pops = { NUM = 1 TARGET_POP = rokha_species }
-
-	spawn_emergency_pops = { NUM = 22 }
 }
