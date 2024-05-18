@@ -4043,7 +4043,7 @@ ti_shaleri_passage_system = {
 
 ti_wren_system = {
 	class = sc_g
-	flags = { neighbor_t1_first_colony wren_terra }
+	flags = { neighbor_t1_first_colony wren_terra_planet }
 	
 	name = "Wren"
 

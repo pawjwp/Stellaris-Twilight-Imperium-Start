@@ -487,202 +487,142 @@ event = {
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = hercant_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 16 TARGET_POP = hacan_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = mentak_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = rokha_species }
-
-			spawn_emergency_pops = { NUM = 22 }
+			ti_change_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = mentak_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = xxcha_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = rokha_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = jol_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 17 TARGET_POP = jol_nar_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = mentak_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = argent_flight_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = hacan_species }
-
-			spawn_emergency_pops = { NUM = 22 }
+			ti_change_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = mentak_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = argent_flight_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = hacan_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = nar_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 6 TARGET_POP = jol_nar_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
-
-			spawn_emergency_pops = { NUM = 10 }
+			ti_change_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = xxcha_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = 000_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 25 TARGET_POP = l1z1x_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = h4l1r_species }
-
-			spawn_emergency_pops = { NUM = 28 }
+			ti_change_pops = { NUM = 2 TARGET_POP = h4l1r_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = wren_terra_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 2 TARGET_POP = letnev_species }
-			ti_spawn_pops = { NUM = 3 TARGET_POP = sol_species }
-
-			spawn_emergency_pops = { NUM = 6 }
+			ti_change_pops = { NUM = 3 TARGET_POP = sol_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = ixth_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 10 TARGET_POP = mahact_species }
-			ti_spawn_pops = { NUM = 3 TARGET_POP = sol_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = jol_nar_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = hacan_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = xxcha_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = winnu_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = sardakk_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = letnev_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = naaz_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = rokha_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = naalu_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = saar_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = argent_flight_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = lazax_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = yssaril_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = creuss_species }
-
-			spawn_emergency_pops = { NUM = 32 }
+			ti_change_pops = { NUM = 3 TARGET_POP = sol_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = jol_nar_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = hacan_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = xxcha_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = winnu_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = sardakk_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = letnev_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = naaz_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = rokha_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = naalu_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = saar_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = argent_flight_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = lazax_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = yssaril_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = creuss_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = moll_primus_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 4 TARGET_POP = mentak_species }
-			ti_spawn_pops = { NUM = 5 TARGET_POP = hacan_species }
-			ti_spawn_pops = { NUM = 5 TARGET_POP = xxcha_species }
-			ti_spawn_pops = { NUM = 4 TARGET_POP = letnev_species }
-			ti_spawn_pops = { NUM = 3 TARGET_POP = yssaril_species }
-			ti_spawn_pops = { NUM = 3 TARGET_POP = jol_nar_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = naaz_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = rokha_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = saar_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = naalu_species }
-
-			spawn_emergency_pops = { NUM = 32 }
+			ti_change_pops = { NUM = 5 TARGET_POP = hacan_species }
+			ti_change_pops = { NUM = 5 TARGET_POP = xxcha_species }
+			ti_change_pops = { NUM = 4 TARGET_POP = letnev_species }
+			ti_change_pops = { NUM = 3 TARGET_POP = yssaril_species }
+			ti_change_pops = { NUM = 3 TARGET_POP = jol_nar_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = naaz_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = rokha_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = saar_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = naalu_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = druaa_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 19 TARGET_POP = naalu_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = miashan_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = yssaril_species }
-
-			spawn_emergency_pops = { NUM = 22 }
+			ti_change_pops = { NUM = 1 TARGET_POP = miashan_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = yssaril_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = maaluuk_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 2 TARGET_POP = naalu_species }
-			ti_spawn_pops = { NUM = 7 TARGET_POP = miashan_species }
-
-			spawn_emergency_pops = { NUM = 10 }
+			ti_change_pops = { NUM = 7 TARGET_POP = miashan_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = naazir_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 10 TARGET_POP = naaz_species }
-			ti_spawn_pops = { NUM = 10 TARGET_POP = rokha_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
-
-			spawn_emergency_pops = { NUM = 22 }
+			ti_change_pops = { NUM = 10 TARGET_POP = rokha_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = sol_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = rokha_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 3 TARGET_POP = naaz_species }
-			ti_spawn_pops = { NUM = 5 TARGET_POP = rokha_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = hacan_species }
-
-			spawn_emergency_pops = { NUM = 10 }
+			ti_change_pops = { NUM = 5 TARGET_POP = rokha_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = hacan_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = space_station_sumerian_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 10 TARGET_POP = sol_species }
-			ti_spawn_pops = { NUM = 5 TARGET_POP = mentak_species }
-			ti_spawn_pops = { NUM = 5 TARGET_POP = hacan_species }
-			ti_spawn_pops = { NUM = 3 TARGET_POP = saar_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
-			ti_spawn_pops = { NUM = 3 TARGET_POP = jol_nar_species }
-			ti_spawn_pops = { NUM = 4 TARGET_POP = letnev_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = naaz_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = rokha_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = winnu_species }
-			ti_spawn_pops = { NUM = 3 TARGET_POP = yssaril_species }
-
-			random_owned_pop = { limit = { species = { has_species_flag = nomad_species } } kill_pop = yes }
-			spawn_emergency_pops = { NUM = 22 }
+			ti_change_pops = { NUM = 10 TARGET_POP = sol_species }
+			ti_change_pops = { NUM = 5 TARGET_POP = mentak_species }
+			ti_change_pops = { NUM = 5 TARGET_POP = hacan_species }
+			ti_change_pops = { NUM = 3 TARGET_POP = saar_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = xxcha_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = jol_nar_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = letnev_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = naaz_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = rokha_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = winnu_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = yssaril_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = jord_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 29 TARGET_POP = sol_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = hacan_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
-
-			spawn_emergency_pops = { NUM = 32 }
+			ti_change_pops = { NUM = 1 TARGET_POP = hacan_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = xxcha_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = elysium_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 19 TARGET_POP = titans_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = hacan_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = sardakk_species }
-			ti_spawn_pops = { NUM = 2 TARGET_POP = yin_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = xxcha_species }
-
-			spawn_emergency_pops = { NUM = 28 }
+			ti_change_pops = { NUM = 2 TARGET_POP = hacan_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = sardakk_species }
+			ti_change_pops = { NUM = 2 TARGET_POP = yin_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = sol_species }
+			ti_change_pops = { NUM = 1 TARGET_POP = xxcha_species }
 		}
 
 		random_galaxy_planet = {
 			limit = { has_planet_flag = archon_tau_planet }
-			reset_pops = yes
 
-			ti_spawn_pops = { NUM = 8 TARGET_POP = xxcha_species }
-			ti_spawn_pops = { NUM = 1 TARGET_POP = sol_species }
-
-			spawn_emergency_pops = { NUM = 10 }
+			ti_change_pops = { NUM = 1 TARGET_POP = sol_species }
 
 			every_owned_pop = {
 				if = {
