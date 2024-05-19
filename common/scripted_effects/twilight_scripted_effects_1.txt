@@ -308,7 +308,7 @@ spawn_orbital_ring_effect = {
     save_event_target_as = orbital_ring_planet
     create_starbase = {
         size = orbital_ring_tier_1
-        owner = event_target:$OWNER$ # needs to direct to planet instead of country
+        owner = FROM
         effect = { }
     }
 }
@@ -1827,8 +1827,7 @@ create_nomad = {
 			namelist = "HUMAN2"
 			gender = not_set
 			traits = {
-				ideal_planet_class = pc_habitat
-				trait = "trait_void_dweller_1"
+				ideal_planet_class = pc_arctic
 				trait = "trait_thrifty"
 				trait = "trait_nomadic"
 				trait = "trait_deviants"
@@ -1885,7 +1884,7 @@ create_nomad = {
 				civic = "civic_corporate_dark_consortium"
 				civic = "civic_naval_contractors"
 			}
-			origin = "origin_void_dwellers"
+			origin = "origin_default"
 
 			species = event_target:nomad_species
 			effect = {
