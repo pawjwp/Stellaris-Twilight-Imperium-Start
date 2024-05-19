@@ -780,7 +780,7 @@ country_event = {
 					ti_is_nomad = yes
 				}
 			}
-			capital_scope = { spawn_orbital_ring_effect = yes }
+			capital_scope = { spawn_orbital_ring_effect = { OWNER = nomad_empire } }
 		}
 		if = {
 			limit = {

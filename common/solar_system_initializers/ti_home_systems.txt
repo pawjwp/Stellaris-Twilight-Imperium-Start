@@ -822,9 +822,9 @@ ti_empyrean_system = {
 			limit = { has_country_flag = empyrean_empire }
 			save_global_event_target_as = empyrean_empire
 			species = {
-					set_species_flag = empyrean_species
-					save_global_event_target_as = empyrean_species
-				}
+				set_species_flag = empyrean_species
+				save_global_event_target_as = empyrean_species
+			}
 		}
 		event_target:empyrean_capital = {
 			if = {
@@ -2194,7 +2194,22 @@ ti_nomad_system = {
 	change_orbit = 25
 
 	planet = {
-		count = 3
+		class = pc_molten
+		orbit_distance = { min = 15 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		flags = { ignore_startup_effect habitat_3_planet has_megastructure }
+		has_ring = yes
+
+		init_effect = {
+			set_deposit = d_energy_4
+		}
+	}
+
+	planet = {
+		count = 2
 		class = random_non_colonizable
 		orbit_distance = { min = 15 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
@@ -2210,39 +2225,51 @@ ti_nomad_system = {
 	}
 
 	planet = {
-		class = pc_arctic
+		name = "Arcturus"
+		class = pc_frozen
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 24
 		starting_planet = yes
 		has_ring = no
-		deposit_blockers = none
-		flags = { nomad_capital arcturus_planet space_station_sumerian_planet }
+		flags = {
+			arcturus_planet
+
+			ignore_startup_effect
+			habitat_1_planet
+			has_megastructure
+		}
 
 		init_effect = {
 			prevent_anomaly = yes
-			set_name = "Arcturus"
-			random_country = {
-				limit = { has_country_flag = nomad_empire }
-				save_global_event_target_as = nomad_empire
-				species = {
-					set_species_flag = nomad_species
-					save_global_event_target_as = nomad_species
-				}
+			clear_deposits = yes
+			add_deposit = d_physics_3
+		}
+
+		moon = {
+			class = pc_habitat
+			orbit_angle = 0
+			orbit_distance = 0
+			size = 24
+			starting_planet = yes
+			flags = {
+				nomad_capital
+				space_station_sumerian_planet
+
+				void_dweller_habitat_1
+				special_start_planet
+				megastructure habitat
 			}
-			if = {
-				limit = { exists = event_target:nomad_empire }
-				set_owner = event_target:nomad_empire
+
+			init_effect = {
+				set_name = "Space Station Sumerian"
+				save_event_target_as = nomad_capital
 			}
-			else = {
-				create_nomad = yes
-			}
-			generate_empire_home_planet = yes
+			deposit_blockers = none
 		}
 	}
 
 	planet = {
-		count = { min = 0 max = 3 }
 		class = random_non_colonizable
 		orbit_distance = { min = 15 max = 30 }
 		orbit_angle = { min = 90 max = 270 }
@@ -2254,6 +2281,42 @@ ti_nomad_system = {
 			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		class = random_non_colonizable
+		orbit_distance = { min = 15 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		flags = { ignore_startup_effect habitat_2_planet has_megastructure }
+		has_ring = yes
+
+		init_effect = {
+			set_deposit = d_minerals_4
+		}
+	}
+
+	init_effect = {
+		random_country = {
+			limit = { has_country_flag = nomad_empire }
+			save_global_event_target_as = nomad_empire
+			species = {
+				set_species_flag = nomad_species
+				save_global_event_target_as = nomad_species
+			}
+		}
+		event_target:nomad_capital = {
+			if = {
+				limit = { exists = event_target:nomad_empire }
+				set_owner = event_target:nomad_empire
+			}
+			else = {
+				create_nomad = yes
+			}
+			generate_empire_home_planet = yes
 		}
 	}
 
@@ -2553,9 +2616,9 @@ ti_saar_system = {
 			limit = { has_country_flag = saar_empire }
 			save_global_event_target_as = saar_empire
 			species = {
-					set_species_flag = saar_species
-					save_global_event_target_as = saar_species
-				}
+				set_species_flag = saar_species
+				save_global_event_target_as = saar_species
+			}
 		}
 		event_target:saar_capital = {
 			if = {
