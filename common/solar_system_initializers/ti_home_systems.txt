@@ -1348,7 +1348,61 @@ ti_letnev_system = {
 }
 
 ti_mahact_system = {
+	class = "sc_black_hole"
+
+	usage = custom_empire
+
+	flags = { empire_home_system }
 	
+	name = "Ixth"
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Husk of Greatness"
+		class = star
+		orbit_distance = 0
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 80
+		home_planet = yes
+		class = "pc_nuked"
+		orbit_angle = -200
+		size = 30
+		deposit_blockers = none
+		modifiers = none
+		flags = { mahact_capital ixth_planet }
+
+		init_effect = {
+			prevent_anomaly = yes
+			set_name = "Ixth"
+			random_country = {
+				limit = { has_country_flag = mahact_empire }
+				save_global_event_target_as = mahact_empire
+				species = {
+					set_species_flag = mahact_species
+					save_global_event_target_as = mahact_species
+				}
+			}
+			if = {
+				limit = { exists = event_target:mahact_empire }
+				set_owner = event_target:mahact_empire
+			}
+			else = {
+				create_mahact = yes
+			}
+			generate_empire_home_planet = yes
+		}
+	}
 }
 
 ti_mentak_system = {
@@ -3149,13 +3203,13 @@ ti_titans_system = {
 }
 
 ti_vuil_raith_system = {
-	class = "sc_g"
+	class = "sc_m_giant"
 
 	usage = custom_empire
 
 	flags = { empire_home_system chosen_system }
 
-	name = "Vortex"
+	name = "Torment Nexus"
 
 	init_effect = {
 		set_star_flag = vuil_raith_system
@@ -3166,33 +3220,78 @@ ti_vuil_raith_system = {
 			}
 		}
 		generate_home_system_resources = yes
-		set_name = "The Vortex"
 	}
 
 	planet = {
 		count = 1
-		class = "pc_g_star"
-		name = "Farruban"
+		class = "pc_m_star"
+		name = "Searing Eye"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = { min = 20 max = 30 }
+		size = { min = 20 max = 40 }
 		has_ring = no
+
+		init_effect = {
+			create_ambient_object = {
+				type = "space_storm_2"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "nebula_1"
+				location = this
+			}
+		}
 	}
 
 	change_orbit = 35
 
 	planet = {
-		count = { min = 1 max = 3 }
-		orbit_distance = 15
-		class = random_non_colonizable
+		name = "Bastion of Desolation"
+		orbit_distance = { min = 0 max = 40 }
+		class = pc_nuked
 		orbit_angle = { min = 90 max = 270 }
 	}
 
 	planet = {
 		count = 1
-		orbit_distance = 15
+		class = "pc_m_star"
+		name = "Infernal Crypt"
+		orbit_distance = { min = 0 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		name = "Doomed Hollow"
+		orbit_distance = { min = 0 max = 40 }
+		class = pc_nuked
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		class = "pc_m_star"
+		name = "Beacon of the Damned"
+		orbit_distance = { min = 0 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		name = "Festering Abyss"
+		count = 1
+		orbit_distance = { min = 0 max = 40 }
 		home_planet = yes
-		class = "pc_tropical"
+		class = pc_nuked
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = @homeworld_min_size max = @homeworld_max_size }
 		deposit_blockers = none
@@ -3202,7 +3301,6 @@ ti_vuil_raith_system = {
 
 		init_effect = {
 			prevent_anomaly = yes
-			set_name = "Nestphar"
 			random_country = {
 				limit = { has_country_flag = vuil_raith_empire }
 				save_global_event_target_as = vuil_raith_empire
@@ -3223,32 +3321,36 @@ ti_vuil_raith_system = {
 	}
 
 	planet = {
-		count = { min = 1 max = 3 }
-		orbit_distance = 25
-		class = random_non_colonizable
+		count = 1
+		class = "pc_m_star"
+		name = "Crimson Maw"
+		orbit_distance = { min = 0 max = 40 }
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		name = "Blighted Heart"
+		orbit_distance = { min = 0 max = 40 }
+		class = pc_nuked
 		orbit_angle = { min = 90 max = 270 }
 	}
 
 	planet = {
-		count = { min = 0 max = 2 }
-		orbit_distance = 20
-		class = pc_gas_giant
+		count = 1
+		class = "pc_m_star"
+		name = "Spark of Hatred"
+		orbit_distance = { min = 0 max = 40 }
 		orbit_angle = { min = 90 max = 270 }
-
-		change_orbit = @base_moon_distance
-
-		moon = {
-			count = { min = 1 max = 3 }
-			class = random_non_colonizable
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
-		}
+		size = { min = 15 max = 35 }
+		has_ring = no
 	}
 
 	planet = {
-		count = { min = 0 max = 1 }
-		orbit_distance = 20
-		class = random_non_colonizable
+		name = "Pit of Horror"
+		orbit_distance = { min = 0 max = 40 }
+		class = pc_nuked
 		orbit_angle = { min = 90 max = 270 }
 	}
 }
@@ -4043,7 +4145,7 @@ ti_shaleri_passage_system = {
 
 ti_wren_system = {
 	class = sc_g
-	flags = { neighbor_t1_first_colony wren_terra_planet }
+	flags = { neighbor_t1_first_colony wren_system }
 	
 	name = "Wren"
 
@@ -4088,7 +4190,7 @@ ti_wren_system = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 15
 
-		flags = { ti_city_1_starting_planet ti_farming_starting_planet }
+		flags = { wren_terra_planet ti_city_1_starting_planet ti_farming_starting_planet }
 
 		init_effect = {
 			prevent_anomaly = yes

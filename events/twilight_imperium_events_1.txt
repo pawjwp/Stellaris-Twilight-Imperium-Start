@@ -30,9 +30,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				ti_is_mentak = yes
-				ti_is_nomad = yes
-				ti_is_naaz_rokha = yes
+				OR = {
+					ti_is_mentak = yes
+					ti_is_nomad = yes
+					ti_is_naaz_rokha = yes
+				}
 			}
 			give_technology = { message = no tech = tech_integrated_cybernetics }
 			give_technology = { message = no tech = tech_frontier_health }
@@ -49,7 +51,14 @@ country_event = {
 			}
 			give_technology = { message = no tech = tech_hyper_drive_2 }
 			give_technology = { message = no tech = tech_wormhole_stabilization }
-
+		}
+		if = {
+			limit = {
+				OR = {
+					ti_is_creuss = yes
+					ti_is_vuil_raith = yes
+				}
+			}
 			set_country_flag = encountered_first_wormhole
 			add_seen_bypass_type = wormhole
 		}
@@ -425,7 +434,7 @@ event = {
 			capital_scope = {
 				solar_system = {
 					closest_system = {
-						limit = { has_star_flag = wren_terra }
+						limit = { has_star_flag = wren_system }
 						max_steps = 2
 						create_starbase = {
 							size = starbase_outpost
@@ -542,6 +551,17 @@ event = {
 			ti_change_pops = { NUM = 1 TARGET_POP = lazax_species }
 			ti_change_pops = { NUM = 1 TARGET_POP = yssaril_species }
 			ti_change_pops = { NUM = 1 TARGET_POP = creuss_species }
+
+			every_owned_pop = {
+				if = {
+					limit = { NOT = { has_trait = trait_survivor } }
+					modify_species = {
+						species = this
+						add_trait = trait_survivor
+						add_traits_at_start_of_list = yes
+					}
+				}
+			}
 		}
 
 		random_galaxy_planet = {
@@ -760,9 +780,21 @@ country_event = {
 					ti_is_nomad = yes
 				}
 			}
-
 			capital_scope = { spawn_orbital_ring_effect = yes }
-
+		}
+		if = {
+			limit = {
+				OR = {
+					ti_is_creuss = yes
+					ti_is_empyrean = yes
+					ti_is_l1z1x = yes # reenable and just change h4l1r rights instead
+					ti_is_letnev = yes
+					ti_is_nomad = yes
+					ti_is_sardakk = yes
+					ti_is_winnu = yes
+					ti_is_yssaril = yes
+				}
+			}
 			set_policy = {
 				policy = slavery
 				option = slavery_not_allowed

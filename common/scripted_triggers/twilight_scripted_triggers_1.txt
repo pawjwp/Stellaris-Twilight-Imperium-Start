@@ -31,7 +31,7 @@ ti_is_mahact = {
 }
 
 ti_is_mentak = {
-	has_country_flag = mahact_empire
+	has_country_flag = mentak_empire
 }
 
 ti_is_muaat = {
@@ -70,6 +70,10 @@ ti_is_titans = {
 	has_country_flag = titans_empire
 }
 
+ti_is_vuil_raith = {
+	has_country_flag = vuil_raith_empire
+}
+
 ti_is_winnu = {
 	has_country_flag = winnu_empire
 }
@@ -84,16 +88,6 @@ ti_is_yin = {
 
 ti_is_yssaril = {
 	has_country_flag = yssaril_empire
-}
-
-has_reduced_pop_origin = {
-	OR = {
-		has_origin = origin_broken_shackles
-		has_origin = origin_payback
-		has_origin = origin_fear_of_the_dark
-		ti_is_mentak = yes
-		ti_is_nomad = yes
-	}
 }
 
 ti_valid_immigration_empire = {
