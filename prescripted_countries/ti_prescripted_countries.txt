@@ -987,24 +987,23 @@ nomad = {
 		}
 	}
 	ruler = {
-		gender = male
-		name = "The Nomad"
+		gender = female
+		name = "Arturo"
 		portrait = "tox2"
 		texture = 2
 		attachment = 0
 		clothes = 0
-		ruler_title = "The Nomad"
-		ruler_title_female = "The Nomad"
+		ruler_title = "Station Master"
+		ruler_title_female = "Station Master"
 		trait = "leader_trait_spycraft"
 		leader_class = "official"
 	}
 	room = "personality_peaceful_traders_room"
-	ethic = "ethic_authoritarian"
-	ethic = "ethic_militarist"
-	ethic = "ethic_materialist"
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_fanatic_materialist"
 	civics = {
-		"civic_corporate_dark_consortium"
-		"civic_naval_contractors"
+		"civic_ruthless_competition"
+		"civic_private_prospectors"
 	}
 	origin = "origin_default"
 }

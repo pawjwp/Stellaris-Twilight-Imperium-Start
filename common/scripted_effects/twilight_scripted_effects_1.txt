@@ -1870,19 +1870,18 @@ create_nomad = {
 			}
 			
 			effect = {
-				set_male_ruler_title = "The Nomad"
-				set_female_ruler_title = "The Nomad"
+				set_male_ruler_title = "Station Master"
+				set_female_ruler_title = "Station Master"
 			}
 
 			ethos = {
-				ethic = "ethic_authoritarian"
-				ethic = "ethic_militarist"
-				ethic = "ethic_materialist"
+				ethic = "ethic_egalitarian"
+				ethic = "ethic_fanatic_materialist"
 			}
 
 			civics = {
-				civic = "civic_corporate_dark_consortium"
-				civic = "civic_naval_contractors"
+				civic = "civic_ruthless_competition"
+				civic = "civic_private_prospectors"
 			}
 			origin = "origin_default"
 
