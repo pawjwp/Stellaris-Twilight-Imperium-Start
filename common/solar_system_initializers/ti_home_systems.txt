@@ -2213,15 +2213,15 @@ ti_nomad_system = {
 		class = pc_arctic
 		orbit_distance = 25
 		orbit_angle = 60
-		size = 10
+		size = 24
 		starting_planet = yes
 		has_ring = no
 		deposit_blockers = none
-		flags = { nomad_capital space_station_sumerian_planet ignore_startup_effect megastructure } }
+		flags = { nomad_capital arcturus_planet space_station_sumerian_planet }
 
 		init_effect = {
 			prevent_anomaly = yes
-			set_name = "Space Station Sumerian"
+			set_name = "Arcturus"
 			random_country = {
 				limit = { has_country_flag = nomad_empire }
 				save_global_event_target_as = nomad_empire
@@ -2238,19 +2238,7 @@ ti_nomad_system = {
 				create_nomad = yes
 			}
 			generate_empire_home_planet = yes
-
-			set_planet_entity = {
-				picture = pc_frozen
-			}
 		}
-	}
-
-	planet = {
-		name = "Arcturus"
-		class = pc_frozen
-		orbit_distance = 0
-		orbit_angle = 0
-		flags = { arcturus_planet }
 	}
 
 	planet = {
