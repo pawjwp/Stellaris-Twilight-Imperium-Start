@@ -1,0 +1,126 @@
+namespace = game_start
+
+### Create wormhole pairs
+event = {
+	id = game_start.31
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = a1_wh_nexus }
+			random_system = {
+				limit = { has_star_flag = a1_wh }
+				prev = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+						orbit_angle = 360
+					}
+				}
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+					orbit_angle = 360
+				}
+				link_wormholes = prev
+			}
+		}
+		random_system = {
+			limit = { has_star_flag = a2_wh_nexus }
+			random_system = {
+				limit = { has_star_flag = a2_wh }
+				prev = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+						orbit_angle = 360
+					}
+				}
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+					orbit_angle = 360
+				}
+				link_wormholes = prev
+			}
+		}
+		random_system = {
+			limit = { has_star_flag = a3_wh_nexus }
+			random_system = {
+				limit = { has_star_flag = a3_wh }
+				prev = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+						orbit_angle = 360
+					}
+				}
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+					orbit_angle = 360
+				}
+				link_wormholes = prev
+			}
+		}
+		
+		random_system = {
+			limit = { has_star_flag = b1_wh_nexus }
+			random_system = {
+				limit = { has_star_flag = b1_wh }
+				prev = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+						orbit_angle = 360
+					}
+				}
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+					orbit_angle = 360
+				}
+				link_wormholes = prev
+			}
+		}
+		random_system = {
+			limit = { has_star_flag = b2_wh_nexus }
+			random_system = {
+				limit = { has_star_flag = b2_wh }
+				prev = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+						orbit_angle = 360
+					}
+				}
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+					orbit_angle = 360
+				}
+				link_wormholes = prev
+			}
+		}
+		random_system = {
+			limit = { has_star_flag = b3_wh_nexus }
+			random_system = {
+				limit = { has_star_flag = b3_wh }
+				prev = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+						orbit_angle = 360
+					}
+				}
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+					orbit_angle = 360
+				}
+				link_wormholes = prev
+			}
+		}
+	}
+}

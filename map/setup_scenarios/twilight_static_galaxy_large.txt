@@ -97,7 +97,7 @@ static_galaxy_scenario = {
 	system = { id = "32" name = "" position = { x = -150 y = 167 } initializer = ti_quann_wormhole_system spawn_weight = { base = 0 } }
 	system = { id = "33" name = "" position = { x = 191 y = -272 } initializer = ti_stygian_passage_system spawn_weight = { base = 0 } }
 	# anomaly
-	system = { id = "34" name = "" position = { x = 261 y = -360 } initializer = ti_ghost_worlds_system spawn_weight = { base = 0 } }
+	system = { id = "34" name = "" position = { x = 261 y = -360 } initializer = ratling_1_1 spawn_weight = { base = 0 } } # formerly ti_ghost_worlds_system, ratlings seem like a good fit
 	system = { id = "35" name = "" position = { x = 259 y = -72 } initializer = ti_manon_singularity_system spawn_weight = { base = 0 } }
 	system = { id = "36" name = "" position = { x = -251 y = 363 } initializer = ti_shattered_ring_system spawn_weight = { base = 0 } }
 	system = { id = "37" name = "" position = { x = -58 y = 129 } initializer = ti_tor_mantal_system spawn_weight = { base = 0 } }
@@ -107,7 +107,7 @@ static_galaxy_scenario = {
 	system = { id = "40" name = "" position = { x = -188 y = -145 } initializer = ti_alio_prima_system spawn_weight = { base = 0 } }
 	system = { id = "41" name = "" position = { x = 206 y = 252 } initializer = ti_cealdri_system spawn_weight = { base = 0 } }
 	system = { id = "42" name = "" position = { x = 20 y = 258 } initializer = ti_sol_neighbor_t1_first_colony spawn_weight = { base = 0 } }
-	system = { id = "43" name = "" position = { x = 94 y = 269 } initializer = ti_coorneeq_system spawn_weight = { base = 0 } }
+	system = { id = "43" name = "" position = { x = 94 y = 269 } initializer = ti_corneeq_system spawn_weight = { base = 0 } }
 	system = { id = "44" name = "" position = { x = -243 y = -179 } initializer = ti_dal_bootha_system spawn_weight = { base = 0 } }
 	system = { id = "45" name = "" position = { x = 3 y = -130 } initializer = ti_everra_system spawn_weight = { base = 0 } }
 	system = { id = "46" name = "" position = { x = -292 y = -11 } initializer = ti_lodor_system spawn_weight = { base = 0 } }
@@ -142,7 +142,7 @@ static_galaxy_scenario = {
 	system = { id = "74" name = "" position = { x = 164 y = -176 } initializer = ti_tequran_system spawn_weight = { base = 0 } }
 	system = { id = "75" name = "" position = { x = -369 y = -65 } initializer = ti_vefut_system spawn_weight = { base = 0 } }
 	system = { id = "76" name = "" position = { x = 307 y = 169 } initializer = ti_vira_pics_system spawn_weight = { base = 0 } }
-	system = { id = "77" name = "" position = { x = 134 y = 251 } initializer = ti_xanact_system spawn_weight = { base = 0 } }
+	system = { id = "77" name = "" position = { x = 134 y = 251 } initializer = ti_xanhact_system spawn_weight = { base = 0 } }
 	system = { id = "78" name = "" position = { x = -145 y = 131 } initializer = ti_zohbat_system spawn_weight = { base = 0 } }
 	# industrial
 	system = { id = "79" name = "" position = { x = 173 y = 10 } initializer = ti_accoen_system spawn_weight = { base = 0 } }
@@ -881,11 +881,34 @@ static_galaxy_scenario = {
 	system = { id = "810" name = "" position = { x = 430 y = 45 } }
 	system = { id = "811" name = "" position = { x = 433 y = 34 } }
 	system = { id = "812" name = "" position = { x = 443 y = 79 } }
+
+	system = { id = "813" name = "" position = { x = 400 y = -400 } initializer = ti_a1_nexus spawn_weight = { base = 0 } }
+	system = { id = "814" name = "" position = { x = 380 y = -400 } initializer = ti_a2_nexus spawn_weight = { base = 0 } }
+	system = { id = "815" name = "" position = { x = 400 y = -380 } initializer = ti_a3_nexus spawn_weight = { base = 0 } }
+
+	system = { id = "816" name = "" position = { x = -400 y = 400 } initializer = ti_b1_nexus spawn_weight = { base = 0 } }
+	system = { id = "817" name = "" position = { x = -380 y = 400 } initializer = ti_b2_nexus spawn_weight = { base = 0 } }
+	system = { id = "818" name = "" position = { x = -400 y = 380 } initializer = ti_b3_nexus spawn_weight = { base = 0 } }
 	
 	add_hyperlane = { from = "8" to = "27" }
 	
 	prevent_hyperlane = { from = "3" to = "all" }
 	prevent_hyperlane = { from = "20" to = "all" }
+	
+	prevent_hyperlane = { from = "813" to = "all" }
+	prevent_hyperlane = { from = "814" to = "all" }
+	prevent_hyperlane = { from = "815" to = "all" }
+	prevent_hyperlane = { from = "816" to = "all" }
+	prevent_hyperlane = { from = "817" to = "all" }
+	prevent_hyperlane = { from = "818" to = "all" }
+	
+	add_hyperlane = { from = "813" to = "814" }
+	add_hyperlane = { from = "814" to = "815" }
+	add_hyperlane = { from = "815" to = "813" }
+	
+	add_hyperlane = { from = "816" to = "817" }
+	add_hyperlane = { from = "817" to = "818" }
+	add_hyperlane = { from = "818" to = "816" }
 
  	nebula = { name = "The Dark" position = { x = -8 y = -92 z = 1 } radius = 50 }
 }

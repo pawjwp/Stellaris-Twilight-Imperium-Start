@@ -1,0 +1,32 @@
+namespace = distar
+
+event = {
+	id = distar.8000
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				lgate_enabled = yes
+			}
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 0
+						blocks_disruptive_gameplay = yes
+					}
+					set_global_flag = gray_goo_crisis_set
+					set_global_flag = active_gray_goo
+				}
+				0 = {}
+				0 = {
+					set_global_flag = dragon_season
+				}
+				0 = {
+					set_global_flag = gray_goo_empire_set
+				}
+			}
+		}
+	}
+}

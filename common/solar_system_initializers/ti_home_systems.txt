@@ -3397,7 +3397,7 @@ ti_winnu_system = {
 		count = 1
 		orbit_distance = 15
 		home_planet = yes
-		class = "pc_tundra"
+		class = "pc_arid"
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = @homeworld_min_size max = @homeworld_max_size }
 		deposit_blockers = none

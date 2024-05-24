@@ -1,0 +1,89 @@
+random_list = {
+	name = "rl_dry_planets"
+	planets = {
+		"pc_arid"
+		"pc_desert"
+		"pc_savannah"
+	}
+}
+random_list = {
+	name = "rl_arid_or_desert"
+	planets = {
+		"pc_arid"
+		"pc_desert"
+	}
+}
+random_list = {
+	name = "rl_arid_or_savannah"
+	planets = {
+		"pc_arid"
+		"pc_savannah"
+	}
+}
+random_list = {
+	name = "rl_desert_or_savannah"
+	planets = {
+		"pc_desert"
+		"pc_savannah"
+	}
+}
+
+random_list = {
+	name = "rl_cold_planets"
+	planets = {
+		"pc_alpine"
+		"pc_arctic"
+		"pc_tundra"
+	}
+}
+random_list = {
+	name = "rl_alpine_or_arctic"
+	planets = {
+		"pc_alpine"
+		"pc_arctic"
+	}
+}
+random_list = {
+	name = "rl_alpine_or_tundra"
+	planets = {
+		"pc_alpine"
+		"pc_tundra"
+	}
+}
+random_list = {
+	name = "rl_arctic_or_tundra"
+	planets = {
+		"pc_arctic"
+		"pc_tundra"
+	}
+}
+
+random_list = {
+	name = "rl_wet_planets"
+	planets = {
+		"pc_continental"
+		"pc_ocean"
+		"pc_tropical"
+	}
+}
+random_list = {
+	name = "rl_continental_or_ocean"
+	planets = {
+		"pc_continental"
+		"pc_ocean"
+	}
+}
+random_list = {
+	name = "rl_continental_or_tropical"
+	planets = {
+		"pc_continental"
+		"pc_tropical"
+	}
+}
+random_list = {
+	name = "rl_ocean_or_tropical"
+	planets = {
+		"pc_ocean"
+		"pc_tropical"
+	}
+}

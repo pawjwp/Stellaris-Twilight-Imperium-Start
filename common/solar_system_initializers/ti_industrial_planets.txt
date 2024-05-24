@@ -13,12 +13,13 @@
 ti_accoen_system = {
 	class = rl_all_stars
 
-	name = "Accoen"
+	init_effect = {
+		set_name = "Accoen"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Accoen"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -35,9 +36,10 @@ ti_accoen_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Accoen"
+		class = pc_ocean
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 13 max = 15 }
 	}
 
 	planet = {
@@ -97,12 +99,13 @@ ti_accoen_system = {
 ti_ang_system = {
 	class = rl_all_stars
 
-	name = "Ang"
+	init_effect = {
+		set_name = "Ang"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Ang"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -119,9 +122,11 @@ ti_ang_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Ang"
+		class = pc_ocean
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 14 max = 18 }
+		has_ring = yes
 	}
 
 	planet = {
@@ -181,12 +186,13 @@ ti_ang_system = {
 ti_arinam_system = {
 	class = rl_all_stars
 
-	name = "Arinam"
+	init_effect = {
+		set_name = "Arinam"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Arinam"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -203,9 +209,10 @@ ti_arinam_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Arinam"
+		class = pc_gaia
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = 15
 	}
 
 	planet = {
@@ -265,12 +272,13 @@ ti_arinam_system = {
 ti_arnor_system = {
 	class = rl_all_stars
 
-	name = "Arnor"
+	init_effect = {
+		set_name = "Arnor"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Arnor"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -287,9 +295,10 @@ ti_arnor_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Arnor"
+		class = pc_continental
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 18 max = 24 }
 	}
 
 	planet = {
@@ -349,12 +358,13 @@ ti_arnor_system = {
 ti_bakal_system = {
 	class = rl_all_stars
 
-	name = "Bakal"
+	init_effect = {
+		set_name = "Ba'kal"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Bakal"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -371,9 +381,10 @@ ti_bakal_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Ba'kal"
+		class = pc_desert
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 16 max = 20 }
 	}
 
 	planet = {
@@ -433,12 +444,13 @@ ti_bakal_system = {
 ti_gral_system = {
 	class = rl_all_stars
 
-	name = "Gral"
+	init_effect = {
+		set_name = "Gral"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Gral"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -455,9 +467,10 @@ ti_gral_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Gral"
+		class = pc_continental
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 18 max = 22 }
 	}
 
 	planet = {
@@ -515,19 +528,26 @@ ti_gral_system = {
 }
 
 ti_jeol_ir_system = {
-	class = rl_all_stars
-
-	name = "Jeol Ir"
+	class = rl_binary_stars
 
 	planet = {
 		count = 1
 		class = star
-		name = "Jeol Ir"
-		orbit_distance = 0
-		orbit_angle = 1
+		orbit_distance = 25
+		orbit_angle = 0
+		size = { min = 30 max = 35 }
+		has_ring = no
 	}
 
-	change_orbit = 35
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	change_orbit = 40
 
 	planet = {
 		count = { min = 1 max = 3 }
@@ -539,9 +559,10 @@ ti_jeol_ir_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Jeol Ir"
+		class = pc_nuked
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 18 max = 22 }
 	}
 
 	planet = {
@@ -601,12 +622,13 @@ ti_jeol_ir_system = {
 ti_lazar_system = {
 	class = rl_all_stars
 
-	name = "Lazar"
+	init_effect = {
+		set_name = "Lazar"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Lazar"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -623,9 +645,10 @@ ti_lazar_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Lazar"
+		class = rl_arid_or_desert
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 14 max = 16 }
 	}
 
 	planet = {
@@ -685,12 +708,13 @@ ti_lazar_system = {
 ti_lisis_system = {
 	class = rl_all_stars
 
-	name = "Lisis"
+	init_effect = {
+		set_name = "Lisis"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Lisis"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -707,9 +731,10 @@ ti_lisis_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Lisis"
+		class = rl_continental_or_tropical
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 16 max = 20 }
 	}
 
 	planet = {
@@ -769,12 +794,13 @@ ti_lisis_system = {
 ti_lor_system = {
 	class = rl_all_stars
 
-	name = "Lor"
+	init_effect = {
+		set_name = "Lor"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Lor"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -791,9 +817,10 @@ ti_lor_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Lor"
+		class = pc_arctic
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 12 max = 15 }
 	}
 
 	planet = {
@@ -853,12 +880,13 @@ ti_lor_system = {
 ti_new_albion_system = {
 	class = rl_all_stars
 
-	name = "New Albion"
+	init_effect = {
+		set_name = "New Albion"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "New Albion"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -875,9 +903,10 @@ ti_new_albion_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "New Albion"
+		class = rl_continental_or_tropical
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 14 max = 18 }
 	}
 
 	planet = {
@@ -937,12 +966,13 @@ ti_new_albion_system = {
 ti_perimeter_system = {
 	class = rl_all_stars
 
-	name = "Perimeter"
+	init_effect = {
+		set_name = "Perimeter"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Perimeter"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -959,9 +989,11 @@ ti_perimeter_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Perimeter"
+		class = pc_continental
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 18 max = 22 }
+		has_ring = yes
 	}
 
 	planet = {
@@ -1021,12 +1053,13 @@ ti_perimeter_system = {
 ti_qucenn_system = {
 	class = rl_all_stars
 
-	name = "Qucenn"
+	init_effect = {
+		set_name = "Qucen'n"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Qucenn"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -1043,9 +1076,10 @@ ti_qucenn_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Qucen'n"
+		class = rl_continental_or_tropical
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 16 max = 22 }
 	}
 
 	planet = {
@@ -1105,12 +1139,13 @@ ti_qucenn_system = {
 ti_saudor_system = {
 	class = rl_all_stars
 
-	name = "Saudor"
+	init_effect = {
+		set_name = "Saudor"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Saudor"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -1127,9 +1162,10 @@ ti_saudor_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Saudor"
+		class = rl_continental_or_tropical
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 16 max = 18 }
 	}
 
 	planet = {
@@ -1189,12 +1225,13 @@ ti_saudor_system = {
 ti_tarmann_system = {
 	class = rl_all_stars
 
-	name = "Tarmann"
+	init_effect = {
+		set_name = "Tar'mann"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Tarmann"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -1211,9 +1248,10 @@ ti_tarmann_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Tar'mann"
+		class = rl_continental_or_tropical
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 13 max = 15 }
 	}
 
 	planet = {
@@ -1273,12 +1311,13 @@ ti_tarmann_system = {
 ti_thibah_system = {
 	class = rl_all_stars
 
-	name = "Thibah"
+	init_effect = {
+		set_name = "Thibah"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Thibah"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -1295,9 +1334,10 @@ ti_thibah_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Thibah"
+		class = rl_dry_planets
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 12 max = 16 }
 	}
 
 	planet = {
@@ -1357,12 +1397,13 @@ ti_thibah_system = {
 ti_velnor_system = {
 	class = rl_all_stars
 
-	name = "Velnor"
+	init_effect = {
+		set_name = "Velnor"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Velnor"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -1379,9 +1420,11 @@ ti_velnor_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Velnor"
+		class = rl_alpine_or_tundra
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 13 max = 16 }
+		has_ring = yes
 	}
 
 	planet = {
@@ -1441,12 +1484,13 @@ ti_velnor_system = {
 ti_wellon_system = {
 	class = rl_all_stars
 
-	name = "Wellon"
+	init_effect = {
+		set_name = "Wellon"
+	}
 
 	planet = {
 		count = 1
 		class = star
-		name = "Wellon"
 		orbit_distance = 0
 		orbit_angle = 1
 	}
@@ -1463,9 +1507,10 @@ ti_wellon_system = {
 	planet = {
 		count = 1
 		orbit_distance = 15
-		class = random_colonizable
+		name = "Wellon"
+		class = rl_dry_planets
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 21 }
+		size = { min = 12 max = 16 }
 	}
 
 	planet = {

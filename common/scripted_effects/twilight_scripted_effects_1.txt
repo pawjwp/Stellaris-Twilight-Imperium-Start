@@ -303,6 +303,25 @@ remove_farming_deposits = {
 }
 
 
+limit_deposits = {
+	remove_generator_deposits = yes
+	remove_generator_deposits = yes
+	add_generator_deposits = yes
+	remove_generator_deposits = yes
+
+	remove_mining_deposits = yes
+	remove_mining_deposits = yes
+	add_mining_deposits = yes
+	remove_mining_deposits = yes
+
+	remove_farming_deposits = yes
+	remove_farming_deposits = yes
+	add_farming_deposits = yes
+	remove_farming_deposits = yes
+}
+
+
+
 spawn_orbital_ring_effect = {
 	set_planet_flag = has_megastructure
     save_event_target_as = orbital_ring_planet
@@ -1251,10 +1270,6 @@ create_mentak = {
 		limit = { NOT = { exists = event_target:mentak_empire } }
 		if = {
 			limit = { NOT = { exists = event_target:sol_species } }
-			random_galaxy_planet = {
-				limit = { has_planet_flag = planet_earth }
-				save_event_target_as = planet_earth
-			}
 			create_species = {
 				class = "HUM"
 				portrait = "human"
@@ -1269,7 +1284,7 @@ create_mentak = {
 					trait = "trait_nomadic"
 					trait = "trait_wasteful"
 				}
-				homeworld = event_target:planet_earth
+				homeworld = this
 			}
 			last_created_species = {
 				set_species_flag = sol_species
@@ -1295,7 +1310,7 @@ create_mentak = {
 							trait = "trait_unruly"
 							trait = "trait_wasteful"
 						}
-						homeworld = event_target:planet_earth
+						homeworld = this
 					}
 				}
 			}
@@ -2108,10 +2123,6 @@ create_sol = {
 		limit = { NOT = { exists = event_target:sol_empire } }
 		if = {
 			limit = { NOT = { exists = event_target:sol_species } }
-			random_galaxy_planet = {
-				limit = { has_planet_flag = planet_earth }
-				save_event_target_as = planet_earth
-			}
 			create_species = {
 				class = "HUM"
 				portrait = "human"
@@ -2125,12 +2136,19 @@ create_sol = {
 					trait = "trait_nomadic"
 					trait = "trait_wasteful"
 				}
-				homeworld = event_target:planet_earth
+				homeworld = this
 			}
 			last_created_species = {
-			set_species_flag = sol_species
-			save_global_event_target_as = sol_species
+				set_species_flag = sol_species
+				save_global_event_target_as = sol_species
+			}
 		}
+		else = {
+			random_galaxy_planet = {
+				limit = { has_planet_flag = planet_earth }
+				save_event_target_as = planet_earth
+			}
+			event_target:sol_species = { set_species_homeworld = event_target:planet_earth }
 		}
 		create_country = {
 			type = default
@@ -2406,7 +2424,7 @@ create_winnu = {
 			namelist = "HUM2"
 			gender = not_set
 			traits = {
-				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_arid
 				trait = "trait_perfected_genes"
 				trait = "trait_docile"
 				trait = "trait_traditional"

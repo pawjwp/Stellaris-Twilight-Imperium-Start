@@ -226,7 +226,7 @@ planet_event = {
 			}
 		}
 
-		# mentak gene clinics and mining district
+		# mentak gene clinics
 		if = {
 			limit = {
 				owner = {
@@ -236,13 +236,11 @@ planet_event = {
 
 			remove_building = building_commercial_zone
 			add_building = building_clinic
-
-			add_district_and_planet_size_if_needed_effect = {
-				district = district_mining
-			}
+			
+			add_deposit = d_msi_air_freshener
 		}
 
-		# nomad gene clinics and generator district
+		# nomad gene clinics
 		if = {
 			limit = {
 				owner = {
@@ -252,10 +250,8 @@ planet_event = {
 
 			remove_building = building_bureaucratic_1
 			add_building = building_clinic
-
-			add_district_and_planet_size_if_needed_effect = {
-				district = district_generator
-			}
+			
+			add_deposit = d_msi_air_freshener
 		}
 
 		# jol-nar bonus research lab
@@ -1244,15 +1240,11 @@ planet_event = {
 					limit = { owner = { ti_is_naaz_rokha = yes } }
 					add_modifier = { modifier = second_home days = -1 }
 				}
-				# add msi air freshener to nomad
-				if = {
-					limit = { owner = { ti_is_nomad = yes } }
-					add_deposit = d_msi_air_freshener
-				}
-
+				every_owned_pop = { clear_pop_category = yes }
 				check_planet_employment = yes
 			}
 		}
+		every_owned_pop = { clear_pop_category = yes }
 		check_planet_employment = yes
 	}
 }

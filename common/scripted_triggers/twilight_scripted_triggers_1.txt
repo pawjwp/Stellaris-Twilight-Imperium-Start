@@ -10,6 +10,10 @@ ti_is_creuss = {
 	has_country_flag = creuss_empire
 }
 
+ti_is_empyrean = {
+	has_country_flag = empyrean_empire
+}
+
 ti_is_hacan = {
 	has_country_flag = hacan_empire
 }
